@@ -59,9 +59,10 @@ def get_publications_by_author(global_index, list_researchers):
         authors = bib_item.author
 
         for researcher_names in list_researchers:
+            firstname = researcher_names[0]
             lastname = researcher_names[-1]
             for first, von, last, jr in authors:
-                if last.lower() == lastname:
+                if last.lower() == lastname and first[0].lower() == firstname[0].lower():
                     author_index[lastname].add(bib_key)
                     # Some 'von' are actually lastnames
                     pvon = von.replace(' ', '').replace('.', '')
