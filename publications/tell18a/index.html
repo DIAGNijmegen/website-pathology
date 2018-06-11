@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Publications of David Tellez - Computational Pathology Group</title>
+    <title>Whole-Slide Mitosis Detection in H\&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks - Computational Pathology Group</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -75,18 +75,36 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="https://diagnijmegen.github.io/website-pathology/">Home</a></li>
         <li class="breadcrumb-item"><a href="https://diagnijmegen.github.io/website-pathology/publications/">Publications</a></li>
-        <li class="breadcrumb-item">Publications of David Tellez</li>
+        <li class="breadcrumb-item">Whole-Slide Mitosis Detection in H\&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks</li>
       </ol>
     </nav>
 </div>
     <div class="container">
-    <h1 class="page-title">Publications of David Tellez</h1>
+    <h1 class="page-title">Whole-Slide Mitosis Detection in H\&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks</h1>
 
-    <ul>
-<li>D. Tellez, I. Balkenhol M. andOtte-Holler, R. van de Loo, R. Vogels, P. Bult, C. Wauters, S. Vreuls W. andMol, N. Karssemeijer, G. Litjens, J. van der Laak and F. Ciompi. "Whole-Slide Mitosis Detection in H&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks", IEEE Transactions on Medical Imaging2018;. <a href="../tell18a">Abstract</a> <a href="https://doi.org/10.1109/TMI.2018.2820199">DOI</a></li>
-<li>B. Ehteshami Bejnordi, M. Veta, P.J. van Diest, B. van Ginneken, N. Karssemeijer, G. Litjens, J.A.W.M. van der Laak, t. CAMELYON16 Consortium, M. Hermsen, Q.F. Manson, M. Balkenhol, O. Geessink, N. Stathonikos, M.C. van Dijk, P. Bult, F. Beca, A.H. Beck, D. Wang, A. Khosla, R. Gargeya, H. Irshad, A. Zhong, Q. Dou, Q. Li, H. Chen, H. Lin, P. Heng, C. Haß, E. Bruni, Q. Wong, U. Halici, M.Ü. Öner, R. Cetin-Atalay, M. Berseth, V. Khvatkov, A. Vylegzhanin, O. Kraus, M. Shaban, N. Rajpoot, R. Awan, K. Sirinukunwattana, T. Qaiser, Y. Tsang, D. Tellez, J. Annuscheit, P. Hufnagl, M. Valkonen, K. Kartasalo, L. Latonen, P. Ruusuvuori, K. Liimatainen, S. Albarqouni, B. Mungal, A. George, S. Demirci, N. Navab, S. Watanabe, S. Seno, Y. Takenaka, H. Matsuda, H. Ahmady Phoulady, V. Kovalev, A. Kalinovsky, V. Liauchuk, G. Bueno, M.M. Fernandez-Carrobles, I. Serrano, O. Deniz, D. Racoceanu and R. Venâncio. "Diagnostic Assessment of Deep Learning Algorithms for Detection of Lymph Node Metastases in Women With Breast Cancer", Journal of the American Medical Association2017;3182199-2210. <a href="../ehte17">Abstract</a> <a href="https://doi.org/10.1001/jama.2017.14585">DOI</a> <a href="http://www.ncbi.nlm.nih.gov/pubmed/29234806/">PMID 29234806</a></li>
-<li>D. Tellez, M. Balkenhol, N. Karssemeijer, G. Litjens, J. van der Laak and F. Ciompi. "H&E stain augmentation improves generalization of convolutional networks for histopathological mitosis detection" in: <i>Medical Imaging</i>, volume 10581 of SPIE, 2018. <a href="../tell18b">Abstract</a> <a href="https://doi.org/10.1117/12.2293048">DOI</a></li>
-</ul>
+    <p class="lead">
+            Tellez,&nbsp;
+            D. and Balkenhol,&nbsp;
+            M. andOtte-Holler,&nbsp;
+            I. and van de Loo,&nbsp;
+            R. and Vogels,&nbsp;
+            R. and Bult,&nbsp;
+            P. and Wauters,&nbsp;
+            C. and Vreuls,&nbsp;
+            W. andMol,&nbsp;
+            S. and Karssemeijer,&nbsp;
+            N. and Litjens,&nbsp;
+            G. and van der Laak,&nbsp;
+            J. and Ciompi,&nbsp;
+            F.,&nbsp;
+    </p>
+
+    <p>Published in TMI</p>
+
+        <p><a href="https://doi.org/10.1109/TMI.2018.2820199" class="btn btn-primary">DOI</a></p>
+
+    <h2>Abstract</h2>
+    <p>Manual counting of mitotic tumor cells in tissue sections constitutes one of the strongest prognostic markers for breast cancer. This procedure, however, is time-consuming and error-prone. We developed a method to automatically detect mitotic figures in breast cancer tissue sections based on convolutional neural networks (CNNs). Application of CNNs to hematoxylin and eosin (H&amp;E) stained histological tissue sections is hampered by: (1) noisy and expensive reference standards established by pathologists, (2) lack of generalization due to staining variation across laboratories, and (3) high computational requirements needed to process gigapixel whole-slide images (WSIs). In this paper, we present a method to train and evaluate CNNs to specifically solve these issues in the context of mitosis detection in breast cancer WSIs. First, by combining image analysis of mitotic activity in phosphohistone-H3 (PHH3) restained slides and registration, we built a reference standard for mitosis detection in entire H&amp;E WSIs requiring minimal manual annotation effort. Second, we designed a data augmentation strategy that creates diverse and realistic H&amp;E stain variations by modifying the hematoxylin and eosin color channels directly. Using it during training combined with network ensembling resulted in a stain invariant mitosis detector. Third, we applied knowledge distillation to reduce the computational requirements of the mitosis detection ensemble with a negligible loss of performance. The system was trained in a single-center cohort and evaluated in an independent multicenter cohort from The Cancer Genome Atlas on the three tasks of the Tumor Proliferation Assessment Challenge (TUPAC). We obtained a performance within the top-3 best methods for most of the tasks of the challenge.</p>
 
     </div>
     </main>
@@ -98,7 +116,7 @@
                 <p>&copy; Computational Pathology Group 2017-2018</p>
                 <p>The Computational Pathology Group is part the Department of Pathology at <a href="https://www.radboudumc.nl">Radboud University Medical Center</a>.</p>
 
-                <a href="https://github.com/diagnijmegen/website-pathology/edit/master/content/pages/publications/david-tellez.md">Edit</a>
+                <a href="https://github.com/diagnijmegen/website-pathology/edit/master/content/pages/publications/Tell18a.md">Edit</a>
             </div>
 
             <div class="col-md-4 footer-ribbon py-3">
