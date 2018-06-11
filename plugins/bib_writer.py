@@ -109,9 +109,10 @@ def generate_md_bibitem(writer=None):
 
     time_list_pubs = time.clock()
     write_author_publications_md(global_index, author_index, list_researchers, out_dir, string_rules)
-    write_list_publications_md(global_index, filtered_publications, out_dir, string_rules)
+    dict_pubs = write_list_publications_md(global_index, filtered_publications, out_dir, string_rules)
     print('Time to create filtered list of publications and publications per researcher', time.clock() - time_list_pubs)
-
+    json_path = os.path.join(base_dir, '..', 'output/dict_pubs.json')
+    save_dict2json(json_path, dict_pubs)
 
 def append_publication_md(global_index, bib_key, html_format, go_parent_dir=False):
     bib_item = global_index[bib_key]
@@ -150,15 +151,19 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
 
     md_format = 'title: Publications\n\n'
     md_format += '<ul>\n'
-
+    
+    dict_pubs = {}
     for bib_key in filtered_publications:
-        md_format += append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
+        html_bibkey = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
+        dict_pubs[bib_key] = html_bibkey
+        md_format += html_bibkey
 
     md_format += '</ul>\n'
     # publications.md
     out_path = out_dir+'.md'
 
     write_md_pass(out_path, md_format)
+    return dict_pubs
 
 
 def write_author_publications_md(global_index, author_index, list_researchers, out_dir, string_rules):
@@ -185,7 +190,7 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
 
 def write_single_publication_md(global_index, filtered_publications, out_dir, json_path):
     # Loads json file with md5 value of bibitems of the previous version
-    prev_md5s = load_json2dict(json_path)
+    prev_md5s = [] #load_json2dict(json_path)
     # Obtains the md5 values of the current bibitems in diag.bib
     md5s = get_md5s(global_index)
 
@@ -239,7 +244,7 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
         except UnicodeEncodeError:
             list_bibs_error.append(bibitem)
 
-    save_dict2json(json_path, md5s)
+    #save_dict2json(json_path, md5s)
     print('List of bibkeys returning UnicodeEncodeError')
 
     for bib in list_bibs_error:

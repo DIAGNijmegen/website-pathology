@@ -35,6 +35,16 @@
         </div>
     </div>
     {% endif %}
-
+    
+    {% if page.bibkeys %}
+        <h2>Publications</h2>
+        <div class="container">
+            <ul>
+            {% for bibkey in page.bibkeys.split(',') %}
+                {{ bibkeys_html[bibkey.strip()] }}
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
     </div>
 {% endblock %}
