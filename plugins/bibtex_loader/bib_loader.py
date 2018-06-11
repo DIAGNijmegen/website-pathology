@@ -19,16 +19,7 @@ def load_json2dict(json_path):
 
     
 def load_bibkeys(generator):
-    #base_dir = os.path.dirname(os.path.abspath(__file__))
-    #json_path = os.path.join(base_dir, '..', '..', 'content', 'dict_pubs.json')
-    json_path = 'content/dict_pubs.json'
-    for idx in range(4):
-        if not os.path.exists(json_path):
-            json_path = '../'+json_path
-        else:
-            break
-    
-    print(json_path, 'json_path')
+    json_path = generator.settings['BIBKEYS_SRC']
     bibkeys_html = load_json2dict(json_path)
     
     generator.context['bibkeys_html'] = bibkeys_html

@@ -31,6 +31,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # URL settings
+BIBKEYS_SRC = 'content/dict_pubs.json'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 SLUGIFY_SOURCE = 'basename'
