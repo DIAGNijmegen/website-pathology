@@ -19,8 +19,8 @@ def load_json2dict(json_path):
 
     
 def load_bibkeys(generator):
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(base_dir, 'output', 'dict_pubs.json')
+    base_dir = os.getcwd()  # os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(base_dir, 'content', 'dict_pubs.json')
     print(json_path, 'json_path')
     bibkeys_html = load_json2dict(json_path)
     

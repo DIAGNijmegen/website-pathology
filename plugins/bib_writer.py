@@ -111,7 +111,7 @@ def generate_md_bibitem(writer=None):
     write_author_publications_md(global_index, author_index, list_researchers, out_dir, string_rules)
     dict_pubs = write_list_publications_md(global_index, filtered_publications, out_dir, string_rules)
     print('Time to create filtered list of publications and publications per researcher', time.clock() - time_list_pubs)
-    json_path = os.path.join(base_dir, '..', 'output/dict_pubs.json')
+    json_path = os.path.join(base_dir, '..', 'content/dict_pubs.json')
     save_dict2json(json_path, dict_pubs)
 
 def append_publication_md(global_index, bib_key, html_format, go_parent_dir=False):
