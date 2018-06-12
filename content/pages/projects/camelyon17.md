@@ -4,7 +4,7 @@ picture: camelyon17_logo.png
 template: project-single
 people: Peter Bandi, Oscar Geessink, Geert Litjens, Jeroen van der Laak
 description: ISBI 2017 challenge on cancer metastases detection in lymph node.
-bibkeys: Ehte17
+bibkeys: Ehte17, Litj18
 
 ## Overview
 
