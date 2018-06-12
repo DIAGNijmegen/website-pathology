@@ -119,10 +119,9 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
     html_to_write = html_format.apply(bib_item)
     pub_html = '<li>'
     pub_html += html_to_write
-    if not go_parent_dir:
-        pub_html += '. <a href=\"' + bib_key.lower() + '\">Abstract</a>'
-    else:
-        pub_html += '. <a href=\"../' + bib_key.lower() + '\">Abstract</a>'
+
+    pub_html += '. <a href=\"SITEURL/publications/' + bib_key.lower() + '\">Abstract</a>'
+
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
         pub_html += ' <a href=\"' + url_doi + '\">DOI</a>'
@@ -151,7 +150,7 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
 
     md_format = 'title: Publications\n\n'
     md_format += '<ul>\n'
-    
+
     dict_pubs = {}
     for bib_key in filtered_publications:
         html_bibkey = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
@@ -162,7 +161,7 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
     # publications.md
     out_path = out_dir+'.md'
 
-    write_md_pass(out_path, md_format)
+    #write_md_pass(out_path, md_format)
     return dict_pubs
 
 
