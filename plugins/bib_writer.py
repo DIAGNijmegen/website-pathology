@@ -116,11 +116,10 @@ def generate_md_bibitem(writer=None):
 
 def append_publication_md(global_index, bib_key, html_format, go_parent_dir=False):
     bib_item = global_index[bib_key]
-    html_to_write = html_format.apply(bib_item)
+    html_to_write = html_format.apply(bib_item).replace('{', '').replace('}', '')
     pub_html = '<li>'
     pub_html += html_to_write
-
-    pub_html += '. <a href=\"SITEURL/publications/' + bib_key.lower() + '\">Abstract</a>'
+    pub_html += r'. <a href="{filename}/pages/publications/' + bib_key + r'.md">Abstract</a>'
 
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
@@ -130,7 +129,6 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
         pub_html += ' <a href=\"' + url_pmid + '/\">PMID '+bib_item.entry['pmid']+'</a>'
     pub_html += '</li>\n'
 
-    pub_html = pub_html.replace('{', '').replace('}', '')
 
     return pub_html
 
@@ -179,7 +177,7 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
         for author_name in author_index.keys():
             if researcher_names[-1] == author_name.lower():
                 for bib_key in author_index[author_name]:
-                    md_format += append_publication_md(global_index, bib_key, html_format, go_parent_dir=True)
+                    md_format += append_publication_md(global_index, bib_key, html_format, go_parent_dir=True).replace('SITEURL', '{{SITEURL}}')
 
         md_format += '</ul>\n'
         out_path = os.path.join(out_dir, full_name + '.md')

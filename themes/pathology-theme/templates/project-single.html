@@ -41,7 +41,7 @@
         <div class="container">
             <ul>
             {% for bibkey in page.bibkeys.split(',') %}
-                {{ bibkeys_html[bibkey.strip()].replace('SITEURL', SITEURL) }}
+                {{ bibkeys_html[bibkey.strip()].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
             {% endfor %}
             </ul>
         </div>

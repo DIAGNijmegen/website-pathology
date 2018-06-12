@@ -6,7 +6,7 @@
 
     <ul>
     {% for bibkey in bibkeys_html.items() %}
-        {{ bibkey[1].replace('SITEURL', SITEURL) }}
+        {{ bibkey[1].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
     {% endfor %}
     </ul>
 
