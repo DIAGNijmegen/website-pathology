@@ -123,10 +123,10 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
 
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
-        pub_html += ' <a href=\"' + url_doi + '\">DOI</a>'
+        pub_html += ' <a href=\"' + url_doi.replace('{', '').replace('}', '') + '\">DOI</a>'
     if 'pmid' in bib_item.entry:
         url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + bib_item.entry['pmid']
-        pub_html += ' <a href=\"' + url_pmid + '/\">PMID '+bib_item.entry['pmid']+'</a>'
+        pub_html += ' <a href=\"' + url_pmid.replace('{', '').replace('}', '') + '/\">PMID '+bib_item.entry['pmid']+'</a>'
     pub_html += '</li>\n'
 
 
