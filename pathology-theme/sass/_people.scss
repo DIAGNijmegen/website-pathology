@@ -31,3 +31,33 @@
     }
   }
 }
+
+// Styes for individual person pages
+.person-single-column {
+  padding-right: 2em;
+  .person {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+
+.person-links {
+  border: 1px solid $gray-300;
+  border-radius: 0.25rem;
+  padding: 1em;
+
+  .row {
+    margin-bottom: 0.5em;
+  }
+  a {
+    margin-left: 10px;
+  }
+  svg {
+    width: 22px;
+    height: 22px;
+    color: $secondary;
+    path {
+      fill: $secondary;
+    }
+  }
+}
