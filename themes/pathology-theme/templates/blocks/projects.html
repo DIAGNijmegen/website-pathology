@@ -1,7 +1,13 @@
+{% if project_columns %}
+<div class="card-columns">
+{% endif %}
+
 {% for project in pages %}
     {% if project.parent.url == 'projects/' %}
         {% if project.finished == 'false' %}
+        {% if not project_columns %}
         <div class="col-md-4">
+        {% endif %}
             <div class="card mb-4">
                 {% if project.picture %}
                 <a href="{{ SITEURL }}/{{ project.url }}"><img class="card-img-top" src="{{ SITEURL}}/images/projects/{{ project.picture }}" alt="{{ project.title }}"></a>
@@ -13,7 +19,13 @@
                     <a href="{{ SITEURL }}/{{ project.url }}" class="btn btn-text">Read more →</a>
                 </div>
             </div>
-        </div>
+            {% if not project_columns %}
+            </div>
+            {% endif %}
         {% endif %}
     {% endif %}
 {% endfor %}
+
+{% if project_columns %}
+</div>
+{% endif %}

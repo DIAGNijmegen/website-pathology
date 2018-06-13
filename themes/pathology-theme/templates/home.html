@@ -48,15 +48,14 @@
 <div class="block block-secondary">
     <div class="container">
         <div class="row">
-        </div>
-        <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12 mb-4">
                 <h1>Projects</h1>
             </div>
-            <div class="col-md-9">
-                <div class="row">
-                    {% include "blocks/projects.html" %}
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {% set project_columns=true %}
+                {% include "blocks/projects.html" %}
             </div>
         </div>
     </div>
@@ -64,7 +63,7 @@
 
 
 <div class="container">
-    <div class <div class="row">
+    <div class="row">
         <h1>Our team</h1>
     </div>
 </div>
