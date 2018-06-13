@@ -3,6 +3,7 @@ finished: false
 template: project-single
 picture: TSR.png
 people: Jeroen van der Laak, Francesco Ciompi, Oscar Geessink
+bibkeys: Ciom17
 
 ## Background
 Tumour-stroma ratio (TSR) is an independent prognostic factor in colorectal cancer and other solid malignancies. Digital pathology holds opportunities for automated TSR analysis.
