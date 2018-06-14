@@ -172,16 +172,14 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
         full_name = "-".join(researcher_names)
         title_md = " ".join(researcher_names).title()  # camel case
         md_format = 'title: Publications of ' + title_md + '\n'
-        md_format += 'template: publication-list\n\n'
-        md_format += '<ul>\n'
-
+        md_format += 'template: publications-author\n'
+        list_pubs_author = []
         for author_name in author_index.keys():
             if researcher_names[-1] == author_name.lower():
                 for bib_key in author_index[author_name]:
-                    html, year, pub_type = append_publication_md(global_index, bib_key, html_format, go_parent_dir=True)
-                    md_format += html.replace('SITEURL', '{{SITEURL}}')
-
-        md_format += '</ul>\n'
+                    list_pubs_author.append(bib_key)
+        md_format += 'bibkeys: '+','.join(list_pubs_author)
+        
         out_path = os.path.join(out_dir, full_name + '.md')
 
         write_md_pass(out_path, md_format)
