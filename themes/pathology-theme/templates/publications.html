@@ -9,11 +9,11 @@
     {% for bibkey in bibkeys_html.keys() %}
         <!-- Getting list of years -->
         {% if bibkeys_html[bibkey]['year'] not in list_years %}
-            {{ list_years.append(bibkeys_html[bibkey]['year']) }}
+            {% if list_years.append(bibkeys_html[bibkey]['year']) %}{% endif %}
         {% endif %}
         <!-- Getting list of pub_type -->
         {% if bibkeys_html[bibkey]['pub_type'] not in list_pub_type %}
-            {{ list_pub_type.append(bibkeys_html[bibkey]['pub_type']) }}
+            {% if list_pub_type.append(bibkeys_html[bibkey]['pub_type']) %}{% endif %}
         {% endif %}
     {% endfor %}
     
