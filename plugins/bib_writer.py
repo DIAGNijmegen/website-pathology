@@ -120,21 +120,29 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
     pub_html = '<li>'
     pub_html += html_to_write
     pub_html += r'. <a href="{filename}/pages/publications/' + bib_key + r'.md">Abstract</a>'
-
+    
+    pub_type = bib_item.entry_type
+    if 'year' in bib_item.entry:
+        year = bib_item.entry['year'].replace('{', '').replace('}', '')
+    else:
+        # If year is absent, the bib_key is used to set the year
+        year = int(bib_key[-2:].replace('{', '').replace('}', ''))
+        year = 2000 + year if year < 50 else 1900 + year
+    
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
         pub_html += ' <a href=\"' + url_doi.replace('{', '').replace('}', '') + '\">DOI</a>'
     if 'pmid' in bib_item.entry:
         url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + bib_item.entry['pmid']
-        pub_html += ' <a href=\"' + url_pmid.replace('{', '').replace('}', '') + '/\">PMID '+bib_item.entry['pmid']+'</a>'
+        pub_html += ' <a href=\"' + url_pmid + '/\">PMID '+bib_item.entry['pmid']+'</a>'
+        pub_html = pub_html.replace('{', '').replace('}', '')
     pub_html += '</li>\n'
 
-
-    return pub_html
+    return pub_html, year, pub_type
 
 
 def write_md_pass(out_path, md_format):
-    file = open(out_path, 'w')
+    file = open(out_path, 'w', encoding='utf-8')
 
     try:  # This is ugly but necessary for now to avoid UnicodeEncodeError
         file.write(md_format)
@@ -146,20 +154,14 @@ def write_md_pass(out_path, md_format):
 def write_list_publications_md(global_index, filtered_publications, out_dir, string_rules):
     html_format = bibtexformatter.HTML_Formatter(string_rules)
 
-    md_format = 'title: Publications\n\n'
-    md_format += '<ul>\n'
-
     dict_pubs = {}
     for bib_key in filtered_publications:
-        html_bibkey = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
-        dict_pubs[bib_key] = html_bibkey
-        md_format += html_bibkey
-
-    md_format += '</ul>\n'
-    # publications.md
-    out_path = out_dir+'.md'
-
-    #write_md_pass(out_path, md_format)
+        html_bibkey, year, pub_type = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
+        dict_pubs[bib_key] = {}
+        dict_pubs[bib_key]['html'] = html_bibkey
+        dict_pubs[bib_key]['year'] = year
+        dict_pubs[bib_key]['pub_type'] = pub_type
+    
     return dict_pubs
 
 
@@ -177,7 +179,8 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
         for author_name in author_index.keys():
             if researcher_names[-1] == author_name.lower():
                 for bib_key in author_index[author_name]:
-                    md_format += append_publication_md(global_index, bib_key, html_format, go_parent_dir=True).replace('SITEURL', '{{SITEURL}}')
+                    html, year, pub_type = append_publication_md(global_index, bib_key, html_format, go_parent_dir=True)
+                    md_format += html.replace('SITEURL', '{{SITEURL}}')
 
         md_format += '</ul>\n'
         out_path = os.path.join(out_dir, full_name + '.md')
@@ -229,7 +232,7 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
         #     md_format += '  <input type=\"submit\" value=\"Send ' + global_index[bibitem].entry[
         #       'file'] + ' by e-mail\">'
         #     md_format += '</form>'
-
+        
         md_format = md_format.replace('{', '').replace('}', '')
         out_path = os.path.join(out_dir, bibitem + '.md')
 

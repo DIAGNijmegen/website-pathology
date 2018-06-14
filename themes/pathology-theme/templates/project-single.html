@@ -42,7 +42,7 @@
             <ul>
             {% for bibkey in page.bibkeys.split(',') %}
                 {% if bibkey.strip() in bibkeys_html %}
-                    {{ bibkeys_html[bibkey.strip()].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
+                    {{ bibkeys_html[bibkey.strip()]['html'].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
                 {% else %}
                     <li>{{bibkey}}</li>
                 {% endif %}
