@@ -118,7 +118,7 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
     html_to_write = html_format.apply(bib_item)
     pub_html = '<li>'
     pub_html += html_to_write
-    pub_html += r'. <a href="{filename}/pages/publications/' + bib_key + r'.md">Abstract</a>'
+    pub_html += r'. <a href="{filename}/pages/publications/' + bib_key.lower() + r'.md">Abstract</a>'
     
     pub_type = bib_item.entry_type
     if 'year' in bib_item.entry:
@@ -155,6 +155,7 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
 
     dict_pubs = {}
     for bib_key in filtered_publications:
+        bib_key = bib_key.lower()
         html_bibkey, year, pub_type = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
         dict_pubs[bib_key] = {}
         dict_pubs[bib_key]['html'] = html_bibkey

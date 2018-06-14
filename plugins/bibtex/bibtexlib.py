@@ -284,6 +284,7 @@ def read_bibtex_file(filename):
             string_rules[k] = v
         else:
             key, entry_dict = get_entry(entry)
+            key = key.lower()
             bib_item = BibItem(key, entry_dict, type_name)
             global_index[key] = bib_item
             index[type_name][key] = bib_item
