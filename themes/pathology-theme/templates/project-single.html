@@ -41,10 +41,10 @@
         <div class="container">
             <ul>
             {% for bibkey in page.bibkeys.split(',') %}
-                {% if bibkey.strip() in bibkeys_html %}
-                    {{ bibkeys_html[bibkey.strip()]['html'].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
+                {% if bibkey.strip().lower() in bibkeys_html %}
+                    {{ bibkeys_html[bibkey.strip().lower()]['html'].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
                 {% else %}
-                    <li>{{bibkey}}</li>
+                    <li>{{ bibkey }}</li>
                 {% endif %}
             {% endfor %}
             </ul>
