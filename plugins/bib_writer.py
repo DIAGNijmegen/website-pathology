@@ -99,7 +99,6 @@ def generate_md_bibitem(writer=None):
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
-    # os.chdir('../')  # This is for local debugging
     list_researchers = get_list_people()
     author_index, filtered_publications = get_publications_by_author(global_index, list_researchers)
 
@@ -116,26 +115,26 @@ def generate_md_bibitem(writer=None):
 
 def append_publication_md(global_index, bib_key, html_format, go_parent_dir=False):
     bib_item = global_index[bib_key]
-    html_to_write = html_format.apply(bib_item).replace('{', '').replace('}', '')
+    html_to_write = html_format.apply(bib_item)
     pub_html = '<li>'
     pub_html += html_to_write
     pub_html += r'. <a href="{filename}/pages/publications/' + bib_key + r'.md">Abstract</a>'
     
     pub_type = bib_item.entry_type
     if 'year' in bib_item.entry:
-        year = bib_item.entry['year'].replace('{', '').replace('}', '')
+        year = bib_item.entry['year']
     else:
         # If year is absent, the bib_key is used to set the year
-        year = int(bib_key[-2:].replace('{', '').replace('}', ''))
+        year = int(bib_key[-2:])
         year = 2000 + year if year < 50 else 1900 + year
     
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
-        pub_html += ' <a href=\"' + url_doi.replace('{', '').replace('}', '') + '\">DOI</a>'
+        pub_html += ' <a href=\"' + url_doi + '\">DOI</a>'
     if 'pmid' in bib_item.entry:
         url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + bib_item.entry['pmid']
         pub_html += ' <a href=\"' + url_pmid + '/\">PMID '+bib_item.entry['pmid']+'</a>'
-        pub_html = pub_html.replace('{', '').replace('}', '')
+        
     pub_html += '</li>\n'
 
     return pub_html, year, pub_type
@@ -159,7 +158,7 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
         html_bibkey, year, pub_type = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
         dict_pubs[bib_key] = {}
         dict_pubs[bib_key]['html'] = html_bibkey
-        dict_pubs[bib_key]['year'] = year
+        dict_pubs[bib_key]['year'] = int(year)
         dict_pubs[bib_key]['pub_type'] = pub_type
     
     return dict_pubs
@@ -206,6 +205,8 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
             # It skips bibitems with absence of authors or title
             continue
 
+        for attr_key in global_index[bibitem].entry:
+            global_index[bibitem].entry[attr_key] = global_index[bibitem].entry[attr_key].replace('{', '').replace('}', '')
         md_format += 'title: ' + global_index[bibitem].entry['title'] + '\n'
         md_format += 'template: publication\n'
         md_format += 'authors: ' + global_index[bibitem].entry['author'] + '\n'

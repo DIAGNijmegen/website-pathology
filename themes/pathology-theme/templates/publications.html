@@ -3,12 +3,33 @@
 {% block content %}
     <div class="container">
     <h1>{{ page.title }}</h1>
-
-    <ul>
+    
+    {% set list_years = [] %}
+    {% set list_pub_type = [] %}
     {% for bibkey in bibkeys_html.keys() %}
-        {{ bibkeys_html[bibkey]['html'].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
+        <!-- Getting list of years -->
+        {% if bibkeys_html[bibkey]['year'] not in list_years %}
+            {{ list_years.append(bibkeys_html[bibkey]['year']) }}
+        {% endif %}
+        <!-- Getting list of pub_type -->
+        {% if bibkeys_html[bibkey]['pub_type'] not in list_pub_type %}
+            {{ list_pub_type.append(bibkeys_html[bibkey]['pub_type']) }}
+        {% endif %}
     {% endfor %}
-    </ul>
+    
+    {% for cur_year in list_years|sort(reverse = True) %}
+        <h2>{{ cur_year }}</h2>
+            {% for pub_type in list_pub_type %}
+            <h3>{{ pub_type }}</h3>
+                <ul>
+                {% for bibkey in bibkeys_html.keys() %}
+                    {% if bibkeys_html[bibkey]['pub_type'] == pub_type and bibkeys_html[bibkey]['year'] == cur_year %}
+                        {{ bibkeys_html[bibkey]['html'].replace('{filename}/pages', SITEURL).replace('.md', '/') }}
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endfor %}
+    {% endfor %}
 
     </div>
 {% endblock %}
