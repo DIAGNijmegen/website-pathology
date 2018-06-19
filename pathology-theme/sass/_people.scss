@@ -26,7 +26,7 @@
     height: 125px;
     width: 125px;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
        width: 150px;
        height: 150px;
     }
