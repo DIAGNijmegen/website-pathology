@@ -23,8 +23,8 @@
   .img-thumbnail {
     object-fit: cover;
 
-    height: 125px;
-    width: 125px;
+    height: 115px;
+    width: 115px;
 
     @include media-breakpoint-up(md) {
        width: 150px;
