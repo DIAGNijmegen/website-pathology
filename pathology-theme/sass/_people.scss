@@ -11,12 +11,13 @@
   }
   .person-name {
     color: $primary;
-    font-weight: 700;
+    font-weight: 400;
 
     padding-top: 0.25em;
   }
   .person-title {
     color: $secondary;
+    font-weight: 300;
   }
 
   .img-thumbnail {

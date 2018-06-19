@@ -2,11 +2,15 @@
 h1,h2,h3,h4,h5,h6 {
   color: $primary;
 }
+h1,h2,h3 {
+  font-weight: 300;
+}
+h4,h5,h6 {
+  font-weight: 400;
+}
 
 // Main titles (for example on home page)
 h1.display-title {
-  font-weight: 400;
-
   @include media-breakpoint-up(md) {
     font-size: 4em;
   }
