@@ -13,7 +13,7 @@ install:
   - pip install -r requirements.txt
   # Install requirements for the css build
   - npm --prefix pathology-theme install
-  - npm --prefix above-the-fold
+  - npm --prefix above-the-fold install
 
 # Caching settings (this speeds up the build)
 cache:
