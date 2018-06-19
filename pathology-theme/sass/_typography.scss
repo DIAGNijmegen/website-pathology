@@ -1,9 +1,15 @@
+// Set font rendering defaults
+body {
+  // No web fonts are used so maximize client rendering of the system font
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
 // Default settings for header
 h1,h2,h3,h4,h5,h6 {
   color: $primary;
   
   // Better font rendering on mac
-  -webkit-font-smoothing: antialiased;
 }
 h1,h2,h3 {
   font-weight: 300;
