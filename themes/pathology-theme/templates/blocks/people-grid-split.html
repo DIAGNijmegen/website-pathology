@@ -9,7 +9,7 @@
         {% if people.parent.url == 'people/' and people.type == 'faculty' %}
             <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
                 {% if people.picture %}
-                <a href="{{ SITEURL }}/{{ people.url}}"><img src="{{SITEURL}}/images/people/{{ people.picture }}" alt="{{ person.name }}" class="img-thumbnail rounded-circle border border-primary"></a>
+                <a href="{{ SITEURL }}/{{ people.url}}"><img src="{{SITEURL}}/images/people/{{ people.picture }}" alt="{{ people.name }}" class="img-thumbnail rounded-circle border border-primary"></a>
                 {% else %}
                 <a href="{{ SITEURL }}/{{ people.url}}"><div class="img-thumbnail rounded-circle border border-primary placeholder"></div></a>
                 {% endif %}

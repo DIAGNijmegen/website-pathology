@@ -13,12 +13,14 @@ install:
   - pip install -r requirements.txt
   # Install requirements for the css build
   - npm --prefix pathology-theme install
+  - npm --prefix above-the-fold
 
-# Caching settings (this speeds up the )
+# Caching settings (this speeds up the build)
 cache:
   pip: true
   directories:
     - pathology-theme/node_modules
+    - above-the-fold/node_modules
 
 before_cache:
   - rm -f $HOME/.cache/pip/log/debug.log
@@ -27,6 +29,7 @@ script:
 - npm --prefix pathology-theme run deploy
 - python plugins/bib_writer.py
 - pelican content -s publishconf.py
+- npm --prefix above-the-fold run critical
 
 deploy:
   provider: pages
