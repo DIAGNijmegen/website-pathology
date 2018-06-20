@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-flow: column
 }
+
 main {
   // Add top padding for navbar
   padding-top: 60px;
@@ -43,33 +44,4 @@ main {
     background-color: $primary;
     color: $white;
   }
-}
-
-
-// Content blocks
-.block {
-  margin-bottom: 3em;
-  padding: 3em 0 3em 0;
-}
-
-.block-home {
-  margin-top: -3px;
-}
-
-.block-primary {
-  border-radius: 0;
-  background-color: $primary;
-  color: $white;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
-  }
-
-  figcaption {
-    color: white;
-  }
-}
-
-.block-secondary {
-  background-color: $gray-300;
 }

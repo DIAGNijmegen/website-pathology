@@ -18,7 +18,7 @@
     {% include "blocks/svg-definitions.html" %}
     {% include "blocks/nav-top.html" %}
 
-    <main role="main">
+    <main role="main" class="content {% if page and page.template == 'home' %}content-home{%endif%}">
         {% block content %}
         {% endblock %}
     </main>

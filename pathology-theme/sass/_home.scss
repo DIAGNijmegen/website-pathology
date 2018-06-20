@@ -1,0 +1,37 @@
+// Home has custom styling on its container
+.content-home {
+  background-color: #f5f5f5;
+}
+
+// Content blocks
+.block {
+  margin-bottom: 3em;
+  padding: 3em 0 3em 0;
+
+  border-bottom: 3px solid #dee2e6;
+}
+
+.block-home {
+  margin-top: -3px;
+}
+
+.block-primary {
+  border-radius: 0;
+  background-color: $primary;
+  color: $white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+
+  figcaption {
+    color: white;
+  }
+}
+
+// News blocks on home page
+.content-home article {
+  background-color: white;
+  padding: 2em 1em;
+
+}
