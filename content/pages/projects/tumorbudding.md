@@ -1,5 +1,6 @@
 title: Tumor budding
 finished: false
+picture: TB_small.jpg
 template: project-single
 people: John-Melle Bokhorst, Francesco Ciompi, Femke Doubrava-Simmer, Jeroen van der Laak, Iris Nagtegaal
 discription: In this project, we will develop and validate digital image analysis algorithms for quantification of tumor budding from scanned whole slide images. 
