@@ -4,13 +4,9 @@ $primary: #00afdc;
 $body-bg: #FCFCFC;
 $body-color: #4F4F4F;
 
+$body-bg-darker: #f5f5f5;
+
+// Override default primary to radboudumc color
 $theme-colors: (
   "primary": $primary,
 );
-// $secondary:     $gray-600 !default;
-// $success:       $green !default;
-// $info:          $cyan !default;
-// $warning:       $yellow !default;
-// $danger:        $red !default;
-// $light:         $gray-100 !default;
-// $dark:          $gray-800 !default;

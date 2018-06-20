@@ -26,6 +26,8 @@
     height: 115px;
     width: 115px;
 
+    border: 2px solid $gray-300;
+
     @include media-breakpoint-up(md) {
        width: 150px;
        height: 150px;
