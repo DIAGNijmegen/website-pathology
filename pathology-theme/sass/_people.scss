@@ -41,7 +41,10 @@
 
 // Styes for individual person pages
 .person-single-column {
-  padding-right: 2em;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 2em;
+  }
 
   .person {
     text-align: center;

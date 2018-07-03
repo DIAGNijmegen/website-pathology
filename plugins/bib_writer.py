@@ -119,7 +119,7 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
     pub_html = '<li>'
     pub_html += html_to_write
     pub_html += r'. <a href="{filename}/pages/publications/' + bib_key.lower() + r'.md">Abstract</a>'
-    
+
     pub_type = bib_item.entry_type
     if 'year' in bib_item.entry:
         year = bib_item.entry['year']
@@ -127,14 +127,14 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
         # If year is absent, the bib_key is used to set the year
         year = int(bib_key[-2:])
         year = 2000 + year if year < 50 else 1900 + year
-    
+
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
         pub_html += ' <a href=\"' + url_doi + '\">DOI</a>'
     if 'pmid' in bib_item.entry:
         url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + bib_item.entry['pmid']
         pub_html += ' <a href=\"' + url_pmid + '/\">PMID '+bib_item.entry['pmid']+'</a>'
-        
+
     pub_html += '</li>\n'
 
     return pub_html, year, pub_type
@@ -161,7 +161,7 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
         dict_pubs[bib_key]['html'] = html_bibkey
         dict_pubs[bib_key]['year'] = int(year)
         dict_pubs[bib_key]['pub_type'] = pub_type
-    
+
     return dict_pubs
 
 
@@ -174,13 +174,15 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
         title_md = " ".join(researcher_names).title()  # camel case
         md_format = 'title: Publications of ' + title_md + '\n'
         md_format += 'template: publications-author\n'
+        md_format += 'author: ' + "-".join(researcher_names) + '\n'
+        md_format += 'author_name: ' + title_md + '\n'
         list_pubs_author = []
         for author_name in author_index.keys():
             if researcher_names[-1] == author_name.lower():
                 for bib_key in author_index[author_name]:
                     list_pubs_author.append(bib_key)
         md_format += 'bibkeys: '+','.join(list_pubs_author)
-        
+
         out_path = os.path.join(out_dir, full_name + '.md')
 
         write_md_pass(out_path, md_format)
@@ -232,7 +234,7 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
         #     md_format += '  <input type=\"submit\" value=\"Send ' + global_index[bibitem].entry[
         #       'file'] + ' by e-mail\">'
         #     md_format += '</form>'
-        
+
         md_format = md_format.replace('{', '').replace('}', '')
         out_path = os.path.join(out_dir, bibitem + '.md')
 
