@@ -9,13 +9,13 @@
 
     <div class="row">
         {% set projects_show_finished = 'false' %}
-        {% include "blocks/projects.html" %}
+        {% include "blocks/project-cards.html" %}
     </div>
 
     <h2 class="my-4">Finished projects</h2>
     <div class="row">
         {% set projects_show_finished = 'true' %}
-        {% include "blocks/projects.html" %}
+        {% include "blocks/project-cards.html" %}
     </div>
 </div>
 {% endblock %}

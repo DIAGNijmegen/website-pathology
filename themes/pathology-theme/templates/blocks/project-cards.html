@@ -1,16 +1,13 @@
-{% if project_columns %}
-<div class="card-columns">
-{% endif %}
-
 {% for project in pages %}
     {% if project.parent.url == 'projects/' %}
         {% if project.finished == projects_show_finished %}
         {% if not project_columns %}
         <div class="col-md-4">
         {% endif %}
-            <div class="card mb-4">
-                {% if project.picture %}
-                <a href="{{ SITEURL }}/{{ project.url }}"><img class="card-img-top" src="{{ SITEURL}}/images/projects/{{ project.picture }}" alt="{{ project.title }}"></a>
+            <div class="card project-card mb-4" style="background-image: url('{{ SITEURL}}/images/projects/{{ project.picture }}')">
+
+                {%if not project.disable_gradient %}
+                <div class="card-gradient"></div>
                 {% endif %}
 
                 <div class="card-body">
@@ -25,7 +22,3 @@
         {% endif %}
     {% endif %}
 {% endfor %}
-
-{% if project_columns %}
-</div>
-{% endif %}
