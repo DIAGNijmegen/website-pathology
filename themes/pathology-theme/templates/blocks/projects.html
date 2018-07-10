@@ -4,7 +4,7 @@
 
 {% for project in pages %}
     {% if project.parent.url == 'projects/' %}
-        {% if project.finished == 'false' %}
+        {% if project.finished == projects_show_finished %}
         {% if not project_columns %}
         <div class="col-md-4">
         {% endif %}

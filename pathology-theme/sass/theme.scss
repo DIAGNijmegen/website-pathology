@@ -50,14 +50,15 @@ Built on top of Bootstrap 4.
 @import "node_modules/bootstrap/scss/print";
 
 
-// Styles for the theme
+// Styles for the base theme
 @import "layout";
 @import "navigation";
 @import "typography";
-@import "home";
 
-// Styles for blocks
+// Styles for specific pages or blocks
+@import "home";
 @import "people";
+@import "projects"
 
 // Util
 @import "icons"
