@@ -22,7 +22,7 @@
             {% set found = { 'flag': false } %}
 
             {% for person in pages %}
-                {% if person.parent.url == 'people/' and person_name.strip() == person.name %}
+                {% if person.parent.url == 'members/' and person_name.strip() == person.name %}
                     {% include "blocks/person-circle.html" %}
                     {% if found.update({'flag': true}) %}{% endif %}
                 {% endif %}
