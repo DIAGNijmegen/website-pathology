@@ -79,7 +79,7 @@ def generate_md_bibitem(writer=None):
     """ Uses the Bart's bibtex script to write the following markdown files:
         - content/Publications.md that contains the full list of publications
         - A MD file for every publication (filtered by researcher name)
-        - A list of publications per researcher on content/pages/people/*.md with the same slug
+        - A list of publications per researcher on content/pages/members/*.md with the same slug
           on content/pages/publications. For instance content/pages/publications/francesco-ciompi.md
     """
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -255,7 +255,7 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
 
 def get_list_people():
     base_dir = os.getcwd()
-    people_dir = '{}/content/pages/people'.format(base_dir)
+    people_dir = '{}/content/pages/members'.format(base_dir)
     print(people_dir, '##')
     list_researchers = []
 
