@@ -108,7 +108,10 @@ class HTML_Formatter(BaseFormatter):
 
     def format_article(self, bib_item):
         authors = authors_to_string(bib_item.author)
-        nr = '({number})' if getattr(bib_item, 'number') else ''
+        # TODO: The comment line of code was not working, it was printing always '{number}' in the parsed version. 
+        # Gabriel replaced it by the current value, @Bart, please check if it is the corrrect way to do it.
+        # nr = '({number})' if getattr(bib_item, 'number') else ''
+        nr = '('+str(getattr(bib_item, 'number'))+')' if getattr(bib_item, 'number') else ''
  
         output = '{authors}. "{title}", {journal}{year};{volume}{nr}{pages}'
         return self.apply_format(output, bib_item, authors=authors, nr=nr)
