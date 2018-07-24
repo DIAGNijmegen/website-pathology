@@ -17,6 +17,9 @@
         {% endif %}
     {% endfor %}
     
+    <!-- Inpress keys should go here. To include "Accepted or to appear" section -->
+    
+    <!-- Lists the publications per year and organized by publication type -->
     {% for cur_year in list_years|sort(reverse = True) %}
         <h2>{{ cur_year }}</h2>
             {% for pub_type in list_pub_type %}

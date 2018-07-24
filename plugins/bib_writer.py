@@ -210,7 +210,8 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
             global_index[bibitem].entry[attr_key] = global_index[bibitem].entry[attr_key].replace('{', '').replace('}', '')
         md_format += 'title: ' + global_index[bibitem].entry['title'] + '\n'
         md_format += 'template: publication\n'
-        md_format += 'authors: ' + global_index[bibitem].entry['author'] + '\n'
+        authors_format = bibtexformatter.authors_to_string(global_index[bibitem].author)
+        md_format += 'authors: ' + authors_format + '\n'
 
         if 'journal' in global_index[bibitem].entry:
             md_format += 'published_in: ' + global_index[bibitem].entry['journal'] + '\n'
