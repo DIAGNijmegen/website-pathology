@@ -102,7 +102,7 @@ def generate_md_bibitem(writer=None):
     list_researchers = get_list_people()
     author_index, filtered_publications = get_publications_by_author(global_index, list_researchers)
 
-    write_single_publication_md(global_index, filtered_publications, out_dir, json_path)
+    write_single_publication_md(global_index, string_rules, filtered_publications, out_dir, json_path)
     print('\nTime to process diag.bib ', time_diagbib)
     print('Time to create ' + str(len(global_index)) + ' MD files ', time.clock() - start_time)
 
@@ -188,7 +188,7 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
         write_md_pass(out_path, md_format)
 
 
-def write_single_publication_md(global_index, filtered_publications, out_dir, json_path):
+def write_single_publication_md(global_index, string_rules, filtered_publications, out_dir, json_path):
     # Loads json file with md5 value of bibitems of the previous version
     prev_md5s = [] #load_json2dict(json_path)
     # Obtains the md5 values of the current bibitems in diag.bib
@@ -212,12 +212,16 @@ def write_single_publication_md(global_index, filtered_publications, out_dir, js
         md_format += 'template: publication\n'
         authors_format = bibtexformatter.authors_to_string(global_index[bibitem].author)
         md_format += 'authors: ' + authors_format + '\n'
-
-        if 'journal' in global_index[bibitem].entry:
-            md_format += 'published_in: ' + global_index[bibitem].entry['journal'] + '\n'
-        elif 'booktitle' in global_index[bibitem].entry:
-            md_format += 'published_in: ' + global_index[bibitem].entry['booktitle'] + '\n'
-
+            
+        if 'booktitle' in global_index[bibitem].entry or 'journal' in global_index[bibitem].entry:
+            event_type = 'journal' if 'journal' in global_index[bibitem].entry else 'booktitle'
+            if global_index[bibitem].entry[event_type] in string_rules:
+                event_name = string_rules[global_index[bibitem].entry[event_type]]
+                event_name = event_name.replace('_', ' ').strip()
+            else:
+                event_name = global_index[bibitem].entry[event_type]
+            md_format += 'published_in: ' + event_name + '\n'
+                
         if 'doi' in global_index[bibitem].entry:
             md_format += 'doi: ' + 'https://doi.org/' + global_index[bibitem].entry['doi'] + '\n'
 
