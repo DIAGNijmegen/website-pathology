@@ -8,7 +8,7 @@ Geert Grooteplein 10
 6525 GA Nijmegen
 the Netherlands
 
-Post address:
+Postal address:
 Postbus 9101, huispost 824
 6500 HB Nijmegen
 the Netherlands
