@@ -45,3 +45,11 @@ main {
     color: $white;
   }
 }
+
+.page-content {
+  // Make all images on pages auto-responsive
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
