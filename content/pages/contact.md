@@ -3,20 +3,16 @@ title: Contact
 The Computational Pathology group  is located at the Radboud University Medical Center, Nijmegen, the Netherlands. 
 Follow walking route 812 to reach the secretary of the Department of Pathology.
 
-Visiting address:
+<i>Visiting address </i> 
+<br>Radboudumc
+<br>Department of Pathology
+<br>Geert Grooteplein 12
+<br>6525 GA Nijmegen
+<br>the Netherlands
 
-Geert Grooteplein 12
-
-6525 GA Nijmegen
-
-the Netherlands
-
-Postal address:
-
-Postbus 9101, huispost 824
-
-6500 HB Nijmegen
-
-the Netherlands
-
-
+<i>Postal address </i>
+<br>Radboudumc
+<br>Department of Pathology
+<br>Postbus 9101, huispost 824
+<br>6500 HB Nijmegen
+<br>the Netherlands
