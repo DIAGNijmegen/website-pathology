@@ -20,7 +20,7 @@
   .name-full {
     display: none;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     .name-short { display: none; }
     .name-full { display: inline; }
   }

@@ -5,7 +5,7 @@
 
 // Content blocks
 .block {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   padding: 3em 0 3em 0;
 
   border-bottom: 3px solid $gray-300;
@@ -17,6 +17,7 @@
 
 .block-primary {
   border-radius: 0;
+  margin-bottom: 1em;
   background-color: $primary;
   color: $white;
 
@@ -30,8 +31,24 @@
 }
 
 // News blocks on home page
-.content-home article {
-  background-color: white;
-  padding: 2em 1em;
+.content-home {
+  article {
+    background-color: white;
+    padding: 2em 1em;
+    margin-bottom: 15px;
 
+    @include media-breakpoint-up(lg) {
+      height: 300px;
+    }
+    // border-radius: 5px;
+  }
+
+  .twitter-embed {
+    background-color: $white;
+
+    @include media-breakpoint-up(lg) {
+      height: 615px;
+      overflow: hidden;
+    }
+  }
 }

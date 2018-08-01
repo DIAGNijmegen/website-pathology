@@ -4,13 +4,13 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ SITEURL }}/">Home</a></li>
-        <li class="breadcrumb-item">News</li>
+        <li class="breadcrumb-item">Highlights</li>
       </ol>
     </nav>
 </div>
 
 <div class="container">
-    <h1 class="page-title">News</h1>
+    <h1 class="page-title">Highlights</h1>
 
     {% for article in articles_page.object_list %}
         {% include 'blocks/article-summary.html' %}

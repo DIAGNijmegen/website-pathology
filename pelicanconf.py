@@ -36,8 +36,8 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 SLUGIFY_SOURCE = 'basename'
 
-ARTICLE_URL = 'news/{slug}/'
-ARTICLE_SAVE_AS = 'news/{slug}/index.html'
+ARTICLE_URL = 'highlights/{slug}/'
+ARTICLE_SAVE_AS = 'highlights/{slug}/index.html'
 
 CATEGORY_URL = 'categories/{slug}'
 CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
@@ -45,7 +45,7 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
 
-INDEX_SAVE_AS = 'news/index.html'
+INDEX_SAVE_AS = 'highlights/index.html'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

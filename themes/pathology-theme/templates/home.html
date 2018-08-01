@@ -13,7 +13,6 @@
             <div class="row">
                 <div class="col-md">
                     <p class="lead">The Computational Pathology group has been active in its current form since 2013, while foundations were made in the early 1980's. We have a strong translational focus, owing to our firm embedding in a clinical environment. We have a leading position in our research field, witnessed for instance by our highly successful CAMELYON16 and CAMELYON17 grand challenges. We aim to remain at the cutting edge of computational pathology by fulfilling an active role in committees and conference organization.</p>
-                    <p><a class="btn btn-outline-light btn-lg" href="{{ SITEURL }}/about" role="button">Learn more &raquo;</a></p>
                 </div>
                 <div class="col-md">
                     <figure class="figure">
@@ -28,18 +27,24 @@
     <div class="block">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h1>Latest news</h1>
+                <div class="col-md-12 mb-4">
+                    <h1>Highlights</h1>
                 </div>
-
-                <div class="col-md-9">
-                    {% for article in articles[0:3] %}
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-lg-9">
+                    {% for article in articles[0:2] %}
                         {% include 'blocks/article-summary.html' %}
                     {% endfor %}
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-12">
                             <a href="{{ SITEURL }}/news" class="btn btn-primary float-right">All news articles &rarr;</a>
                         </div>
+                    </div> -->
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="twitter-embed">
+                        <a class="twitter-timeline" data-height="615" data-chrome="transparent noheader nofooter" data-dnt="true" href="https://twitter.com/midl_amsterdam?ref_src=twsrc%5Etfw">Tweets by midl_amsterdam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                </div>
                     </div>
                 </div>
             </div>
