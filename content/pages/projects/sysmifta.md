@@ -22,3 +22,7 @@ Kim M (2018, March 29). ‘A Machine Learning Algorithm Segments Renal Tissue in
 de Bel T, Hermsen M, Smeets B, Hilbrands L, van der Laak J and Litjens G. Automatic segmentation of histopathological slides of renal tissues using deep learning. Poster presentation, SPIE 2018, Houston, Texas, United States.
 
 Hermsen M, de Bel T, van de Warenburg M, Knuiman J, Steenbergen E, Litjens G, Smeets B, Hilbrands L and van der Laak J. Automatic segmentation of histopathological slides from renal allograft biopsies using artifical intelligence. Poster presentation, Dutch federation of Nephrology Fall Symposium 2017, Bunnik, The Netherlands.
+
+## Funding
+
+* [ERA-LEARN 2020](https://www.era-learn.eu/)
