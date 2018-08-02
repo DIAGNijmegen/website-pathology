@@ -1,7 +1,7 @@
 <article class="row">
     <div class="col-md-4">
         {% if article.picture %}
-        <img class="img-thumbnail" src="{{ SITEURL }}/images/news/{{ article.picture }}">
+        <img class="img-thumbnail" alt="{{ article.title|striptags }}" src="{{ SITEURL }}/images/news/{{ article.picture }}">
         {% endif %}
 
     </div>
