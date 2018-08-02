@@ -79,23 +79,13 @@
 
                 <dt>Projects:</dt>
                 <dd>
-                    <div class="row mt-3">
+                    <ul>
                     {% for project in pages %}
                         {% if project.parent.url == 'projects/' and project.people and page.name.strip() in project.people.split(', ') %}
-                        <div class="col-lg-3 col-md-4">
-                        <div class="card mb-2">
-                            {% if project.picture %}
-                            <a href="{{ SITEURL }}/{{ project.url }}"><img class="card-img-top" src="{{ SITEURL}}/images/projects/{{ project.picture }}" alt="{{ project.title }}"></a>
-                            {% endif %}
-
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="{{ SITEURL }}/{{ project.url }}">{{ project.title }}</a></h5>
-                            </div>
-                        </div>
-                        </div>
+                            <li><a href="{{ SITEURL }}/{{ project.url }}">{{ project.title }}</a></li>
                         {% endif %}
                     {% endfor %}
-                    </div>
+                    </ul>
                 </dd>
             </dl>
 
