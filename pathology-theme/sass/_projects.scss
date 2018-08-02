@@ -5,6 +5,10 @@
   background-position: 1px 1px;
   position: relative;
 
+  margin-bottom: 1.5rem;
+  height: 95%;
+  height: calc(100% - 1.5rem); // Compute height without margin bottom
+
   .card-title {
     font-weight: 500;
     font-size: 1.4em;
