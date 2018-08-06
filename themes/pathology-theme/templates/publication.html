@@ -4,7 +4,8 @@
     {% include 'blocks/breadcrumbs.html' %}
 
     <div class="container">
-    <h1 class="page-title">{{ page.title }}</h1>
+    <!-- WORKAROUND: remove replace('\\','')  # TODO this workaround solves the issue in ehte16a, litj15, and tell18a ith H\&E -->
+    <h1 class="page-title">{{ page.title.replace('\\','') }}</h1>
 
     <p class="lead">
         {% for author in page.authors %}
@@ -13,7 +14,7 @@
     </p>
 
     <i>{{ page.published_in }}</i>
-
+    <br>
     {% if page.doi %}
         <p><a href="{{ page.doi }}" class="btn btn-primary">DOI</a></p>
     {% endif %}
