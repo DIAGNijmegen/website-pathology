@@ -92,6 +92,7 @@
     </nav>
 </div>
     <div class="container">
+    <!-- WORKAROUND: remove replace('\\','')  # TODO this workaround solves the issue in ehte16a, litj15, and tell18a ith H\&E -->
     <h1 class="page-title">Automatic branching detection in IVUS sequences</h1>
 
     <p class="lead">
@@ -105,7 +106,7 @@
     </p>
 
     <i>Pattern Recognition and Image Analysis</i>
-
+    <br>
 
     <h2>Abstract</h2>
     <p>Atherosclerosis is a vascular pathology affecting the arterial walls, generally located in specific vessel sites, such as bifurcations. In this paper, for the first time, a fully automatic approach for the detection of bifurcations in IVUS pullback sequences is presented. The method identifies the frames and the angular sectors in which a bifurcation is visible. This goal is achieved by applying a classifier to a set of textural features extracted from each image of an IVUS pullback. A comparison between two state-of-the-art classifiers is performed, AdaBoost and Random Forest. A cross-validation scheme is applied in order to evaluate the performances of the approaches. The obtained results are encouraging, showing a sensitivity of 75% and an accuracy of 94% by using the AdaBoost algorithm.</p>

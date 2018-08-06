@@ -92,6 +92,7 @@
     </nav>
 </div>
     <div class="container">
+    <!-- WORKAROUND: remove replace('\\','')  # TODO this workaround solves the issue in ehte16a, litj15, and tell18a ith H\&E -->
     <h1 class="page-title">Ecoc random fields for lumen segmentation in radial artery ivus sequences</h1>
 
     <p class="lead">
@@ -102,7 +103,7 @@
     </p>
 
     <i>Medical Image Computing and Computer-Assisted Intervention</i>
-
+    <br>
 
     <h2>Abstract</h2>
     <p>The measure of lumen volume on radial arteries can be used to evaluate the vessel response to different vasodilators. In this paper, we present a framework for automatic lumen segmentation in longitudinal cut images of radial artery from Intravascular ultrasound sequences. The segmentation is tackled as a classification problem where the contextual information is exploited by means of Conditional Random Fields (CRFs). A multi-class classification framework is proposed, and inference is achieved by combining binary CRFs according to the Error-Correcting- Output-Code technique. The results are validated against manually segmented sequences. Finally, the method is compared with other state-ofthe- art classifiers.</p>

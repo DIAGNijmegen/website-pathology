@@ -92,6 +92,7 @@
     </nav>
 </div>
     <div class="container">
+    <!-- WORKAROUND: remove replace('\\','')  # TODO this workaround solves the issue in ehte16a, litj15, and tell18a ith H\&E -->
     <h1 class="page-title">Stent Shape Estimation through a Comprehensive Interpretation of Intravascular Ultrasound Images</h1>
 
     <p class="lead">
@@ -102,7 +103,7 @@
     </p>
 
     <i>Medical Image Computing and Computer-Assisted Intervention</i>
-
+    <br>
 
     <h2>Abstract</h2>
     <p>We present a method for automatic struts detection and stent shape estimation in cross-sectional intravascular ultrasound images. A stent shape is first estimated through a comprehensive interpretation of the vessel morphology, performed using a supervised context-aware multi-class classification scheme. Then, the successive strut identification exploits both local appearance and the defined stent shape. The method is tested on 589 images obtained from 80 patients, achieving a F-measure of 74.1% and an averaged distance between manual and automatic struts of 0.10 mm.</p>
