@@ -2,7 +2,7 @@ title: Multimot
 finished: false
 template: project-single
 picture: Multimot.png
-description: MULTIMOT is a H2020 EU funded project that aims to build an open data ecosystem for cell migration research, through standardization, dissemination and meta-analysis efforts.
+description: MULTIMOT aims to build an open data ecosystem for cell migration research, through standardization, dissemination and meta-analysis efforts.
 people: Merijn van Erp
 
 ## Background
