@@ -3,7 +3,7 @@ finished: false
 picture: Sysmifta3a.png
 bibkeys: Litj17
 people: Meyke Hermsen, Jeroen van der Laak, Luuk Hilbrands, Bart Smeets, Friedrich Feuerhake
-description: In this project, we investigate the role of macrophages and T-helper cell subsets in (inflammatory) interstitial fibrosis and tubular atrophy in renal allografts, using multiplex immunohistochemistry and Deep Learning.
+description: This project, we investigate the role of immune cell subsets in (inflammatory) interstitial fibrosis and tubular atrophy in renal allografts, using multiplex immunohistochemistry and Deep Learning.
 template: project-single
 
 ## Background
@@ -18,10 +18,6 @@ In our study we combine  Deep Learning with Periodic Acid Schiff (PAS) and multi
 ## Media & Publications
 
 Kim M (2018, March 29). ‘A Machine Learning Algorithm Segments Renal Tissue into Healthy and Pathological Structures.' [Bioengineering Today]( https://bioengineeringtoday.org/emerging-tech/machine-learning-algorithm-segments-renal-tissue-healthy-and-pathological-structures)
-
-de Bel T, Hermsen M, Smeets B, Hilbrands L, van der Laak J and Litjens G. Automatic segmentation of histopathological slides of renal tissues using deep learning. Poster presentation, SPIE 2018, Houston, Texas, United States.
-
-Hermsen M, de Bel T, van de Warenburg M, Knuiman J, Steenbergen E, Litjens G, Smeets B, Hilbrands L and van der Laak J. Automatic segmentation of histopathological slides from renal allograft biopsies using artifical intelligence. Poster presentation, Dutch federation of Nephrology Fall Symposium 2017, Bunnik, The Netherlands.
 
 ## Funding
 
