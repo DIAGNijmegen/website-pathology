@@ -10,8 +10,7 @@ Built on top of Bootstrap 4.
 // Import the main variables file, all other files should use these variables
 @import "variables";
 
-// Include the full boostrap library for now
-// Todo: only import relevant sub modules
+// Some parts of bootstrap are not loaded to decrease file size
 // @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
@@ -27,7 +26,7 @@ Built on top of Bootstrap 4.
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/transitions";
 // @import "node_modules/bootstrap/scss/dropdown";
-@import "node_modules/bootstrap/scss/button-group";
+// @import "node_modules/bootstrap/scss/button-group";
 // @import "node_modules/bootstrap/scss/input-group";
 // @import "node_modules/bootstrap/scss/custom-forms";
 @import "node_modules/bootstrap/scss/nav";
@@ -35,13 +34,13 @@ Built on top of Bootstrap 4.
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/breadcrumb";
 @import "node_modules/bootstrap/scss/pagination";
-@import "node_modules/bootstrap/scss/badge";
+// @import "node_modules/bootstrap/scss/badge";
 @import "node_modules/bootstrap/scss/jumbotron";
 // @import "node_modules/bootstrap/scss/alert";
 // @import "node_modules/bootstrap/scss/progress";
-@import "node_modules/bootstrap/scss/media";
+// @import "node_modules/bootstrap/scss/media";
 @import "node_modules/bootstrap/scss/list-group";
-@import "node_modules/bootstrap/scss/close";
+// @import "node_modules/bootstrap/scss/close";
 // @import "node_modules/bootstrap/scss/modal";
 // @import "node_modules/bootstrap/scss/tooltip";
 // @import "node_modules/bootstrap/scss/popover";
