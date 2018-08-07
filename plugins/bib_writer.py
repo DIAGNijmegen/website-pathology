@@ -115,7 +115,7 @@ def generate_md_bibitem(writer=None):
 
 def append_publication_md(global_index, bib_key, html_format, go_parent_dir=False):
     bib_item = global_index[bib_key]
-    html_to_write = html_format.apply(bib_item)
+    html_to_write, pub_details = html_format.apply(bib_item)
     pub_html = '<li>'
     pub_html += html_to_write
     pub_html += r'. <a href="{filename}/pages/publications/' + bib_key.lower() + r'.md">Abstract</a>'
@@ -131,13 +131,16 @@ def append_publication_md(global_index, bib_key, html_format, go_parent_dir=Fals
     if 'doi' in bib_item.entry:
         url_doi = 'https://doi.org/' + bib_item.entry['doi']
         pub_html += ' <a href=\"' + url_doi + '\">DOI</a>'
+    if 'url' in bib_item.entry and 'arxiv' in bib_item.entry['url']:
+        url_arxiv = bib_item.entry['url']
+        pub_html += ' <a href=\"' + url_arxiv + '/\">arXiv</a>'
     if 'pmid' in bib_item.entry:
         url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + bib_item.entry['pmid']
-        pub_html += ' <a href=\"' + url_pmid + '/\">PMID '+bib_item.entry['pmid']+'</a>'
+        pub_html += ' <a href=\"' + url_pmid + '/\">PMID</a>'
 
     pub_html += '</li>\n'
 
-    return pub_html, year, pub_type
+    return pub_html, year, pub_type, pub_details
 
 
 def write_md_pass(out_path, md_format):
@@ -156,11 +159,12 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
     dict_pubs = {}
     for bib_key in filtered_publications:
         bib_key = bib_key.lower()
-        html_bibkey, year, pub_type = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
+        html_bibkey, year, pub_type, pub_details = append_publication_md(global_index, bib_key, html_format, go_parent_dir=False)
         dict_pubs[bib_key] = {}
         dict_pubs[bib_key]['html'] = html_bibkey
         dict_pubs[bib_key]['year'] = int(year)
         dict_pubs[bib_key]['pub_type'] = pub_type
+        dict_pubs[bib_key]['pub_details'] = pub_details
 
     return dict_pubs
 
@@ -193,7 +197,8 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
     prev_md5s = [] #load_json2dict(json_path)
     # Obtains the md5 values of the current bibitems in diag.bib
     md5s = get_md5s(global_index)
-
+    html_format = bibtexformatter.HTML_Formatter(string_rules)
+    
     list_bibs_error = []
     for bibitem in filtered_publications:  # global_index.keys():
         # Compares per bibitem whether are changes by comparing the md5s
@@ -212,7 +217,7 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
         md_format += 'template: publication\n'
         authors_format = bibtexformatter.authors_to_string(global_index[bibitem].author)
         md_format += 'authors: ' + authors_format + '\n'
-            
+        
         if 'booktitle' in global_index[bibitem].entry or 'journal' in global_index[bibitem].entry:
             event_type = 'journal' if 'journal' in global_index[bibitem].entry else 'booktitle'
             if global_index[bibitem].entry[event_type] in string_rules:
@@ -221,10 +226,16 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
             else:
                 event_name = global_index[bibitem].entry[event_type]
             md_format += 'published_in: ' + event_name + '\n'
+            _, pub_details = html_format.apply(global_index[bibitem])
+            md_format += 'pub_details: ' + pub_details + '\n'
                 
         if 'doi' in global_index[bibitem].entry:
             md_format += 'doi: ' + 'https://doi.org/' + global_index[bibitem].entry['doi'] + '\n'
-
+        if 'url' in global_index[bibitem].entry and 'arxiv' in global_index[bibitem].entry['url']:
+            md_format += 'arxiv: ' + global_index[bibitem].entry['url'] + '\n'
+        if 'pmid' in global_index[bibitem].entry:
+            url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + global_index[bibitem].entry['pmid']
+            md_format += 'pmid: ' + url_pmid + '\n'
         if 'abstract' in global_index[bibitem].entry:
             md_format += global_index[bibitem].entry['abstract'] + '\n\n'
 

@@ -98,13 +98,21 @@ class HTML_Formatter(BaseFormatter):
             if value: 
                 year_number_pages += ', ' + value
                 
-        output = '{authors}. "{title}" in: <i>{booktitle}</i>, volume {volume} of {series}{year_number_pages}'
-        return  self.apply_format(output, bib_item, authors=authors, year_number_pages=year_number_pages)
+        author_title = '{authors}. "{title}" '
+        pub_details = 'in: <i>{booktitle}</i>, volume {volume} of {series}{year_number_pages}'
+        out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_pub_details = self.apply_format(pub_details, bib_item, year_number_pages=year_number_pages)
+        output = out_author_title+out_pub_details
+        return output, out_pub_details
         
     def format_abstract(self, bib_item):
         authors = authors_to_string(bib_item.author)
-        output = '{authors}. "{title}" in: {booktitle}, {year}'
-        return self.apply_format(output, bib_item, authors=authors)
+        author_title = '{authors}. "{title}" '
+        pub_details = 'in: <i>{booktitle}</i>, {year}'
+        out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_pub_details = self.apply_format(pub_details, bib_item)
+        output = out_author_title+out_pub_details
+        return output, out_pub_details
 
     def format_article(self, bib_item):
         authors = authors_to_string(bib_item.author)
@@ -113,8 +121,12 @@ class HTML_Formatter(BaseFormatter):
         # nr = '({number})' if getattr(bib_item, 'number') else ''
         nr = '('+str(getattr(bib_item, 'number'))+')' if getattr(bib_item, 'number') else ''
  
-        output = '{authors}. "{title}", {journal}{year};{volume}{nr}{pages}'
-        return self.apply_format(output, bib_item, authors=authors, nr=nr)
+        author_title = '{authors}. "{title}" '
+        pub_details = '<i>{journal}</i> {year};{volume}{nr}{pages}'
+        out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_pub_details = self.apply_format(pub_details, bib_item, nr=nr)
+        output = out_author_title+out_pub_details
+        return output, out_pub_details
 
     def format_thesis(self, bib_item):
         authors = authors_to_string(bib_item.author)
@@ -128,14 +140,24 @@ class HTML_Formatter(BaseFormatter):
         school = getattr(bib_item, 'school')
         if school:
             school = ', ' + school            
-        output = authors +'. "{title}" ' + name + school + ', {year}'
-        return self.apply_format(output, bib_item)
+        author_title = authors +'. "{title}" '
+        pub_details = name + school + ', {year}'
+        out_author_title = self.apply_format(author_title, bib_item)
+        out_pub_details = self.apply_format(pub_details, bib_item)
+        output = out_author_title+out_pub_details
+        return output, out_pub_details
 
 
     def format_patent(self, bib_item):
         authors = authors_to_string(bib_item.author)
-        output = '{authors}. "{title}" {year}, {nationality}, patent number {optnumber}'
-        return self.apply_format(output, bib_item, authors=authors)
+        #output = '{authors}. "{title}" {year}, {nationality}, patent number {optnumber}'
+        #return self.apply_format(output, bib_item, authors=authors)
+        author_title = '{authors}. "{title}" '
+        pub_details = '{year}, {nationality}, patent number {optnumber}'
+        out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_pub_details = self.apply_format(pub_details, bib_item)
+        output = out_author_title+out_pub_details
+        return output, out_pub_details
     
     
     
