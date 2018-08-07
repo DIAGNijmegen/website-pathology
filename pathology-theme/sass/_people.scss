@@ -1,3 +1,13 @@
+/*
+
+People page (index and individual)
+-------------------------------------------
+
+Styles for all the elements related to group members.
+
+*/
+
+// Grid of people thumbnails
 .people-grid {
 
   padding: 2em 0 2em 0;
@@ -22,6 +32,7 @@
   }
 
   .img-thumbnail {
+    // Use cover to auto adapt the image regardless of size
     object-fit: cover;
 
     height: 115px;
@@ -69,6 +80,7 @@
   }
 }
 
+// Styles of sidebar on people pages
 .person-links {
   border: 1px solid $gray-300;
   border-radius: 0.25rem;

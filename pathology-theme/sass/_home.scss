@@ -1,3 +1,12 @@
+/*
+
+Home page
+-------------------------------------------
+
+Styles of the home page.
+
+*/
+
 // Home has custom styling on its container
 .content-home {
   background-color: $body-bg-darker;
@@ -11,6 +20,7 @@
   border-bottom: 3px solid $gray-300;
 }
 
+// First block on the home page
 .block-home {
   margin-top: -3px;
   .lead {
@@ -33,8 +43,9 @@
   }
 }
 
-// News blocks on home page
+
 .content-home {
+  // Alternative styles for highlights
   article {
     background-color: white;
     padding: 2em 1em;
@@ -43,9 +54,9 @@
     @include media-breakpoint-up(lg) {
       height: 300px;
     }
-    // border-radius: 5px;
   }
 
+  // Styles for twitter block on home page.
   .twitter-embed {
     background-color: $white;
 

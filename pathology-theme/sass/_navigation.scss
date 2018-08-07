@@ -1,9 +1,20 @@
-#navbar-toggle-cbox:checked ~ .collapse {
-    display:block;
-}
+/*
 
+Navigation file
+-------------------------------------------
+
+Sets basic styles required for the navbar
+
+*/
+
+
+// No-js mobile toggle
 #navbar-toggle-cbox {
    display: none;
+
+   &:checked ~ .collapse {
+     display: block;
+   }
 }
 
 /* Main navbar */
@@ -17,16 +28,14 @@
       color: $link-hover-color;
     }
   }
+
+  // Responsive name in the header
   .name-full {
     display: none;
   }
   @include media-breakpoint-up(lg) {
     .name-short { display: none; }
     .name-full { display: inline; }
-  }
-
-  .nav-item {
-
   }
 
   .nav-link {
