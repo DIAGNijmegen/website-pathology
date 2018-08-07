@@ -36,15 +36,10 @@
                     {% for article in articles[0:2] %}
                         {% include 'blocks/article-summary.html' %}
                     {% endfor %}
-                    <!-- <div class="row">
-                        <div class="col-md-12">
-                            <a href="{{ SITEURL }}/news" class="btn btn-primary float-right">All news articles &rarr;</a>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="col-md-4 col-lg-3">
                     <div class="twitter-embed">
-                        <a class="twitter-timeline" data-height="615" data-chrome="transparent noheader nofooter" data-dnt="true" href="https://twitter.com/midl_amsterdam?ref_src=twsrc%5Etfw">Tweets by midl_amsterdam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                </div>
+                        <a class="twitter-timeline" data-height="615" data-chrome="transparent noheader nofooter" data-dnt="true" href="https://twitter.com/diagnijmegen?ref_src=twsrc%5Etfw">Tweets by midl_amsterdam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                </div>
                     </div>
                 </div>
             </div>
@@ -75,6 +70,16 @@
             <h1>Our team</h1>
         </div>
     </div>
-    {% include "blocks/people-grid.html" %}
+
+    <div class="container">
+        <div class="row people-grid">
+        {% for person in pages %}
+            {% if person.parent.url == 'members/' %}
+                {% include "blocks/person-circle.html" %}
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
 </div>
 {% endblock content %}
