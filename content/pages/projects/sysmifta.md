@@ -1,9 +1,9 @@
 title: SysMIFTA
 finished: false
 picture: Sysmifta3a.png
-bibkeys: Litj17
+bibkeys: 
 people: Meyke Hermsen, Jeroen van der Laak, Luuk Hilbrands, Bart Smeets, Friedrich Feuerhake
-description: This project, we investigate the role of immune cell subsets in (inflammatory) interstitial fibrosis and tubular atrophy in renal allografts, using multiplex immunohistochemistry and Deep Learning.
+description: In this project, we investigate the role of immune cell subsets in interstitial fibrosis and tubular atrophy in renal allografts, using multiplex immunohistochemistry and Deep Learning.
 template: project-single
 
 ## Background
