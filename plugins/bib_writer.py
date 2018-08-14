@@ -13,26 +13,6 @@ import _pickle as pickle
 
 from bibtex import bibtexlib
 from bibtex import bibtexformatter
-# from pelican import signals
-# from pelican.readers import BaseReader
-#
-
-def get_md5_hex(bibitem):
-    # PYTHONHASHSEED should be set to zero to prevent random comparisons
-    bib_md5 = hashlib.md5()
-    pdata = pickle.dumps(bibitem)
-    bib_md5.update(pdata)
-    return bib_md5.hexdigest()
-
-
-def get_md5s(global_index):
-    dict_md5 = {}
-    for bibkey in sorted(global_index.keys()):
-        bibitem = global_index[bibkey].entry
-        data_md5 = get_md5_hex(bibitem)
-        dict_md5[bibkey] = data_md5
-
-    return dict_md5
 
 
 def save_dict2json(json_path, dict_md5):
@@ -75,7 +55,7 @@ def get_publications_by_author(global_index, list_researchers):
     return author_index, filtered_publications
 
 
-def generate_md_bibitem(writer=None):
+def generate_md_bibitem():
     """ Uses the Bart's bibtex script to write the following markdown files:
         - content/Publications.md that contains the full list of publications
         - A MD file for every publication (filtered by researcher name)
@@ -113,6 +93,7 @@ def generate_md_bibitem(writer=None):
     json_path = os.path.join(base_dir, '..', 'content/dict_pubs.json')
     save_dict2json(json_path, dict_pubs)
 
+    
 def append_publication_md(global_index, bib_key, html_format, go_parent_dir=False):
     bib_item = global_index[bib_key]
     html_to_write, pub_details = html_format.apply(bib_item)
@@ -193,18 +174,10 @@ def write_author_publications_md(global_index, author_index, list_researchers, o
 
 
 def write_single_publication_md(global_index, string_rules, filtered_publications, out_dir, json_path):
-    # Loads json file with md5 value of bibitems of the previous version
-    prev_md5s = [] #load_json2dict(json_path)
-    # Obtains the md5 values of the current bibitems in diag.bib
-    md5s = get_md5s(global_index)
     html_format = bibtexformatter.HTML_Formatter(string_rules)
     
     list_bibs_error = []
     for bibitem in filtered_publications:  # global_index.keys():
-        # Compares per bibitem whether are changes by comparing the md5s
-        if prev_md5s is not None and bibitem in prev_md5s and bibitem in md5s and prev_md5s[bibitem] == md5s[bibitem]:
-            print("skipping {}".format(bibitem))
-            continue
         md_format = ''
 
         if 'author' not in global_index[bibitem].entry or 'title' not in global_index[bibitem].entry:
@@ -261,8 +234,6 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
             file.close()
         except UnicodeEncodeError:
             list_bibs_error.append(bibitem)
-
-    #save_dict2json(json_path, md5s)
     print('List of bibkeys returning UnicodeEncodeError')
 
     for bib in list_bibs_error:

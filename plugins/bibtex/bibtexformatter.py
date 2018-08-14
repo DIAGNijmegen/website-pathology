@@ -103,6 +103,7 @@ class HTML_Formatter(BaseFormatter):
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
         out_pub_details = self.apply_format(pub_details, bib_item, year_number_pages=year_number_pages)
         output = out_author_title+out_pub_details
+        
         return output, out_pub_details
         
     def format_abstract(self, bib_item):
@@ -112,6 +113,7 @@ class HTML_Formatter(BaseFormatter):
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
         out_pub_details = self.apply_format(pub_details, bib_item)
         output = out_author_title+out_pub_details
+        
         return output, out_pub_details
 
     def format_article(self, bib_item):
@@ -126,6 +128,7 @@ class HTML_Formatter(BaseFormatter):
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
         out_pub_details = self.apply_format(pub_details, bib_item, nr=nr)
         output = out_author_title+out_pub_details
+        
         return output, out_pub_details
 
     def format_thesis(self, bib_item):
@@ -145,18 +148,18 @@ class HTML_Formatter(BaseFormatter):
         out_author_title = self.apply_format(author_title, bib_item)
         out_pub_details = self.apply_format(pub_details, bib_item)
         output = out_author_title+out_pub_details
+        
         return output, out_pub_details
 
 
     def format_patent(self, bib_item):
         authors = authors_to_string(bib_item.author)
-        #output = '{authors}. "{title}" {year}, {nationality}, patent number {optnumber}'
-        #return self.apply_format(output, bib_item, authors=authors)
         author_title = '{authors}. "{title}" '
         pub_details = '{year}, {nationality}, patent number {optnumber}'
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
         out_pub_details = self.apply_format(pub_details, bib_item)
         output = out_author_title+out_pub_details
+        
         return output, out_pub_details
     
     
