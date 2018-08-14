@@ -8,6 +8,7 @@ import os
 import json
 from pelican import signals
 
+
 def load_json2dict(json_path):
     if os.path.exists(json_path):
         json_file = open(json_path)
@@ -20,17 +21,10 @@ def load_json2dict(json_path):
     
 def load_bibkeys(generator):
     json_path = generator.settings['BIBKEYS_SRC']
-    #json_path = 'output/dict_pubs.json'
-    #for idx in range(4):
-    #    if not os.path.exists(json_path):
-    #        json_path = '../'+json_path
-    #    else:
-    #        break
     bibkeys_html = load_json2dict(json_path)
     
     generator.context['bibkeys_html'] = bibkeys_html
     
     
 def register():
-    #signals.finalized.connect(load_bibkeys)
     signals.generator_init.connect(load_bibkeys)
