@@ -50,6 +50,15 @@ Or, if available, using browser-sync:
 browser-sync start --server output --files output
 ```
 
+## Publications pipeline
+
+The publications pipeline needs manual execution. It parses the content/diag.bib file to create the markdown files in content/pages/publications needed by pelican to create the pages for every publication.
+
+```
+# Run in repository root
+python plugins/bibtex_writer.py
+```
+
 ## Radboudumc theme
 
 The theme requires Nodejs and npm to be built.
