@@ -8,11 +8,12 @@ Pilot website for Computational Pathology Group.
 
 **Components**
 
-This project consists of three subprojects:
+This project consists of four subprojects:
 
 1. A Pelican static site.
-2. A sass-powered Radboudumc theme built on top of bootstrap.
-3. A above-the-fold css extraction tool.
+2. Publications pipeline
+3. A sass-powered Radboudumc theme built on top of bootstrap.
+4. A above-the-fold css extraction tool.
 
 ## Static site by Pelican
 
