@@ -45,13 +45,43 @@ Sets basic styles required for the navbar
       padding-left: 0.8rem;
       padding-right: 0.8rem;
     }
+
     &:hover {
       color: $primary;
+      .nav-icon {
+        color: $primary;
+      }
+      .nav-icon-text {
+        display: inline-block;
+      }
     }
   }
 
-  .svg-icon {
-    font-size: 1.1rem;
-    vertical-align: middle;
+  .nav-icon-text {
+    display: inline-block;
+
+    // Hide on small to medium devices
+    @include media-breakpoint-between(md, lg) {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+        &.nav-icon-text-hidden {
+          display: none;
+        }
+    }
+  }
+
+  .nav-icon {
+    color: $secondary;
+    font-size: 1.3rem;
+    vertical-align: text-bottom;
+    display: inline-block;
+    margin-left: 2px;
+
+    @include media-breakpoint-down(sm) {
+      float: left;
+      margin-right: 10px;
+    }
   }
 }
