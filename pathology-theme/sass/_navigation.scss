@@ -24,6 +24,23 @@ Sets basic styles required for the navbar
   .navbar-brand {
     color: $primary;
 
+    .external-links {
+      display: none;
+      color: $secondary;
+      font-size: 0.65em;
+
+      a {
+        color: $secondary;
+      }
+
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+
+    .name-full {
+      font-size: 1.15em;
+    }
     &:hover {
       color: $link-hover-color;
     }
@@ -33,13 +50,13 @@ Sets basic styles required for the navbar
   .name-full {
     display: none;
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     .name-short { display: none; }
     .name-full { display: inline; }
   }
 
   .nav-link {
-    color: #000000;
+    color: $body-color;
 
     @include media-breakpoint-up(md) {
       padding-left: 0.8rem;
@@ -73,7 +90,7 @@ Sets basic styles required for the navbar
   }
 
   .nav-icon {
-    color: $secondary;
+    color: $body-color;
     font-size: 1.3rem;
     vertical-align: text-bottom;
     display: inline-block;

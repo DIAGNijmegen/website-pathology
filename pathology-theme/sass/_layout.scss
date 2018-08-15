@@ -21,7 +21,10 @@ body {
 
 main {
   // Add top padding for navbar
-  padding-top: 60px;
+  padding-top: 40px;
+  @include media-breakpoint-up(md) {
+    padding-top: 80px; // More padding due to external links
+  }
   padding-bottom: 60px;
   // Let content grow for sticky footer
   flex: 1 1 auto;

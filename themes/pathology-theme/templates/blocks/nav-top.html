@@ -1,9 +1,16 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ SITEURL }}/">
-            <span class="name-full">{{ SITENAME }}</span>
-            <span class="name-short">{{ SITENAME_SHORT }}</span>
-        </a>
+        <div class="navbar-brand">
+            <small class="external-links">
+                <a href="https://www.radboudumc.nl">Radboudumc</a> |
+                <a href="http://www.diagnijmgen.nl">Diagnostic Image Analysis Group</a> <br>
+            </small>
+
+            <a href="{{ SITEURL }}/">
+                <span class="name-full">{{ SITENAME }}</span>
+                <span class="name-short">{{ SITENAME_SHORT }}</span>
+            </a>
+        </div>
         <input type="checkbox" id="navbar-toggle-cbox">
 
         <label for="navbar-toggle-cbox" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-top" aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
