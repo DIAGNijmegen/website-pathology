@@ -73,9 +73,12 @@ Sets basic styles required for the navbar
       .nav-icon {
         color: $primary;
       }
-      .nav-icon-text {
-        transition: max-width 0.8s ease-in-out;
-        max-width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        .nav-icon-text {
+          transition: max-width 0.8s ease-in-out;
+          max-width: 100%;
+        }
       }
     }
   }
