@@ -74,7 +74,7 @@ Sets basic styles required for the navbar
         color: $primary;
       }
       .nav-icon-text {
-        transition: max-width 1s ease-in-out;
+        transition: max-width 0.8s ease-in-out;
         max-width: 100%;
       }
     }
@@ -111,6 +111,10 @@ Sets basic styles required for the navbar
     @include media-breakpoint-down(sm) {
       float: left;
       margin-right: 10px;
+    }
+
+    &.svg-icon-file-code, &.svg-icon-file-text-o {
+      font-size: 1.2em;
     }
   }
 }
