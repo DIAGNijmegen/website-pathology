@@ -75,9 +75,9 @@ Sets basic styles required for the navbar
       }
 
       @include media-breakpoint-up(lg) {
-        .nav-icon-text {
-          transition: max-width 0.8s ease-in-out;
-          max-width: 100%;
+        .nav-icon-text.nav-icon-text-hidden {
+          transition: width 0.8s ease-in-out;
+          width: calc(100% - 27px);
         }
       }
     }
@@ -90,12 +90,12 @@ Sets basic styles required for the navbar
 
     // Hide on small to medium devices
     @include media-breakpoint-between(md, lg) {
-      max-width: 0;
+      width: 0;
     }
 
     @include media-breakpoint-up(md) {
         &.nav-icon-text-hidden {
-          max-width: 0;
+          width: 0;
         }
     }
 
@@ -106,7 +106,7 @@ Sets basic styles required for the navbar
 
   .nav-icon {
     color: $body-color;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     display: inline-block;
     margin: 2px 0 0 5px;
     float: right;
@@ -118,6 +118,7 @@ Sets basic styles required for the navbar
 
     &.svg-icon-file-code, &.svg-icon-file-text-o {
       font-size: 1.2em;
+      margin-left: 10px;
     }
   }
 }
