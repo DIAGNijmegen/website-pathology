@@ -1,1 +1,2 @@
-title: Presentations
+title: Presentations & Posters
+template: presentations
