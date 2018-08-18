@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{%endblock%}
+{% block content %}
+    <div class="container">
+    <h1>{{ page.title }}</h1>
+    
+    {% set list_years = [] %}
+    {% set list_pub_type = [] %}
+    {% for bibkey in bibkeys_html.keys() %}
+        <!-- Getting list of years -->
+        {% if bibkeys_html[bibkey]['pub_type'] == '@PhdThesis' and bibkeys_html[bibkey]['year'] not in list_years %}
+            {% if list_years.append(bibkeys_html[bibkey]['year']) %}{% endif %}
+        {% endif %}
+        <!-- Getting list of pub_type -->
+        {% if bibkeys_html[bibkey]['pub_type'] == '@PhdThesis' and bibkeys_html[bibkey]['pub_type'] not in list_pub_type %}
+            {% if list_pub_type.append(bibkeys_html[bibkey]['pub_type']) %}{% endif %}
+        {% endif %}
+    {% endfor %}
+    
+    <!-- Inpress keys should go here. To include "Accepted or to appear" section -->
+    <p>Below is an overview of PhD theses written or supervised by members of the Diagnostic Image Analysis Group.</p>
+    <!-- Lists the publications per year and organized by publication type -->
+    {% for cur_year in list_years|sort(reverse = True) %}
+        <h2>{{ cur_year }}</h2>
+            {% for pub_type in list_pub_type %}
+                {% set found = { 'flag': false } %}
+                {% for bibkey in bibkeys_html.keys() %}
+                    {% if bibkeys_html[bibkey]['pub_type'] == pub_type and bibkeys_html[bibkey]['year'] == cur_year %}
+                        {{ bibkeys_html[bibkey]['author_name'] }}, <i>" {{ bibkeys_html[bibkey]['title_thesis'] }}"</i>
+                        {% set coverpng = bibkeys_html[bibkey]['coverpng'] %}
+                        {% set bibkey = bibkeys_html[bibkey]['coverpng'].replace('.png', '').lower() %}
+                        <br>
+                        <a href="{{filename}}/publications/{{ bibkey }}"><img src="{{SITEURL}}/images/theses/{{ coverpng }}"></a>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+    {% endfor %}
+
+    </div>
+{% endblock %}

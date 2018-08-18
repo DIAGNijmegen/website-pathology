@@ -146,7 +146,11 @@ def write_list_publications_md(global_index, filtered_publications, out_dir, str
         dict_pubs[bib_key]['year'] = int(year)
         dict_pubs[bib_key]['pub_type'] = pub_type
         dict_pubs[bib_key]['pub_details'] = pub_details
-
+        if pub_type.lower() == '@phdthesis':
+            dict_pubs[bib_key]['author_name'] = global_index[bib_key].entry['author']
+            dict_pubs[bib_key]['title_thesis'] = global_index[bib_key].entry['title']
+            # TODO this is a hardcode capital first letter of bibkey
+            dict_pubs[bib_key]['coverpng'] = bib_key[0].title()+bib_key[1:]+'.png'
     return dict_pubs
 
 
@@ -193,8 +197,8 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
         pub_type = global_index[bibitem].entry_type
         if pub_type.lower() == '@phdthesis':
             md_format += 'template: publication-thesis\n'
-            # Using title() for camel case
-            md_format += 'coverpng: '+bibitem.title()+'.png\n'
+            # TODO this is a hardcode capital first letter of bibkey
+            md_format += 'coverpng: '+bibitem[0].title()+bibitem[1:]+'.png\n'
             for k in 'promotor', 'copromotor', 'school', 'optmonth', 'year':
                 if k in global_index[bibitem].entry:
                     md_format += k+': ' + global_index[bibitem].entry[k] + '\n'
