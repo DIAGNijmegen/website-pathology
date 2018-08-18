@@ -177,7 +177,7 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
     html_format = bibtexformatter.HTML_Formatter(string_rules)
     
     list_bibs_error = []
-    for bibitem in filtered_publications:  # global_index.keys():
+    for bibitem in filtered_publications:
         md_format = ''
 
         if 'author' not in global_index[bibitem].entry or 'title' not in global_index[bibitem].entry:
@@ -186,29 +186,37 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
 
         for attr_key in global_index[bibitem].entry:
             global_index[bibitem].entry[attr_key] = global_index[bibitem].entry[attr_key].replace('{', '').replace('}', '')
-        md_format += 'title: ' + global_index[bibitem].entry['title'] + '\n'
-        md_format += 'template: publication\n'
         authors_format = bibtexformatter.authors_to_string(global_index[bibitem].author)
+        md_format += 'title: ' + global_index[bibitem].entry['title'] + '\n'
         md_format += 'authors: ' + authors_format + '\n'
         
-        if 'booktitle' in global_index[bibitem].entry or 'journal' in global_index[bibitem].entry:
-            event_type = 'journal' if 'journal' in global_index[bibitem].entry else 'booktitle'
-            if global_index[bibitem].entry[event_type] in string_rules:
-                event_name = string_rules[global_index[bibitem].entry[event_type]]
-                event_name = event_name.replace('_', ' ').strip()
-            else:
-                event_name = global_index[bibitem].entry[event_type]
-            md_format += 'published_in: ' + event_name + '\n'
-            _, pub_details = html_format.apply(global_index[bibitem])
-            md_format += 'pub_details: ' + pub_details + '\n'
-                
-        if 'doi' in global_index[bibitem].entry:
-            md_format += 'doi: ' + 'https://doi.org/' + global_index[bibitem].entry['doi'] + '\n'
-        if 'url' in global_index[bibitem].entry and 'arxiv' in global_index[bibitem].entry['url']:
-            md_format += 'arxiv: ' + global_index[bibitem].entry['url'] + '\n'
-        if 'pmid' in global_index[bibitem].entry:
-            url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + global_index[bibitem].entry['pmid']
-            md_format += 'pmid: ' + url_pmid + '\n'
+        pub_type = global_index[bibitem].entry_type
+        if pub_type.lower() == '@phdthesis':
+            md_format += 'template: publication-thesis\n'
+            md_format += 'coverpng: '+bibitem+'.png\n'
+            for k in 'promotor', 'copromotor', 'school', 'optmonth', 'year':
+                if k in global_index[bibitem].entry:
+                    md_format += k+': ' + global_index[bibitem].entry[k] + '\n'
+        else:
+            md_format += 'template: publication\n'
+            if 'booktitle' in global_index[bibitem].entry or 'journal' in global_index[bibitem].entry:
+                event_type = 'journal' if 'journal' in global_index[bibitem].entry else 'booktitle'
+                if global_index[bibitem].entry[event_type] in string_rules:
+                    event_name = string_rules[global_index[bibitem].entry[event_type]]
+                    event_name = event_name.replace('_', ' ').strip()
+                else:
+                    event_name = global_index[bibitem].entry[event_type]
+                md_format += 'published_in: ' + event_name + '\n'
+                _, pub_details = html_format.apply(global_index[bibitem])
+                md_format += 'pub_details: ' + pub_details + '\n'
+                    
+            if 'doi' in global_index[bibitem].entry:
+                md_format += 'doi: ' + 'https://doi.org/' + global_index[bibitem].entry['doi'] + '\n'
+            if 'url' in global_index[bibitem].entry and 'arxiv' in global_index[bibitem].entry['url']:
+                md_format += 'arxiv: ' + global_index[bibitem].entry['url'] + '\n'
+            if 'pmid' in global_index[bibitem].entry:
+                url_pmid = 'http://www.ncbi.nlm.nih.gov/pubmed/' + global_index[bibitem].entry['pmid']
+                md_format += 'pmid: ' + url_pmid + '\n'
         if 'abstract' in global_index[bibitem].entry:
             md_format += global_index[bibitem].entry['abstract'] + '\n\n'
 
