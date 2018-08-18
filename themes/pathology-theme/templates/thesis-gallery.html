@@ -30,7 +30,7 @@
                         {% set coverpng = bibkeys_html[bibkey]['coverpng'] %}
                         {% set bibkey = bibkeys_html[bibkey]['coverpng'].replace('.png', '').lower() %}
                         <br>
-                        <a href="{{filename}}/publications/{{ bibkey }}"><img src="{{SITEURL}}/images/theses/{{ coverpng }}"></a>
+                        <a href="{{SITEURL}}/publications/{{ bibkey }}"><img src="{{SITEURL}}/images/theses/{{ coverpng }}"></a>
                     {% endif %}
                 {% endfor %}
             {% endfor %}
