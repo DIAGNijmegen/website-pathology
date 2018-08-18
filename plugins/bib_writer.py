@@ -193,7 +193,8 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
         pub_type = global_index[bibitem].entry_type
         if pub_type.lower() == '@phdthesis':
             md_format += 'template: publication-thesis\n'
-            md_format += 'coverpng: '+bibitem+'.png\n'
+            # Using title() for camel case
+            md_format += 'coverpng: '+bibitem.title()+'.png\n'
             for k in 'promotor', 'copromotor', 'school', 'optmonth', 'year':
                 if k in global_index[bibitem].entry:
                     md_format += k+': ' + global_index[bibitem].entry[k] + '\n'
