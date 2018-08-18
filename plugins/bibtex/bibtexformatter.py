@@ -93,22 +93,38 @@ class HTML_Formatter(BaseFormatter):
     def format_proceedings(self, bib_item):
         authors = authors_to_string(bib_item.author)
         year_number_pages = ''
-        for k in 'year', 'number', 'pages':
-            value = getattr(bib_item, k)
-            if value: 
-                year_number_pages += ', ' + value
-                
-        author_title = '{authors}. "{title}" '
-        pub_details = 'in: <i>{booktitle}</i>, volume {volume} of {series}{year_number_pages}'
+        
+        # Gabriel: replaced for to handle attribute names before the value for instance 'i.e. pages 3'
+        pub_tail = ''
+        value_vol = getattr(bib_item, 'volume')
+        value_ser = getattr(bib_item, 'series')
+        if value_vol and value_ser: 
+            pub_tail += ', volume {volume} of {series}'
+        
+        value = getattr(bib_item, 'year')
+        if value:
+            pub_tail += ', {year}'
+        
+        value = getattr(bib_item, 'number')
+        if value:
+            pub_tail += ', {number}'
+        
+        value = getattr(bib_item, 'pages')
+        if value:
+            pub_tail += ', pages {pages}'
+        
+        author_title = '{authors}. "{title}", '
+        pub_details = 'in: <i>{booktitle}</i>' + pub_tail
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
-        out_pub_details = self.apply_format(pub_details, bib_item, year_number_pages=year_number_pages)
+        out_pub_details = self.apply_format(pub_details, bib_item)
+        # Gabriel: workaround to remove 'volume of , ' when volume is not present in bibitem
         output = out_author_title+out_pub_details
         
         return output, out_pub_details
         
     def format_abstract(self, bib_item):
         authors = authors_to_string(bib_item.author)
-        author_title = '{authors}. "{title}" '
+        author_title = '{authors}. "{title}", '
         pub_details = 'in: <i>{booktitle}</i>, {year}'
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
         out_pub_details = self.apply_format(pub_details, bib_item)
@@ -122,9 +138,19 @@ class HTML_Formatter(BaseFormatter):
         # Gabriel replaced it by the current value, @Bart, please check if it is the corrrect way to do it.
         # nr = '({number})' if getattr(bib_item, 'number') else ''
         nr = '('+str(getattr(bib_item, 'number'))+')' if getattr(bib_item, 'number') else ''
- 
-        author_title = '{authors}. "{title}" '
-        pub_details = '<i>{journal}</i> {year};{volume}{nr}{pages}'
+        
+        pub_tail = ';'
+        value = getattr(bib_item, 'volume')
+        if value:
+            pub_tail += '{volume}{nr}'
+        value = getattr(bib_item, 'pages')
+        if value:
+            pub_tail += ':{pages}' if len(pub_tail) > 1 else '{pages}'
+        if len(pub_tail) == 1:
+            # removing semicolon as the following attributes are absent: volume, nr, pages
+            pub_tail = ''
+        author_title = '{authors}. "{title}", '
+        pub_details = '<i>{journal}</i> {year}' + pub_tail
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
         out_pub_details = self.apply_format(pub_details, bib_item, nr=nr)
         output = out_author_title+out_pub_details
@@ -142,7 +168,7 @@ class HTML_Formatter(BaseFormatter):
             name = '?'
         school = getattr(bib_item, 'school')
         if school:
-            school = ', ' + school            
+            school = ', {school}'
         author_title = authors +'. "{title}" '
         pub_details = name + school + ', {year}'
         out_author_title = self.apply_format(author_title, bib_item)
