@@ -57,7 +57,7 @@ The publications pipeline needs manual execution. It parses the content/diag.bib
 
 ```
 # Run in repository root
-python plugins/bibtex_writer.py
+python plugins/bib_writer.py
 ```
 
 ## Radboudumc theme

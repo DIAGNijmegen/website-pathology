@@ -79,7 +79,9 @@ Sets basic styles required for the navbar
         .nav-icon-text.nav-icon-text-hidden {
           &.w-95 {  width: 95px; }
           &.w-85 {  width: 85px; }
+          &.w-60 {  width: 60px; }
           &.w-55 {  width: 55px; }
+
         }
       }
     }
@@ -90,6 +92,7 @@ Sets basic styles required for the navbar
     overflow-x: hidden;
     float: right;
     text-align: right;
+    white-space: nowrap;
 
     // Hide on small to medium devices
     @include media-breakpoint-between(md, lg) {
