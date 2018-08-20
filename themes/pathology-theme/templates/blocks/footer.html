@@ -2,14 +2,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-11 py-3 footer-content">
-                <p>&copy; Computational Pathology Group 2017-2018</p>
+                <p>
+                    {% if page %}
+                    <a href="{{ page.edit_url }}">&copy;</a>
+                    {% elif article %}
+                    <a href="{{ article.edit_url }}">&copy;</a>
+                    {% else %}
+                    &copy;
+                    {% endif %}
+
+                    Computational Pathology Group 2017-{{ CURRENTYEAR }}. <a href="{{SITEURL}}/colofon">Colofon</a>.
+                </p>
                 <p>The Computational Pathology Group is part the Department of Pathology at <a href="https://www.radboudumc.nl">Radboud University Medical Center</a>.</p>
 
-                {% if page %}
-                <a href="{{ page.edit_url }}">Edit</a>
-                {% elif article %}
-                <a href="{{ article.edit_url }}">Edit</a>
-                {% endif %}
+                <p</a>
             </div>
 
             <div class="col-md-1 footer-ribbon">

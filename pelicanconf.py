@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import date
 
+CURRENTYEAR = date.today().year
 AUTHOR = u'WebteamDIAG'
 SITENAME = u'Computational Pathology Group'
 SITENAME_SHORT = 'CPG'
