@@ -28,6 +28,9 @@
                 {% set found = { 'flag': false } %}
                 {% for bibkey in bibkeys_html.keys() %}
                     {% if bibkeys_html[bibkey]['pub_type'] == pub_type and bibkeys_html[bibkey]['year'] == cur_year %}
+                    {% set coverpng = bibkeys_html[bibkey]['coverpng'] %}
+                    {% set bibkey = bibkeys_html[bibkey]['coverpng'].replace('.png', '').lower() %}
+
                     <div class="col-md-4">
                         <div class="card">
                             <a href="{{SITEURL}}/publications/{{ bibkey }}"><img class="card-img-top" src="{{SITEURL}}/images/theses/{{ coverpng }}" alt="{{ bibkeys_html[bibkey]['title_thesis'] }}"></a>
