@@ -15,17 +15,16 @@
     <div class="page-content">
         <p>{{ page.author_list }}</p>
 
+        <h2 class="display-5">Abstract</h2>
+
+        {{ page.content }}
+
+        <p>
+            <a href="{{ page.arxiv }}" class="btn btn-primary">arXiv</a>
+        </p>
         {% if page.picture_large %}
             <img class="img-fluid mb-3" src="{{ SITEURL}}/images/{{page.picture_large}}">
         {% endif %}
 
-        <p>
-            <a href="{{ SITEURL }}/{{ page.url }}" class="btn btn-primary">Abstract</a>
-            <a href="{{ page.arxiv }}" class="btn btn-primary">arXiv</a>
-        </p>
-
-        <h2 class="display-5">Abstract</h2>
-
-        {{ page.content }}
     </div>
 {% endblock %}
