@@ -1,5 +1,5 @@
 title: AMI
-title_long: 
+finished: false 
 picture: AMI.png
 template: project-single
 people: Peter Bandi, Marcory van Dijk, Geert Litjens, Jeroen van der Laak
