@@ -1,7 +1,7 @@
 title: STITPRO I
 finished: true
 template: project-single
-picture: STITPROI.png
+picture: STITPROI.jpg
 description: Project on the development of ASAP and on the automatic detection of metastases in WSI of sentinel lymph nodes of breast cancer patients.
 bibkeys: Litj16a, Ehte17
 
