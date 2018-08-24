@@ -2,7 +2,7 @@ title: STITPRO I
 finished: true
 template: project-single
 picture: STITPROI.png
-description:
+description: Project on the development of ASAP and on the automatic detection of metastases in WSI of sentinel lymph nodes of breast cancer patients.
 bibkeys: Litj16a, Ehte17
 
 This project is aimed to develop open-source software for handling the large images resulting from scanning whole pathology slides (whole slide images; WSI) at microscopic resolution. The software enables researchers and pathologists to view WSI, similar to the visual inspection of slides under a microscope. To this end, the software employs Google-earth type of functionality, enabling seamless panning and zooming of the images. In addition, functionality for annotating images was developed and a plug-in interface was generated to enable use of algorithms from 'third parties'. The resulting 'automated slide analysis platform' [(ASAP)](https://diagnijmegen.github.io/website-pathology/software/asap/) open source software is capable of dealing with WSI from almost all scanners currently in use.
