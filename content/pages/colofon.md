@@ -7,6 +7,7 @@ This website was built using the following packages/projects:
 - [Critical css](https://github.com/addyosmani/critical)
 - [Github pages](https://pages.github.com/)
 - [Travis CI](https://travis-ci.org/)
+- [Latexcodec](https://latexcodec.readthedocs.io)
 
 Icons are from:
 
