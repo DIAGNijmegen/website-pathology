@@ -10,6 +10,8 @@ import json
 import time
 import hashlib
 import _pickle as pickle
+import codecs
+import latexcodec
 
 from bibtex import bibtexlib
 from bibtex import bibtexformatter
@@ -191,7 +193,8 @@ def write_single_publication_md(global_index, string_rules, filtered_publication
         for attr_key in global_index[bibitem].entry:
             global_index[bibitem].entry[attr_key] = global_index[bibitem].entry[attr_key].replace('{', '').replace('}', '')
         authors_format = bibtexformatter.authors_to_string(global_index[bibitem].author)
-        md_format += 'title: ' + global_index[bibitem].entry['title'] + '\n'
+        title = codecs.decode(global_index[bibitem].entry['title'], "ulatex")
+        md_format += 'title: ' + title + '\n'
         md_format += 'authors: ' + authors_format + '\n'
         
         pub_type = global_index[bibitem].entry_type

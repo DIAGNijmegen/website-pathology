@@ -9,7 +9,7 @@
 
     <p class="lead">
         {% for author in page.authors %}
-            {{ author }}, 
+            {{ author }}{% if not loop.last %}, {% endif %}
         {% endfor %}
     </p>
 

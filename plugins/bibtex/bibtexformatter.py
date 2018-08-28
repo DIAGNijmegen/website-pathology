@@ -1,3 +1,5 @@
+import codecs
+import latexcodec
 from string import Formatter
 
 def authors_to_string(authors):
@@ -152,6 +154,7 @@ class HTML_Formatter(BaseFormatter):
         author_title = '{authors}. "{title}", '
         pub_details = '<i>{journal}</i> {year}' + pub_tail
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_author_title = codecs.decode(out_author_title, "ulatex")
         out_pub_details = self.apply_format(pub_details, bib_item, nr=nr)
         output = out_author_title+out_pub_details
         
