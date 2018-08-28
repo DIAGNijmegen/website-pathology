@@ -118,6 +118,7 @@ class HTML_Formatter(BaseFormatter):
         author_title = '{authors}. "{title}", '
         pub_details = 'in: <i>{booktitle}</i>' + pub_tail
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_author_title = codecs.decode(out_author_title, "ulatex")
         out_pub_details = self.apply_format(pub_details, bib_item)
         # Gabriel: workaround to remove 'volume of , ' when volume is not present in bibitem
         output = out_author_title+out_pub_details
@@ -129,6 +130,7 @@ class HTML_Formatter(BaseFormatter):
         author_title = '{authors}. "{title}", '
         pub_details = 'in: <i>{booktitle}</i>, {year}'
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_author_title = codecs.decode(out_author_title, "ulatex")
         out_pub_details = self.apply_format(pub_details, bib_item)
         output = out_author_title+out_pub_details
         
@@ -175,6 +177,7 @@ class HTML_Formatter(BaseFormatter):
         author_title = authors +'. "{title}" '
         pub_details = name + school + ', {year}'
         out_author_title = self.apply_format(author_title, bib_item)
+        out_author_title = codecs.decode(out_author_title, "ulatex")
         out_pub_details = self.apply_format(pub_details, bib_item)
         output = out_author_title+out_pub_details
         
@@ -186,6 +189,7 @@ class HTML_Formatter(BaseFormatter):
         author_title = '{authors}. "{title}" '
         pub_details = '{year}, {nationality}, patent number {optnumber}'
         out_author_title = self.apply_format(author_title, bib_item, authors=authors)
+        out_author_title = codecs.decode(out_author_title, "ulatex")
         out_pub_details = self.apply_format(pub_details, bib_item)
         output = out_author_title+out_pub_details
         
