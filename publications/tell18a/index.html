@@ -7,7 +7,7 @@
 
 <link href="https://diagnijmegen.github.io/website-pathology/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Computational Pathology Group Full Atom Feed" />
 
-    <title>Whole-Slide Mitosis Detection in H&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks - Computational Pathology Group</title>
+    <title>H&E stain augmentation improves generalization of convolutional networks for histopathological mitosis detection - Computational Pathology Group</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -173,23 +173,22 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="https://diagnijmegen.github.io/website-pathology/">Home</a></li>
         <li class="breadcrumb-item"><a href="https://diagnijmegen.github.io/website-pathology/publications/">Publications</a></li>
-        <li class="breadcrumb-item">Whole-Slide Mitosis Detection in H&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks</li>
+        <li class="breadcrumb-item">H&E stain augmentation improves generalization of convolutional networks for histopathological mitosis detection</li>
       </ol>
     </nav>
 </div>
     <div class="container">
-    <!-- WORKAROUND: remove replace('\\','')  # TODO this workaround solves the issue in ehte16a, litj15, and tell18a ith H\&E -->
-    <h1 class="page-title">Whole-Slide Mitosis Detection in H&E Breast Histology Using PHH3 as a Reference to Train Distilled Stain-Invariant Convolutional Networks</h1>
+    <h1 class="page-title">H&E stain augmentation improves generalization of convolutional networks for histopathological mitosis detection</h1>
 
     <p class="lead">
-            D. Tellez,             I. Balkenhol M. andOtte-Holler,             R. van de Loo,             R. Vogels,             P. Bult,             C. Wauters,             S. Vreuls W. andMol,             N. Karssemeijer,             G. Litjens,             J. van der Laak and F. Ciompi    </p>
+            D. Tellez,             M. Balkenhol,             N. Karssemeijer,             G. Litjens,             J. van der Laak and F. Ciompi    </p>
 
-    <p><i>IEEE Transactions on Medical Imaging</i> 2018</p>
+    <p>in: <i>Medical Imaging</i>, volume 10581 of SPIE, 2018</p>
     <p>
-            <a href="https://doi.org/10.1109/TMI.2018.2820199" class="btn btn-primary">DOI</a>
+            <a href="https://doi.org/10.1117/12.2293048" class="btn btn-primary">DOI</a>
     </p>
     <h2>Abstract</h2>
-    <p>Manual counting of mitotic tumor cells in tissue sections constitutes one of the strongest prognostic markers for breast cancer. This procedure, however, is time-consuming and error-prone. We developed a method to automatically detect mitotic figures in breast cancer tissue sections based on convolutional neural networks (CNNs). Application of CNNs to hematoxylin and eosin (H&amp;E) stained histological tissue sections is hampered by: (1) noisy and expensive reference standards established by pathologists, (2) lack of generalization due to staining variation across laboratories, and (3) high computational requirements needed to process gigapixel whole-slide images (WSIs). In this paper, we present a method to train and evaluate CNNs to specifically solve these issues in the context of mitosis detection in breast cancer WSIs. First, by combining image analysis of mitotic activity in phosphohistone-H3 (PHH3) restained slides and registration, we built a reference standard for mitosis detection in entire H&amp;E WSIs requiring minimal manual annotation effort. Second, we designed a data augmentation strategy that creates diverse and realistic H&amp;E stain variations by modifying the hematoxylin and eosin color channels directly. Using it during training combined with network ensembling resulted in a stain invariant mitosis detector. Third, we applied knowledge distillation to reduce the computational requirements of the mitosis detection ensemble with a negligible loss of performance. The system was trained in a single-center cohort and evaluated in an independent multicenter cohort from The Cancer Genome Atlas on the three tasks of the Tumor Proliferation Assessment Challenge (TUPAC). We obtained a performance within the top-3 best methods for most of the tasks of the challenge.</p>
+    <p>The number of mitotic figures per tumor area observed in hematoxylin and eosin (H and E) histological tissue sections under light microscopy is an important biomarker for breast cancer prognosis. Whole-slide imaging and computational pathology have enabled the development of automatic mitosis detection algorithms based on convolutional neural networks (CNNs). These models can suffer from high generalization error, i.e. trained networks often underperform on datasets originating from pathology laboratories different than the one that provided the training data, mainly due to the presence of inter-laboratory stain variations. We propose a novel data augmentation strategy that exploits the properties of the H and E color space to simulate a broad range of realistic H and E stain variations. To our best knowledge, this is the first time that data augmentation is performed directly in the H and E color space, instead of RGB. The proposed technique uses color deconvolution to transform RGB images into the H and E color space, modifies the H and E color channels stochastically, and projects them back to RGB space. We trained a CNN-based mitosis detector on homogeneous data from a single institution, and tested its performance on an external, multicenter cohort that contained a wide range of unseen H and E stain variations. We compared CNNs trained with and without the proposed augmentation strategy and observed a significant improvement in performance and robustness to unseen stain variations when the new color augmentation technique was included. In essence, we have shown that CNNs can be made robust to inter-lab stain variation by incorporating extensive stain augmentation techniques.</p>
 
     </div>
     </main>
