@@ -12,6 +12,31 @@
 
     {% endblock head %}
 
+    <!-- Search Engine -->
+    <meta name="description" content="{% block description %}{% endblock description %}">
+    <meta name="image" content="{% if article %}{{ SITEURL }}/images/news/{{ article.picture }}{% endif %}">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="{{ self.title() }} - Computational Pathology Group">
+    <meta itemprop="description" content="{{ self.description() }}">
+    <meta itemprop="image" content="{% block page_picture %}{% endblock %}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if article %}{{ article.title }}{% else %}{{ self.title() }}{% endif %}">
+    <meta name="twitter:description" content="{{ self.description() }}">
+    <meta name="twitter:creator" content="@diagnijmegen">
+    <meta name="twitter:image:src" content="{% if article %}{{ SITEURL }}/images/news/{{ article.picture }}{% endif %}">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="{% if article %}{{ article.title }}{% else %}{{ self.title() }}{% endif %}">
+    <meta property="og:description" content="{{ self.description() }}">
+    <meta property="og:image" content="{% if article %}{{ SITEURL }}/images/news/{{ article.picture }}{% endif %}">
+    <meta property="og:site_name" content="Computational Pathology Group">
+    <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
+    {% if article %}
+    <meta name="article:published_time" content="{{ article.date.isoformat() }}">
+    {% endif %}
+
     <!-- Bootstrap core CSS -->
     <link href="{{SITEURL}}/theme/css/theme.min.css" rel="stylesheet">
 </head>

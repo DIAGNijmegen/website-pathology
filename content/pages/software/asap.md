@@ -1,5 +1,5 @@
 title: ASAP - Fluid whole-slide image viewer
-picture: asap_screenshot.png
+picture: software/asap_screenshot.png
 description: ASAP (Automated Slide Analysis Platform) is a fast and fluid viewer for digitized multi-resolution histopathology images. ASAP offers several tools to make annotations in an intuitive way. Dots, rectangles, polygons are all supported. ASAP allows on-slide visualization of image analysis and machine learning results such as segmentation masks with customizable lookup-tables.
 github: https://github.com/computationalpathologygroup/ASAP
 

@@ -1,40 +1,7 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title }}{%endblock%}
-{% block head %}
-    {{ super() }}
-
-    {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
-    {% endfor %}
-
-
-
-    <!-- COMMON TAGS -->
-    <!-- Search Engine -->
-    <meta name="description" content="{% block description %}{% if article.description %}{{ article.description }}{% else %}{{ article.summary | striptags | truncate(200)}}{% endif %}{% endblock description %}">
-    <meta name="image" content="{{ SITEURL }}/images/news/{{ article.picture }}">
-
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="{{ article.title }}">
-    <meta itemprop="description" content="{{ self.description() }}">
-    <meta itemprop="image" content="{{ SITEURL }}/images/news/{{ article.picture }}">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ article.title }}">
-    <meta name="twitter:description" content="{{ self.description() }}">
-    <meta name="twitter:creator" content="@diagnijmegen">
-    <meta name="twitter:image:src" content="{{ SITEURL }}/images/news/{{ article.picture }}">
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="{{ article.title }}">
-    <meta property="og:description" content="{{ self.description() }}">
-    <meta property="og:image" content="{{ SITEURL }}/images/news/{{ article.picture }}">
-    <meta property="og:site_name" content="Computational Pathology Group">
-    <meta property="og:type" content="article">
-    <!-- Open Graph - Article -->
-    <meta name="article:published_time" content="{{ article.date.isoformat() }}">
-
-{% endblock %}
-
+{% block title %}{{ article.title }}{% endblock title %}
+{% block page_picture %}{{ SITEURL }}/images/news/{{ article.picture }}{% endblock %}
+{% block description %}{% if article.description %}{{ article.description }}{% else %}{{ article.summary | striptags | truncate(200)}}{% endif %}{% endblock description %}
 {% block content %}
 <div class="container">
     <nav aria-label="breadcrumb">

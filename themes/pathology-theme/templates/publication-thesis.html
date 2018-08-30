@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{%endblock%}
+{% block description %}{{ page.content | striptags | truncate(200)}}{% endblock %}
+{% block page_picture %}{{SITEURL}}/images/theses/{{ page.coverpng }}{% endblock %}
 {% block content %}
     {% include 'blocks/breadcrumbs.html' %}
 
@@ -24,14 +26,14 @@
     {% if page.optmonth or page.year %}
         <p><b>
             {% if page.optmonth %}
-                {{page.optmonth.replace(',', '')}}, 
+                {{page.optmonth.replace(',', '')}},
             {% endif %}
             {% if page.year %}
                 {{page.year}}
             {% endif %}
         </b></p>
     {% endif %}
-    
+
     <h2>Abstract</h2>
     {{ page.content }}
 
