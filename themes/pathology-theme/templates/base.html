@@ -26,11 +26,11 @@
     <meta name="twitter:title" content="{% if article %}{{ article.title }}{% else %}{{ self.title() }}{% endif %}">
     <meta name="twitter:description" content="{{ self.description() }}">
     <meta name="twitter:creator" content="@diagnijmegen">
-    <meta name="twitter:image:src" content="{{ self.picture() }}">
+    <meta name="twitter:image:src" content="{{ self.page_picture() }}">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta property="og:title" content="{% if article %}{{ article.title }}{% else %}{{ self.title() }}{% endif %}">
     <meta property="og:description" content="{{ self.description() }}">
-    <meta property="og:image" content="{{ self.picture() }}">
+    <meta property="og:image" content="{{ self.page_picture() }}">
     <meta property="og:site_name" content="Computational Pathology Group">
     <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
     {% if article %}
