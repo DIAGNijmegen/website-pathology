@@ -3,6 +3,7 @@ name: Francesco Ciompi
 template: people-single
 picture: Francesco_Ciompi.jpg
 position: Postdoc
+active: yes
 email: francesco.ciompi@radboudumc.nl
 office: Route 812, Room 2.18
 telephone:

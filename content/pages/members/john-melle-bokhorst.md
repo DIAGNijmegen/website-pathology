@@ -3,6 +3,7 @@ name: John-Melle Bokhorst
 template: people-single
 picture: John-Melle_Bokhorst.jpg
 position: PhD student
+active: yes
 email: john-melle.bokhorst@radboudumc.nl
 office: Route 812, room 2.39
 type: phd

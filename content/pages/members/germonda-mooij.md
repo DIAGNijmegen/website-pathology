@@ -3,6 +3,7 @@ name: Germonda Mooij
 template: people-single
 picture: Germonda_Mooij.jpg
 position: Master student
+active: yes
 email: germonda.mooij@radboudumc.nl
 office: Route 812, room 2.39
 type: student

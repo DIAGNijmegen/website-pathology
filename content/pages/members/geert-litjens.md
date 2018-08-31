@@ -3,6 +3,7 @@ name: Geert Litjens
 template: people-single
 picture: Geert_Litjens.jpg
 position: Assistant professor
+active: yes
 email: geert.litjens@radboudumc.nl
 office: Route 812, Room 2.18
 telephone:
