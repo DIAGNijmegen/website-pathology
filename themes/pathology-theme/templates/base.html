@@ -23,18 +23,18 @@
     <meta name="image" content="{% block page_picture %}{% endblock %}">
 
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="{{ self.title() }} - Computational Pathology Group">
+    <meta itemprop="name" content="{{ self.title() }}{% if page and page.template != 'home' %} - Computational Pathology Group{% endif %}">
     <meta itemprop="description" content="{{ self.description() }}">
     <meta itemprop="image" content="{{ self.page_picture() }}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ self.title() }} - Computational Pathology Group">
+    <meta name="twitter:title" content="{{ self.title() }}{% if page and page.template != 'home' %} - Computational Pathology Group{% endif %}">
     <meta name="twitter:description" content="{{ self.description() }}">
     <meta name="twitter:creator" content="@diagnijmegen">
     <meta name="twitter:image:src" content="{{ self.page_picture() }}">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="{{ self.title() }} - Computational Pathology Group">
+    <meta property="og:title" content="{{ self.title() }}{% if page and page.template != 'home' %} - Computational Pathology Group{% endif %}">
     <meta property="og:description" content="{{ self.description() }}">
     <meta property="og:image" content="{{ self.page_picture() }}">
     <meta property="og:site_name" content="Computational Pathology Group">
