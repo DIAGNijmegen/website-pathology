@@ -44,9 +44,20 @@
     {% endif %}
 
     <!-- Include critical css -->
-    <style>
+    <!-- <style>
         {% set css_file = output_file | replace('.html', '.css') %}
         {% include "critical_css/" + css_file ignore missing %}
+    </style> -->
+    <style>
+        {% if page %}
+            {% include "critical_css/" + page.template + ".css"  %}
+        {% elif article %}
+            {% include "critical_css/article.css"  %}
+        {% elif page_name == 'highlights/index' %}
+            {% include "critical_css/index.css"  %}
+        {% else %}
+            /* no above the fold css for {{ page_name}} */
+        {% endif %}
     </style>
 
     <!-- Async load css -->
