@@ -30,6 +30,7 @@ script:
 - python plugins/bib_writer.py
 - pelican content -s publishconf.py
 - npm --prefix above-the-fold run critical
+- cp CNAME output/CNAME
 
 deploy:
   provider: pages
