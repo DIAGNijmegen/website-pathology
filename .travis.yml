@@ -29,7 +29,7 @@ script:
 - npm --prefix pathology-theme run deploy
 - python plugins/bib_writer.py
 - pelican content -s publishconf.py
-- npm --prefix above-the-fold run critical
+#- npm --prefix above-the-fold run critical
 - cp CNAME output/CNAME
 
 deploy:
