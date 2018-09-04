@@ -3,6 +3,7 @@ name: Wouter Bulten
 template: people-single
 picture: Wouter_Bulten.png
 position: PhD student
+active: yes
 email: wouter.bulten@radboudumc.nl
 office: Route 812, room 2.39
 type: phd

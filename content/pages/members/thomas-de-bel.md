@@ -3,6 +3,7 @@ name: Thomas de Bel
 template: people-single
 picture: Thomas_de_Bel.jpg
 position: PhD student
+active: yes
 email: thomas.debel@radboudumc.nl
 office: Route 812, room 2.39
 type: phd

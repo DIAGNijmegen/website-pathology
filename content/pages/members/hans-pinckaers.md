@@ -3,6 +3,7 @@ name: Hans Pinckaers
 template: people-single
 picture: Hans_Pinckaers.jpg
 position: PhD student
+active: yes
 email: hans.pinckaers@radboudumc.nl
 office: Route 812, room 2.39
 type: phd

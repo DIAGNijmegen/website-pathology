@@ -14,7 +14,7 @@
 
         <div class="row people-grid">
         {% for person in pages|reverse %}
-            {% if person.parent.url == 'members/' and person.type == 'faculty' %}
+            {% if person.parent.url == 'members/' and person.type == 'faculty' and person.active == 'yes' %}
                 {% include "blocks/person-circle.html" %}
             {% endif %}
         {% endfor %}
@@ -22,8 +22,8 @@
 
         <h1 class="text-muted">Scientific staff</h1>
         <div class="row people-grid">
-        {% for person in pages|reverse %}
-            {% if person.parent.url == 'members/' and (person.type == 'postdoc' or person.type == 'phd') %}
+        {% for person in pages %}
+            {% if person.parent.url == 'members/' and (person.type == 'postdoc' or person.type == 'phd') and person.active == 'yes' %}
                 {% include "blocks/person-circle.html" %}
             {% endif %}
         {% endfor %}
@@ -32,7 +32,7 @@
         <h1 class="text-muted">Technical staff</h1>
         <div class="row people-grid">
         {% for person in pages %}
-            {% if person.parent.url == 'members/' and person.type == 'tech' %}
+            {% if person.parent.url == 'members/' and person.type == 'tech' and person.active == 'yes'%}
                 {% include "blocks/person-circle.html" %}
             {% endif %}
         {% endfor %}
@@ -41,10 +41,21 @@
         <h1 class="text-muted">Master students</h1>
         <div class="row people-grid">
         {% for person in pages %}
-            {% if person.parent.url == 'members/' and person.type == 'student' %}
+            {% if person.parent.url == 'members/' and person.type == 'student' and person.active == 'yes' %}
                 {% include "blocks/person-circle.html" %}
             {% endif %}
         {% endfor %}
+        </div>
+        
+        <h1 class="text-muted">Former members</h1>
+        <div>
+            <ul>
+            {% for person in pages %}
+                {% if person.parent.url == 'members/' and person.active == 'no' %}
+                    <li><a href="{{ SITEURL }}/{{ person.url}}">{{ person.name }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
         </div>
     </div>
 

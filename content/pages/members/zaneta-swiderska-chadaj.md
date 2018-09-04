@@ -3,6 +3,7 @@ name: Zaneta Swiderska-Chadaj
 template: people-single
 picture: Zaneta_Swiderska-Chadaj.jpg
 position: Postdoc
+active: yes
 email: zatena.swiderska@radboudumc.nl
 office: Route 812, Room 2.18
 telephone:
