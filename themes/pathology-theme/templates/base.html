@@ -43,11 +43,6 @@
     <meta name="article:published_time" content="{{ article.date.isoformat() }}">
     {% endif %}
 
-    <!-- Include critical css -->
-    <!-- <style>
-        {% set css_file = output_file | replace('.html', '.css') %}
-        {% include "critical_css/" + css_file ignore missing %}
-    </style> -->
     <style>
         {% if page %}
             /* above the fold for {{ page.template }} */
