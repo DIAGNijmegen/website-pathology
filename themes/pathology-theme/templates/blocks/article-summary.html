@@ -3,7 +3,9 @@
         {% if article.picture %}
         <img class="img-thumbnail" alt="{{ article.title|striptags }}" src="{{ SITEURL }}/images/news/{{ article.picture }}">
         {% endif %}
-
+        <footer class="post-info text-muted text-center mt-4">
+            <small><time class="published" datetime="{{ article.date.isoformat() }}">Published {{ article.locale_date }} </time></small>
+        </footer>
     </div>
 
     <div class="col-md-8">
@@ -21,8 +23,5 @@
             <a href="{{ SITEURL }}/{{ article.url }}">Read more &rarr;</a>
         </p>
 
-        <footer class="post-info text-muted">
-            <small><time class="published" datetime="{{ article.date.isoformat() }}">Published {{ article.locale_date }} </time></small>
-        </footer>
     </div>
 </article>
