@@ -8,7 +8,7 @@
 
     {% include "blocks/feeds.html" %}
 
-    <title>{% block title %}{{ SITENAME }}{% endblock title %} - Computational Pathology Group</title>
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}{% if page and page.template != 'home' %} - Computational Pathology Group{% endif %}</title>
 
     {% endblock head %}
 
