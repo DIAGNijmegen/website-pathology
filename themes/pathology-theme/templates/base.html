@@ -50,10 +50,13 @@
     </style> -->
     <style>
         {% if page %}
+            /* above the fold for {{ page.template }} */
             {% include "critical_css/" + page.template + ".css"  %}
         {% elif article %}
+            /* above the fold for article */
             {% include "critical_css/article.css"  %}
         {% elif page_name == 'highlights/index' %}
+            /* above the fold for hightlights */
             {% include "critical_css/index.css"  %}
         {% else %}
             /* no above the fold css for {{ page_name}} */
