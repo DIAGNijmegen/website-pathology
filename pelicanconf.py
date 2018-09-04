@@ -7,7 +7,7 @@ CURRENTYEAR = date.today().year
 AUTHOR = u'WebteamDIAG'
 SITENAME = u'Computational Pathology Group'
 SITENAME_SHORT = 'CPG'
-SITE_PICTURE = 'images/projects/SM_kidney.png'
+SITE_PICTURE = 'images/computational_pathology_social_image.png'
 SITEURL = ''
 
 PATH = 'content'
