@@ -20,7 +20,7 @@ cache:
   pip: true
   directories:
     - pathology-theme/node_modules
-    - above-the-fold/node_modules
+    #- above-the-fold/node_modules
 
 before_cache:
   - rm -f $HOME/.cache/pip/log/debug.log
