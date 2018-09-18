@@ -1,7 +1,7 @@
 title: Emiel Stoelinga
 name: Emiel Stoelinga
 template: people-single
-picture: 
+picture: Person.png
 position: Master student
 active: yes
 email: emiel.stoelinga@radboudumc.nl
