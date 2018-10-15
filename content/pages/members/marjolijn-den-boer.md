@@ -3,7 +3,7 @@ name: Marjolijn den Boer
 template: people-single
 picture: Marjolijn_den_Boer.jpg
 position: Master student
-active: yes
+active: no
 email: marjolijn.denboer@radboudumc.nl
 office: Route 812, room 2.39
 type: student
