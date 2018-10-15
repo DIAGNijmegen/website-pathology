@@ -1,7 +1,7 @@
 title: Maud Wekking
 name: Maud Wekking
 template: people-single
-picture: Person.png
+picture: Maud_Wekking.jpg
 position: Research technician
 active: yes
 email: maud.wekking@radboudumc.nl
