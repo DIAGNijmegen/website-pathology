@@ -2,7 +2,7 @@ title: Zaneta Swiderska-Chadaj
 name: Zaneta Swiderska-Chadaj
 template: people-single
 picture: Zaneta_Swiderska-Chadaj.jpg
-position: Postdoc
+position: Postdoctoral researcher
 active: yes
 email: zatena.swiderska@radboudumc.nl
 office: Route 812, Room 2.18
