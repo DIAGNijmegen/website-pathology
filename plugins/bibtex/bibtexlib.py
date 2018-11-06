@@ -279,7 +279,7 @@ def read_bibtex_file(filename):
     for type_name, entry in get_blocks(content, start_character='@'):
         if type_name == '@Comment':
             continue
-        elif type_name == '@String':
+        elif type_name.strip() == '@String':
             k, v = [x.strip() for x in entry.split('=')]
             string_rules[k] = v
         else:
