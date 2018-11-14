@@ -1,4 +1,4 @@
-title: Great results for CAMELYON17 challenge
+title: Results CAMELYON17 challenge
 date: 11-03-2018
 picture: CAMELYON17.png
 
