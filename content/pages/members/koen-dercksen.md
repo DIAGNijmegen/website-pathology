@@ -1,7 +1,7 @@
 title: Koen Dercksen
 name: Koen Dercksen
 template: people-single
-picture: Person.png
+picture: Koen_Dercksen.jpg
 position: Master student
 active: yes
 email: koen.dercksen@radboudumc.nl
