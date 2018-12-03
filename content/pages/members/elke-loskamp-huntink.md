@@ -1,7 +1,7 @@
 title: Elke Loskamp-Huntink
 name: Elke Loskamp-Huntink
 template: people-single
-picture: Person.png
+picture: Elke_Loskamp-Huntink.jpg
 position: Study manager
 active: yes
 email: elke.loskamp-hunink@radboudumc.nl
