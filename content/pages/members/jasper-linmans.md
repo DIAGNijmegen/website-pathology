@@ -1,7 +1,7 @@
 title: Jasper Linmans
 name: Jasper Linmans
 template: people-single
-picture: Person.png
+picture: Jasper_Linmans.jpg
 position: PhD student
 active: yes
 email: jasper.linmans@radboudumc.nl
