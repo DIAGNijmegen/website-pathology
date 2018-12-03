@@ -1,7 +1,7 @@
 title: Yiping Jiao
 name: Yiping Jiao
 template: people-single
-picture: Person.png
+picture: Yiping_Jiao.jpg
 position: PhD student
 active: yes
 email: yiping.jiao@radboudumc.nl
