@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://www.computationalpathologygroup.eu/publications/swid18/">
+    <link rel="canonical" href="https://www.computationalpathologygroup.eu/publications/band18/">
 
 <link href="https://www.computationalpathologygroup.eu/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Computational Pathology Group Full Atom Feed" />
 
-    <title>Convolutional Neural Networks for Lymphocyte detection in Immunohistochemically Stained Whole-Slide Images - Computational Pathology Group</title>
+    <title>From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge - Computational Pathology Group</title>
 
 
     <!-- Search Engine -->
@@ -17,19 +17,19 @@
     <meta name="image" content="">
 
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Convolutional Neural Networks for Lymphocyte detection in Immunohistochemically Stained Whole-Slide Images - Computational Pathology Group">
+    <meta itemprop="name" content="From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge - Computational Pathology Group">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Convolutional Neural Networks for Lymphocyte detection in Immunohistochemically Stained Whole-Slide Images - Computational Pathology Group">
+    <meta name="twitter:title" content="From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge - Computational Pathology Group">
     <meta name="twitter:description" content="">
     <meta name="twitter:creator" content="@diagnijmegen">
     <meta name="twitter:image:src" content="">
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="Convolutional Neural Networks for Lymphocyte detection in Immunohistochemically Stained Whole-Slide Images - Computational Pathology Group">
+    <meta property="og:title" content="From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge - Computational Pathology Group">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:site_name" content="Computational Pathology Group">
@@ -216,21 +216,22 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/">Home</a></li>
         <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/publications/">Publications</a></li>
-        <li class="breadcrumb-item">Convolutional Neural Networks for Lymphocyte detection in Immunohistochemically Stained Whole-Slide Images</li>
+        <li class="breadcrumb-item">From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge</li>
       </ol>
     </nav>
 </div>
     <div class="container">
-    <h1 class="page-title">Convolutional Neural Networks for Lymphocyte detection in Immunohistochemically Stained Whole-Slide Images</h1>
+    <h1 class="page-title">From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge</h1>
 
     <p class="lead">
-            Z. Swiderska-Chadaj,             H. Pinckaers,             M. van Rijthoven,             M. Balkenhol,             M. Melnikova,             O. Geessink,             Q. Manson,             G. Litjens,             J. van der Laak and F. Ciompi    </p>
+            P. Bandi,             O. Geessink,             Q. Manson,             M. van Dijk,             M. Balkenhol,             M. Hermsen,             B. Ehteshami Bejnordi,             B. Lee,             K. Paeng,             A. Zhong,             Q. Li,             F. Ghazvinian Zanjani,             S. Zinger,             K. Fukuta,             D. Komura,             V. Ovtcharov,             S. Cheng,             S. Zeng,             J. Thagaard,             A.B. Dahl,             H. Lin,             H. Chen,             L. Jacobsson,             M. Hedlund,             M. Cetin,             E. Halici,             H. Jackson,             R. Chen,             F. Both,             J. Franke,             H. Kusters-Vandevelde,             W. Vreuls,             P. Bult,             B. van Ginneken,             J. van der Laak and G. Litjens    </p>
 
-    <p>in: <i>Medical Imaging with Deep Learning</i>, 2018</p>
+    <p><i>IEEE Transactions on Medical Imaging</i> 2018</p>
     <p>
+            <a href="https://doi.org/10.1109/tmi.2018.2867350" class="btn btn-primary">DOI</a>
     </p>
     <h2>Abstract</h2>
-    <p>Recent advances in cancer immunotherapy have boosted the interest in the role played by the immune system in cancer treatment. In particular, the presence of tumor-infiltrating lymphocytes (TILs) have become a central research topic in oncology and pathology. Consequently, a method to automatically detect and quantify immune cells is of great interest. In this paper, we present a comparison of different deep learning (DL) techniques for the detection of lymphocytes in immunohistochemically stained (CD3 and CD8) slides of breast, prostate and colon cancer. The compared methods cover the state-of-the-art in object localization, classification and segmentation: Locality Sensitive Method (LSM), U-net, You Only Look Once (YOLO) and fully-convolutional networks (FCNN). A dataset with 109,841 annotated cells from 58 whole-slide images was used for this study. Overall, U-net and YOLO achieved the highest results, with an F1-score of 0.78 in regular tissue areas. U-net approach was more robust to biological and staining variability and could also handle staining and tissue artifacts.</p>
+    <p>Automated detection of cancer metastases in lymph nodes has the potential to improve assessment of prognosis for patients. To enable fair comparison between the algorithms for this purpose, we set up the CAMELYON17 challenge in conjunction with the IEEE International Symposium on Biomedical Imaging 2017 conference in Melbourne. Over 300 participants registered on the challenge website, of which 23 teams submitted a total of 37 algorithms before the initial deadline. Participants were provided with 899 whole-slide images for developing their algorithms.The developed algorithms were evaluated based on the test set encompassing 100 patients and 500 whole-slide images. The evaluation metric used was a quadratic weighted Cohen’s kappa. We discuss the algorithmic details of the ten best preconference and two post-conference submissions. All these participants used convolutional neural networks in combination with pre- and postprocessing steps. Algorithms differed mostly in neural network architecture, training strategy and pre- and postprocessing methodology. Overall, the kappa metric ranged from 0.89 to -0.13 across all submissions. The best results were obtained with pre-trained architectures such as ResNet. Confusion matrix analysis revealed that all participants struggled with reliably identifying isolated tumor cells, the smallest type of metastasis, with detection rates below 40%. Qualitative inspection of the results of the top participants showed categories of false positives, such as nerves or contamination, which could be targets for further optimization. Last, we show that simple combinations of the top algorithms result in higher kappa metric values than any algorithm individually, with 0.93 for the best combination. </p>
 
     </div>
     </main>
@@ -240,7 +241,7 @@
         <div class="row">
             <div class="col-md-11 py-3 footer-content">
                 <p>
-                    <a href="https://github.com/diagnijmegen/website-pathology/edit/master/content/pages/publications/swid18.md">&copy;</a>
+                    <a href="https://github.com/diagnijmegen/website-pathology/edit/master/content/pages/publications/band18.md">&copy;</a>
 
                     Computational Pathology Group 2017-2018. <a href="https://www.computationalpathologygroup.eu/colofon">Colofon</a>.
                 </p>
