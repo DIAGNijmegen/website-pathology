@@ -8,4 +8,4 @@ email: babak@radboudumc.nl
 office: Route 812, room 2.39
 type: phd
 
-Babak Ehteshami Bejnordi succesfully defended his PhD thesis titled ['Histopathological diagnosis of breast cancer using machine learning'](https://www.computationalpathologygroup.eu/members/babak-ehteshami-bejnordi/).
+Babak Ehteshami Bejnordi succesfully defended his PhD thesis titled ['Histopathological diagnosis of breast cancer using machine learning'] (https://www.computationalpathologygroup.eu/members/babak-ehteshami-bejnordi/).
