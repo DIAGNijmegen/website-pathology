@@ -135,13 +135,17 @@
     <title>book-open</title>
     <path d="M22 2h-6c-1.6 0-3.1 0.8-4 2-0.9-1.2-2.4-2-4-2h-6c-0.6 0-1 0.4-1 1v15c0 0.6 0.4 1 1 1h7c1.1 0 2 0.9 2 2 0 0.6 0.4 1 1 1s1-0.4 1-1c0-1.1 0.9-2 2-2h7c0.6 0 1-0.4 1-1v-15c0-0.6-0.4-1-1-1zM11 17.5c-0.6-0.3-1.3-0.5-2-0.5h-6v-13h5c1.7 0 3 1.3 3 3v10.5zM21 17h-6c-0.7 0-1.4 0.2-2 0.5v-10.5c0-1.7 1.3-3 3-3h5v13z"></path>
     </symbol>
+
+    <symbol id="icon-vacancies" viewBox="0 0 24 24">
+    <title>vacancies</title>
+    <path d="M18.984 20.016v-16.031h-1.969v3h-10.031v-3h-1.969v16.031h13.969zM12 2.016c-0.563 0-0.984 0.422-0.984 0.984s0.422 0.984 0.984 0.984 0.984-0.422 0.984-0.984-0.422-0.984-0.984-0.984zM18.984 2.016c1.078 0 2.016 0.891 2.016 1.969v16.031c0 1.078-0.938 1.969-2.016 1.969h-13.969c-1.078 0-2.016-0.891-2.016-1.969v-16.031c0-1.078 0.938-1.969 2.016-1.969h4.172c0.422-1.172 1.5-2.016 2.813-2.016s2.391 0.844 2.813 2.016h4.172z"></path>
+    </symbol>
 </defs>
 </svg><nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <div class="container">
         <div class="navbar-brand">
             <div class="external-links">
-                <a href="https://www.radboudumc.nl">Radboudumc</a> |
-                <a href="http://www.diagnijmegen.nl">Diagnostic Image Analysis Group</a>
+                <a href="https://www.radboudumc.nl">Radboudumc</a> | <a href="http://www.diagnijmegen.nl">Diagnostic Image Analysis Group</a>
             </div>
 
             <a href="https://www.computationalpathologygroup.eu/">
@@ -176,9 +180,9 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.computationalpathologygroup.eu/software" aria-label="Software">
-                        <svg class="nav-icon svg-icon svg-icon-file-code"><use xlink:href="#icon-file-code"></use></svg>
-                        <span class="nav-icon-text">Software</span>
+                    <a class="nav-link" href="https://www.computationalpathologygroup.eu/vacancies" aria-label="Vacancies">
+                        <svg class="nav-icon svg-icon svg-icon-vacancies"><use xlink:href="#icon-vacancies"></use></svg>
+                        <span class="nav-icon-text">Vacancies</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -230,7 +234,7 @@
     <p>
     </p>
     <h2>Abstract</h2>
-    
+    <p>Purpose The recent PI-RADS standard considers T2-weighted (T2W) MR the best imaging modality to characterize central gland (CG) lesions. In this study we assessed whether computer-aided diagnosis using T2 texture and relaxation features can separate benign and malignant CG lesions. Materials and Methods: MR scans of 101 patients were included in this study. The reference standard was MR-guided MR biopsy. Of these patients 36 had benign disease (e.g. benign prostatic hyperplasia) and 65 had prostate cancer. Lesions were annotated on the T2W sequence using a contouring tool. A quantitative T2 relaxation map was computed using an estimator that combines the T2W and proton density images with a turbo-spin-echo signal model and a gain factor. The latter was estimated using an automatically selected muscle reference region. Several texture voxel features were computed on the resulting T2-map: co-occurrenc matrix based homogeneity, neighboring gray-level dependence matrix based texture strength, and multi-scale Gaussian derivative features. For the latter 5 scales between 2 and 12 mm and derivatives up to the second order were calculated. For the matrix based features we calculated several histogram bin sizes (8, 16 and 32) and kernel sizes (4, 8 and 12 mm). The total number of texture features was 42. A linear discriminant classifier with feature selection was trained to compute the cancer likelihood for each voxel in the lesion. A feature selection was performed in a nested cross-validation loop using 10 folds. Cross-validation was performed in a leave-one-patient-out manner. For each annotated region a summary lesion likelihood was computed using the 75th percentile of the voxel likelihoods. The diagnostic accuracy of the lesion cancer likelihood was evaluated using receiver-operating characteristic (ROC) analysis and bootstrapping. Results: An area under the ROC curve of 0.76 (95% bootstrap confidence interval 0.64 Ã¯Â¿Â½ 0.87) was obtained for determining cancer likelihood using texture features, which is similar to radiologist performance reported in the literature when they only have T2W images available, like in this study. Conclusion: A novel method for characterizing lesions in T2-weighted MRI using texture descriptors was developed. The performance is in the range of values reported in the literature for radiologists. Clinical relevance: A CAD system for classification of CG lesions could improve the characterization of these lesions, which might result in better treatment planning.</p>
 
     </div>
     </main>
@@ -240,13 +244,11 @@
         <div class="row">
             <div class="col-md-11 py-3 footer-content">
                 <p>
-                    <a href="https://github.com/diagnijmegen/website-pathology/edit/master/content/pages/publications/litj12c.md">&copy;</a>
+                    <a href="https://github.com/diagnijmegen/website-content/edit/master/website-pathology/content/pages/publications/litj12c.md">&copy;</a>
 
                     Computational Pathology Group 2017-2019. <a href="https://www.computationalpathologygroup.eu/colofon">Colofon</a>.
                 </p>
                 <p>The Computational Pathology Group is part of the Department of Pathology at <a href="https://www.radboudumc.nl">Radboud University Medical Center</a>.</p>
-
-                <p</a>
             </div>
 
             <div class="col-md-1 footer-ribbon">
