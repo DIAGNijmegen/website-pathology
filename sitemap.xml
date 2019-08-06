@@ -67,10 +67,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/plui12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/ciom11/</loc>
     <priority>1.0</priority>
   </url>
@@ -276,10 +272,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/litj15a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/niek09/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -548,10 +540,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/ciom13a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/wal14a/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -828,10 +816,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/members/peter-bandi/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/reij18/</loc>
     <priority>1.0</priority>
   </url>
   <url>
