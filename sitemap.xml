@@ -34,14 +34,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/highlights/camelyon17/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/highlights/radboud_science_award_2018/</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/highlights/mitosis-detection-in-he/</loc>
     <priority>0.8</priority>
   </url>
@@ -50,11 +42,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/highlights/camelyon16-published-in-jama/</loc>
+    <loc>https://www.computationalpathologygroup.eu/highlights/radboud_science_award_2018/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/highlights/camelyon17/</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/highlights/nos-news-article/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/highlights/camelyon16-published-in-jama/</loc>
     <priority>0.8</priority>
   </url>
 
@@ -236,6 +236,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/ciom14c/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/calendar/</loc>
     <priority>1.0</priority>
   </url>
   <url>
