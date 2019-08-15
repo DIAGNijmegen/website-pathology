@@ -167,6 +167,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/bult19b/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/deba16/</loc>
     <priority>1.0</priority>
   </url>
@@ -743,11 +747,19 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/wink19/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/404/</loc>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/members/patrick-sonsma/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/litj10b/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -992,6 +1004,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/balo13/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/litj19/</loc>
     <priority>1.0</priority>
   </url>
   <url>
