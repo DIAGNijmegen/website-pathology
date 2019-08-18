@@ -127,6 +127,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/vacancies/deep-learning-lung-immune-therapy/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/ami/</loc>
     <priority>1.0</priority>
   </url>
@@ -400,10 +404,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/vacancies/deep-learning-for-artifacts/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/vacancies/deep-learning-lung-immune-therapy/</loc>
     <priority>1.0</priority>
   </url>
   <url>
