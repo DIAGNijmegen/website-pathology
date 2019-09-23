@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://www.computationalpathologygroup.eu/publications/litj14a/">
+    <link rel="canonical" href="https://www.computationalpathologygroup.eu/publications/balk19b/">
 
 
-    <title>Distinguishing prostate cancer from benign confounders via a cascaded classifier on multi-parametric MRI - Computational Pathology Group</title>
+    <title>Deep learning assisted mitotic counting for breast cancer - Computational Pathology Group</title>
 
 
     <!-- Search Engine -->
@@ -16,19 +16,19 @@
     <meta name="image" content="">
 
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Distinguishing prostate cancer from benign confounders via a cascaded classifier on multi-parametric MRI - Computational Pathology Group">
+    <meta itemprop="name" content="Deep learning assisted mitotic counting for breast cancer - Computational Pathology Group">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Distinguishing prostate cancer from benign confounders via a cascaded classifier on multi-parametric MRI - Computational Pathology Group">
+    <meta name="twitter:title" content="Deep learning assisted mitotic counting for breast cancer - Computational Pathology Group">
     <meta name="twitter:description" content="">
     <meta name="twitter:creator" content="@diagnijmegen">
     <meta name="twitter:image:src" content="">
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="Distinguishing prostate cancer from benign confounders via a cascaded classifier on multi-parametric MRI - Computational Pathology Group">
+    <meta property="og:title" content="Deep learning assisted mitotic counting for breast cancer - Computational Pathology Group">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:site_name" content="Computational Pathology Group">
@@ -256,22 +256,24 @@
 
 
           <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/publications/">Publications</a></li>
-        <li class="breadcrumb-item">Distinguishing prostate cancer from benign confounders via a cascaded classifier on multi-parametric MRI</li>
+        <li class="breadcrumb-item">Deep learning assisted mitotic counting for breast cancer</li>
       </ol>
     </nav>
 </div>
     <div class="container">
-    <h1 class="page-title">Distinguishing prostate cancer from benign confounders via a cascaded classifier on multi-parametric MRI</h1>
+    <h1 class="page-title">Deep learning assisted mitotic counting for breast cancer</h1>
 
     <p class="lead">
-            G. Litjens,             R. Elliott,             N. Shih,             M. Feldman,             J. Barentsz,             C. Hulsbergen - van de Kaa,             I. Kovacs,             H. Huisman and A. Madabhushi    </p>
+            M.C.A. Balkenhol,             D. Tellez,             W. Vreuls,             P.C. Clahsen,             H. Pinckaers,             F. Ciompi,             P. Bult and J.A.W.M. van der Laak    </p>
 
-    <p>in: <i>Medical Imaging</i>, volume 9035 of SPIE, 2014, pages 903512</p>
+    <p><i>Laboratory Investigation</i> 2019</p>
     <p>
-            <a href="https://doi.org/10.1117/12.2043751" class="btn btn-primary">DOI</a>
+            <a href="https://doi.org/10.1038/s41374-019-0275-0" class="btn btn-primary">DOI</a>
+            <a href="http://www.ncbi.nlm.nih.gov/pubmed/31222166" class="btn btn-primary">PMID</a>
+            <a href="https://www.nature.com/articles/s41374-019-0275-0" class="btn btn-primary">URL</a>
     </p>
     <h2>Abstract</h2>
-    <p>Learning how to separate benign confounders from prostate cancer is important because the imaging characteristics of these confounders are poorly understood. Furthermore, the typical representations of the MRI parameters might not be enough to allow discrimination. The diagnostic uncertainty this causes leads to a lower diagnostic accuracy. In this paper a new cascaded classifier is introduced to separate prostate cancer and benign confounders on MRI in conjunction with specific computer-extracted features to distinguish each of the benign classes (benign prostatic hyperplasia (BPH), inflammation, atrophy or prostatic intra-epithelial neoplasia (PIN). In this study we tried to (1) calculate different mathematical representations of the MRI parameters which more clearly express subtle differences between different classes, (2) learn which of the MRI image features will allow to distinguish specific benign confounders from prostate cancer, and (2) find the combination of computer-extracted MRI features to best discriminate cancer from the confounding classes using a cascaded classifier. One of the most important requirements for identifying MRI signatures for adenocarcinoma, BPH, atrophy, inflammation, and PIN is accurate mapping of the location and spatial extent of the confounder and cancer categories from ex vivo histopathology to MRI. Towards this end we employed an annotated prostatectomy data set of 31 patients, all of whom underwent a multi-parametric 3 Tesla MRI prior to radical prostatectomy. The prostatectomy slides were carefully co-registered to the corresponding MRI slices using an elastic registration technique. We extracted texture features from the T2-weighted imaging, pharmacokinetic features from the dynamic contrast enhanced imaging and diffusion features from the diffusion-weighted imaging for each of the confounder classes and prostate cancer. These features were selected because they form the mainstay of clinical diagnosis. Relevant features for each of the classes were selected using maximum relevance minimum redundancy feature selection, allowing us to perform classifier independent feature selection. The selected features were then incorporated in a cascading classifier, which can focus on easier sub-tasks at each stage, leaving the more difficult classification tasks for later stages. Results show that distinct features are relevant for each of the benign classes, for example the fraction of extra-vascular, extra-cellular space in a voxel is a clear discriminator for inflammation. Furthermore, the cascaded classifier outperforms both multi-class and one-shot classifiers in overall accuracy for discriminating confounders from cancer: 0.76 versus 0.71 and 0.62.</p>
+    <p>As part of routine histological grading, for every invasive breast cancer the mitotic count is assessed by counting mitoses in the (visually selected) region with the highest proliferative activity. Because this procedure is prone to subjectivity, the present study compares visual mitotic counting with deep learning based automated mitotic counting and fully automated hotspot selection. Two cohorts were used in this study. Cohort A comprised 90 prospectively included tumors which were selected based on the mitotic frequency scores given during routine glass slide diagnostics. This pathologist additionally assessed the mitotic count in these tumors in whole slide images (WSI) within a preselected hotspot. A second observer performed the same procedures on this cohort. The preselected hotspot was generated by a convolutional neural network (CNN) trained to detect all mitotic figures in digitized hematoxylin and eosin (H&amp;E) sections. The second cohort comprised a multicenter, retrospective TNBC cohort (n = 298), of which the mitotic count was assessed by three independent observers on glass slides. The same CNN was applied on this cohort and the absolute number of mitotic figures in the hotspot was compared to the averaged mitotic count of the observers. Baseline interobserver agreement for glass slide assessment in cohort A was good (kappa 0.689; 95% CI 0.580-0.799). Using the CNN generated hotspot in WSI, the agreement score increased to 0.814 (95% CI 0.719-0.909). Automated counting by the CNN in comparison with observers counting in the predefined hotspot region yielded an average kappa of 0.724. We conclude that manual mitotic counting is not affected by assessment modality (glass slides, WSI) and that counting mitotic figures in WSI is feasible. Using a predefined hotspot area considerably improves reproducibility. Also, fully automated assessment of mitotic score appears to be feasible without introducing additional bias or variability.</p>
 
 
     </div>
@@ -282,7 +284,7 @@
         <div class="row">
             <div class="col-md-11 py-3 footer-content">
                 <p>
-                    <a href="https://github.com/diagnijmegen/website-content/edit/master/website-pathology/content/pages/publications/litj14a.md">&copy;</a>
+                    <a href="https://github.com/diagnijmegen/website-content/edit/master/website-pathology/content/pages/publications/balk19b.md">&copy;</a>
 
                     Computational Pathology Group 2019. <a href="https://www.computationalpathologygroup.eu/colofon">Colofon</a>.
                 </p>

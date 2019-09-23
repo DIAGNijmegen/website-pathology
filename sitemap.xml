@@ -311,6 +311,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/abel19/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/huis10/</loc>
     <priority>1.0</priority>
   </url>
@@ -408,6 +412,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/litj16c/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/balk19b/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -564,6 +572,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/members/hans-pinckaers/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/hali19/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -963,6 +975,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/tell19a/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/niek11/</loc>
     <priority>1.0</priority>
   </url>
@@ -1095,10 +1111,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/pinc18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/tumorbudding/</loc>
     <priority>1.0</priority>
   </url>
@@ -1140,6 +1152,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/baid18a/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/stur19/</loc>
     <priority>1.0</priority>
   </url>
   <url>
