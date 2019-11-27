@@ -183,6 +183,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/automated-gleason-grading/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/bult19a/</loc>
     <priority>1.0</priority>
   </url>
