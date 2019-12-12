@@ -151,6 +151,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/mull19/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/aquila/</loc>
     <priority>1.0</priority>
   </url>
