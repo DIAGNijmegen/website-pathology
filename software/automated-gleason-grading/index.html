@@ -269,9 +269,19 @@
         <p>The <strong>Gleason score</strong> is the most important prognostic marker for prostate cancer patients but suffers from significant inter-observer variability. We developed a <strong>fully automated system using deep learning</strong> that can grade prostate biopsies following the Gleason Grading System. A description of our method and research can be found in the paper: <a href="https://arxiv.org/abs/1907.07980">Automated deep learning system for Gleason grading of prostate biopsies: a development and validation study</a>. A summary is available in a <a href="https://www.wouterbulten.nl/blog/tech/automated-gleason-grading-deep-learning/">blog post on our study</a>.</p>
 <p>The algorithm we developed is available to try out online, without any requirements on deep learning hardware.</p>
 <figure class="figure my-4">
-<img alt="Example segmentations of the Gleason algorithm." class="figure-img lazyload img-fluid" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
+<img alt="Example segmentations of the Gleason algorithm." class="img-fluid figure-img lazyload" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
 <figcaption class="figure-caption">Three examples showing the output of the Gleason algorithm. The algorithm marks glands in green (benign), yellow (Gleason 3), orange (Gleason 4) or red (Gleason 5).</figcaption>
 </figure>
+<h2>Online examples</h2>
+<p>The two examples below show the raw output of the algorithm, without any post-processing, overlayed on biopsies. Benign tissue is colored green, Gleason 3 in yellow, Gleason 4 in orange and Gleason 5 in red. The original biopsy is shown on the left, the biopsy with overlay on the right. You can zoom in by scrolling, moving around can be done with click&amp;drag.</p>
+<div class="row my-4">
+<div class="col-md-6">
+<div class="img-thumbnail" id="openseadragon1" style="width: 100%; height: 400px;"></div>
+</div>
+<div class="col-md-6">
+<div class="img-thumbnail" id="openseadragon2" style="width: 100%; height: 400px;"></div>
+</div>
+</div>
 <h2>Trying out the algorithm</h2>
 <p>Our trained system can be tried out online through the <a href="https://grand-challenge.org/algorithms/">Grand Challenge Algorithms</a> platform. All processing is performed on the platform; there is no specialized hardware required to try out our algorithm. Running the algorithm requires an account for Grand Challenge. If you don't have an account yet, you can register at the <a href="https://grand-challenge.org/accounts/signin/">website</a>; alternatively, you can log in using a Google account. After registering for a new account, or logging in to an existing Grand Challenge account, you can request access to the algorithm.</p>
 <p>The algorithm can be run with a minimum of one biopsy, supplied in a multiresolution tiff file. We assume that the following magnification levels are available in the slide (measured in μm pixel spacing): 0.5, 1.0, and 2.0 (with a small tolerance).</p>
@@ -288,7 +298,7 @@
 <p>Each job roughly completes within an hour, depending on the size and number of biopsies, and the processing capacity. Jobs are processed on a first-come, first-served basis. The actual Gleason grading system itself can grade a biopsy within a few minutes, the remainder of the time is spent on the normalization task. For real world scenarios, this preprocessing step is not needed or can be pre-trained to speed up the process.</p>
 <p>The training time of the normalization algorithm is independent of the number of biopsies. It is, therefore, more efficient to submit several biopsies at once, than to submit multiple jobs with a single biopsy.</p>
 <figure class="figure my-4">
-<img alt="Overview of the pipeline." class="figure-img lazyload rounded img-fluid" data-src="/images/software/gleason_algorithm_overview.png"/>
+<img alt="Overview of the pipeline." class="rounded img-fluid figure-img lazyload" data-src="/images/software/gleason_algorithm_overview.png"/>
 <figcaption class="figure-caption">Overview of the Gleason grading pipeline, including the normalization step.</figcaption>
 </figure>
 <p><a name="terms"></a></p>
@@ -309,6 +319,20 @@
 <li>This algorithm is part of the <a href="/projects/deeppca">Deep PCA</a> research project.</li>
 </ul>
 <p>Further questions regarding the Gleason grading system can be addressed to <a href="/members/wouter-bulten/">Wouter Bulten</a>.</p>
+<script type="text/javascript">
+function loadDzi() {
+  var viewer = OpenSeadragon({
+    id: "openseadragon1",
+    prefixUrl: "/dzi/images/",
+    tileSources: "/dzi/gleason_example_1_512.dzi"
+  });
+  var viewer2 = OpenSeadragon({
+    id: "openseadragon2",
+    prefixUrl: "/dzi/images/",
+    tileSources: "/dzi/gleason_example_2_1024.dzi"
+  });
+}
+</script>
     </div>
 
     <h2>People</h2>
@@ -464,5 +488,6 @@
         </div>
     </div>
 </footer>
+    <script type="text/javascript" src="/dzi/openseadragon.min.js" async onload="window.loadDzi();"></script>
 </body>
 </html>
