@@ -276,7 +276,7 @@
 <li><a href="#info">More information</a></li>
 </ol>
 <figure class="figure my-4">
-<img alt="Example segmentations of the Gleason algorithm." class="figure-img lazyload img-fluid" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
+<img alt="Example segmentations of the Gleason algorithm." class="img-fluid figure-img lazyload" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
 <figcaption class="figure-caption">Three examples showing the output of the Gleason algorithm. The algorithm marks glands in green (benign), yellow (Gleason 3), orange (Gleason 4) or red (Gleason 5).</figcaption>
 </figure>
 <p><a name="examples"></a></p>
@@ -308,14 +308,14 @@
 <p>Each job roughly completes within an hour, depending on the size and number of biopsies, and the processing capacity. Jobs are processed on a first-come, first-served basis. The actual Gleason grading system itself can grade a biopsy within a few minutes, the remainder of the time is spent on the normalization task. For real world scenarios, this preprocessing step is not needed or can be pre-trained to speed up the process.</p>
 <p>The training time of the normalization algorithm is independent of the number of biopsies. It is, therefore, more efficient to submit several biopsies at once, than to submit multiple jobs with a single biopsy.</p>
 <figure class="figure my-4">
-<img alt="Overview of the pipeline." class="figure-img rounded lazyload img-fluid" data-src="/images/software/gleason_algorithm_overview.png"/>
+<img alt="Overview of the pipeline." class="img-fluid figure-img rounded lazyload" data-src="/images/software/gleason_algorithm_overview.png"/>
 <figcaption class="figure-caption">Overview of the Gleason grading pipeline, including the normalization step.</figcaption>
 </figure>
 <p><a name="terms"></a></p>
 <h2>Terms &amp; Conditions</h2>
 <p>When submitting data to the algorithm, please take the following into account:</p>
 <ol>
-<li>The use of the algorithm is for meant for research purposes only. The algorithm was trained on data from a single center, and can give the wrong diagnosis on external data. We give no assurance on the correctness of the system's output.</li>
+<li>The use of the algorithm is meant for research purposes only. The algorithm was trained on data from a single center, and can give the wrong diagnosis on external data. We give no assurance on the correctness of the system's output.</li>
 <li>A custom normalization algorithm is trained on the input data, though this cannot overcome all stain and scanner differences. We limit the overall processing time of each job by setting an upper bound on the number of epochs the normalization algorithm is trained. Due to the limited processing time, in some cases the normalization technique can fail.</li>
 <li>We currently only support multiresolution .tif files as input.</li>
 <li>All input images should contain magnification levels that correspond to a 0.5, 1.0, and 2.0μm pixel spacing (± 0.05). The algorithm will stop if any of the input images miss one or more of these levels.</li>
