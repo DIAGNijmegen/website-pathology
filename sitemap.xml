@@ -447,10 +447,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/presentations/asn-kidney-segmentation/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/deeppca/</loc>
     <priority>1.0</priority>
   </url>
