@@ -276,7 +276,7 @@
 <li><a href="#info">More information</a></li>
 </ol>
 <figure class="figure my-4">
-<img alt="Example segmentations of the Gleason algorithm." class="img-fluid figure-img lazyload" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
+<img alt="Example segmentations of the Gleason algorithm." class="lazyload figure-img img-fluid" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
 <figcaption class="figure-caption">Three examples showing the output of the Gleason algorithm. The algorithm marks glands in green (benign), yellow (Gleason 3), orange (Gleason 4) or red (Gleason 5).</figcaption>
 </figure>
 <p><a name="examples"></a></p>
@@ -293,7 +293,7 @@
 <p><a name="try-out"></a></p>
 <h2>Trying out the algorithm</h2>
 <p>Our trained system can be tried out online through the <a href="https://grand-challenge.org/algorithms/">Grand Challenge Algorithms</a> platform. All processing is performed on the platform; there is no specialized hardware required to try out our algorithm. Running the algorithm requires an account for Grand Challenge. If you don't have an account yet, you can register at the <a href="https://grand-challenge.org/accounts/signin/">website</a>; alternatively, you can log in using a Google account. After registering for a new account, or logging in to an existing Grand Challenge account, you can request access to the algorithm.</p>
-<p>The algorithm can be run with a minimum of one biopsy, supplied in a multiresolution tiff file. We assume that the following magnification levels are available in the slide (measured in μm pixel spacing): 0.5, 1.0, and 2.0 (with a small tolerance).</p>
+<p>The algorithm can be run with a minimum of one biopsy, supplied in a multiresolution tiff file. For more details on how to generate such a file, see <a href="#info">below</a>. We assume that the following magnification levels are available in the slide (measured in μm pixel spacing): 0.5, 1.0, and 2.0 (with a small tolerance). Note that the algorithm will provide two outputs, the first is the normalized version of the uploaded image, the second is the output of the Gleason grading system. To visualize the output of the Gleason grading system, press the second 'View input &amp; output' button. You can download the processed results as well.</p>
 <p><a class="btn btn-primary btn-lg my-3" href="https://grand-challenge.org/algorithms/gleason-grading-of-prostate-biopsies/">Try out the algorithm</a></p>
 <p><small class="text-muted">Before submitting, please take our <a href="#terms">Terms &amp; Conditions</a> in to account.</small></p>
 <p><a name="pipeline"></a></p>
@@ -308,7 +308,7 @@
 <p>Each job roughly completes within an hour, depending on the size and number of biopsies, and the processing capacity. Jobs are processed on a first-come, first-served basis. The actual Gleason grading system itself can grade a biopsy within a few minutes, the remainder of the time is spent on the normalization task. For real world scenarios, this preprocessing step is not needed or can be pre-trained to speed up the process.</p>
 <p>The training time of the normalization algorithm is independent of the number of biopsies. It is, therefore, more efficient to submit several biopsies at once, than to submit multiple jobs with a single biopsy.</p>
 <figure class="figure my-4">
-<img alt="Overview of the pipeline." class="img-fluid figure-img rounded lazyload" data-src="/images/software/gleason_algorithm_overview.png"/>
+<img alt="Overview of the pipeline." class="lazyload figure-img img-fluid rounded" data-src="/images/software/gleason_algorithm_overview.png"/>
 <figcaption class="figure-caption">Overview of the Gleason grading pipeline, including the normalization step.</figcaption>
 </figure>
 <p><a name="terms"></a></p>
@@ -328,6 +328,7 @@
 <li>A summary of the research can be found in our <a href="https://www.wouterbulten.nl/blog/tech/automated-gleason-grading-deep-learning/">blog post</a>.</li>
 <li>The full paper can be read at <em>journal link follows</em>, a preprint is available on <a href="https://arxiv.org/abs/1907.07980/">arXiv</a>.</li>
 <li>This algorithm is part of the <a href="/projects/deeppca">Deep PCA</a> research project.</li>
+<li>To generate a multi-resolution TIF file from proprietary WSI scanner formats, we recommend using the multiresolutionimageconverter command line tool which is provided with the <a href="https://computationalpathologygroup.github.io/ASAP/">ASAP</a> package.</li>
 </ul>
 <p>Further questions regarding the Gleason grading system can be addressed to <a href="/members/wouter-bulten/">Wouter Bulten</a>.</p>
 <script type="text/javascript">
