@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>Atherosclerosis is a vascular pathology affecting the arterial walls, generally located in specific vessel sites, such as bifurcations. In this paper, for the first time, a fully automatic approach for the detection of bifurcations in IVUS pullback sequences is presented. The method identifies the frames and the angular sectors in which a bifurcation is visible. This goal is achieved by applying a classifier to a set of textural features extracted from each image of an IVUS pullback. A comparison between two state-of-the-art classifiers is performed, AdaBoost and Random Forest. A cross-validation scheme is applied in order to evaluate the performances of the approaches. The obtained results are encouraging, showing a sensitivity of 75% and an accuracy of 94% by using the AdaBoost algorithm.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=albe11&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>The assessment of arterial luminal area, performed by IVUS analysis, is a clinical index used to evaluate the degree of coronary artery disease. In this paper we propose a novel approach to automatically segment the vessel lumen, which combines model-based temporal information extracted from successive frames of the sequence, with spatial classification using the Growcut algorithm. The performance of the method is evaluated by an in vivo experiment on 300 IVUS frames. The automatic and manual segmentation performances in general vessel and stent frames are comparable. The average segmentation error in vessel, stent and bifurcation frames are 0.17 Ã‚Â± 0.08 mm, 0.18 Ã‚Â± 0.07 mm and 0.31 Ã‚Â± 0.12 mm respectively.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=balo11&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

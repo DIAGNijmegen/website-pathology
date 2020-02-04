@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>A correct modelling of tissue morphology is determinant for the identification of vulnerable plaques. This paper aims at describing the plaque composition by means of a Rayleigh Mixture Model applied to ultrasonic data. The effectiveness of using a mixture of distributions is established through synthetic and real ultrasonic data samples. Furthermore, the proposed mixture model is used in a plaque classification problem in Intravascular Ultrasound (IVUS) images of coronary plaques. A classifier tested on a set of 67 in-vitro plaques, yields an overall accuracy of 86% and sensitivity of 92%, 94% and 82%, for fibrotic, calcified and lipidic tissues, respectively. These results strongly suggest that different plaques types can be distinguished by means of the coefficients and Rayleigh parameters of the mixture distribution.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=seab10&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

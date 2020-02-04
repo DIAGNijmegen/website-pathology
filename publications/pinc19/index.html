@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>Prostate cancer is the most common cancer for men in Western countries, counting 1.1 million new diagnoses every year. The incidence is expected to increase further, due to the growing elderly population. This is leading to a significantly increased workload for pathologists. The burden of this time-consuming and repetitive workload has the potential to be decreased by computational pathology, e.g., by automatically screening prostate biopsies. The current state-of-the-art in many computational pathology tasks use patch-based convolutional neural networks. Developing such algorithms require detailed annotations of the task-specific classes on whole-slide images, which are challenging to create due to low availability of the pathologists. Therefore, it would be beneficial to be able to train using labels the pathologist already provides for regular clinical practice in the form of a report. However, these reports correspond to whole-slide images which are of such a high resolution that current accelerator cards cannot process them at once due to memory constraints. We developed a method, streaming stochastic gradient descent, to train a convolutional neural network end-to-end with entire high resolution images and slide-level labels extracted from pathology reports. Here we trained a neural network on 2812 whole prostate biopsies, at a input size of 8000x8000 pixels, equivalent to 50x total magnification, for a binary classification, cancerous or benign. We achieved an accuracy of 84%. These results show that we may not need expensive annotations to train classification networks in this domain.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=pinc19&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

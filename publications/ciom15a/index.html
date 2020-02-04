@@ -276,6 +276,27 @@
     <h2>Abstract</h2>
     <p>In this paper, we tackle the problem of automatic classification of pulmonary peri-fissural nodules (PFNs). The classification problem is formulated as a machine learning approach, where detected nodule candidates are classified as PFNs or non-PFNs. Supervised learning is used, where a classifier is trained to label the detected nodule. The classification of the nodule in 3D is formulated as an ensemble of classifiers trained to recognize PFNs based on 2D views of the nodule. In order to describe nodule morphology in 2D views, we use the output of a pre-trained convolutional neural network known as OverFeat. We compare our approach with a recently presented descriptor of pulmonary nodule morphology, namely Bag of Frequencies, and illustrate the advantages offered by the two strategies, achieving performance of AUC = 0.868, which is close to the one of human experts.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=ciom15a&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

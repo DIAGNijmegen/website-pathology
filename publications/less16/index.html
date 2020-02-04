@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>The amount of calcifications in the coronary arteries is a powerful and independent predictor of cardiovascular events and is used to identify subjects at high risk who might benefit from preventive treatment. Routine quantification of coronary calcium scores can complement screening programs using low-dose chest CT, such as lung cancer screening. We present a system for automatic coronary calcium scoring based on deep convolutional neural networks (CNNs).  The system uses three independently trained CNNs to estimate a bounding box around the heart. In this region of interest, connected components above 130 HU are considered candidates for coronary artery calcifications. To separate them from other high intensity lesions, classification of all extracted voxels is performed by feeding two-dimensional 50 mm x 50 mm patches from three orthogonal planes into three concurrent CNNs. The networks consist of three convolutional layers and one fully-connected layer with 256 neurons.  In the experiments, 1028 non-contrast-enhanced and non-ECG-triggered low-dose chest CT scans were used. The network was trained on 797 scans. In the remaining 231 test scans, the method detected on average 194.3 mm3 of 199.8 mm3 coronary calcifications per scan (sensitivity 97.2%) with an average false-positive volume of 10.3 mm3. Subjects were assigned to one of five standard cardiovascular risk categories based on the Agatston score. Accuracy of risk category assignment was 84.4% with a linearly weighted kappa of 0.89.  The proposed system can perform automatic coronary artery calcium scoring to identify subjects undergoing low-dose chest CT screening who are at risk of cardiovascular events with high accuracy.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=less16&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

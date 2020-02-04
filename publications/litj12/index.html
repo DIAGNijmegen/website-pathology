@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>MRI has shown to have great potential in prostate cancer localization and grading, but interpreting those exams requires expertise that is not widely available. Therefore, CAD applications are being developed to aid radiologists in detecting prostate cancer. Existing CAD applications focus on the prostate as a whole. However, in clinical practice transition zone cancer and peripheral zone cancer are considered to have different appearances. In this paper we present zone-specific CAD, in addition to an atlas based segmentation technique which includes zonal segmentation. Our CAD system consists of a detection and a classification stage. Prior to the detection stage the prostate is segmented into two zones. After segmentation features are extracted. Subsequently a likelihood map is generated on which local maxima detection is performed. For each local maximum a region is segmented. In the classification stage additional shape features are calculated, after which the regions are classified. Validation was performed on 288 data sets with MR-guided biopsy results as ground truth. Free-response Receiver Operating Characteristic (FROC) analysis was used for statistical evaluation. The difference between whole-prostate and zone-specific CAD was assessed using the difference between the FROCs. Our results show that evaluating the two zones separately results in an increase in performance compared to whole-prostate CAD. The FROC curves at .1, 1 and 3 false positives have a sensitivity of 0.0, 0.55 and 0.72 for whole-prostate and 0.08, 0.57 and 0.80 for zone-specific CAD. The FROC curve of the zone-specific CAD also showed significantly better performance overall (p &lt; 0.05).</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=litj12&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

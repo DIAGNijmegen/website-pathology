@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>This paper presents a new algorithm for automatic detection of regions of interest in whole slide histopathological images. The proposed algorithm generates and classifies superpixels at multiple resolutions to detect regions of interest. The algorithm emulates the way the pathologist examines the whole slide histopathology image by processing the image at low magnifications and performing more sophisticated analysis only on areas requiring more detailed information. However, instead of the traditional usage of fixed sized rectangular patches for the identification of relevant areas, we use superpixels as the visual primitives to detect regions of interest. Rectangular patches can span multiple distinct structures, thus degrade the classification performance. The proposed multi-scale superpixel classification approach yields superior performance for the identification of the regions of interest. For the evaluation, a set of 10 whole slide histopathology images of breast tissue were used. Empirical evaluation of the performance of our proposed algorithm relative to expert manual annotations shows that the algorithm achieves an area under the Receiver operating characteristic (ROC) curve of 0.958, demonstrating its efficacy for the detection of regions of interest.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=bejn15&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

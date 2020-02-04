@@ -275,6 +275,27 @@
     <h2>Abstract</h2>
     <p>BACKGROUND Accurate assessment of hepatic steatosis is a key to grade disease severity in non-alcoholic fatty liver disease (NAFLD). METHODS: We developed a digital automated quantification of steatosis on whole-slide images (WSIs) of liver tissue and performed a validation study. Hematoxylin-eosin stained liver tissue slides were digitally scanned, and steatotic areas were manually annotated. We identified thresholds for size and roundness parameters by logistic regression to discriminate steatosis from surrounding liver tissue. The resulting algorithm produces a steatosis proportionate area (SPA; ratio of steatotic area to total tissue area described as percentage). The software can be implemented as a Java plug-in in FIJI, in which digital WSI can be processed automatically using the Pathomation extension. RESULTS: We obtained liver tissue specimens from 61 NAFLD patients and 18 controls. The area under the curve of correctly classified steatosis by the algorithm was 0.970 (95% CI 0.968-0.973), P &lt; 0.001. Accuracy of the algorithm was 91.9%, with a classification error of 8.1%. SPA correlated significantly with steatosis grade (Rs = 0.845, CI: 0.749-0.902, P &lt; 0.001) and increased significantly with each individual steatosis grade, except between Grade 2 and 3. CONCLUSIONS: We have developed a novel digital analysis algorithm that accurately quantifies steatosis on WSIs of liver tissue. This algorithm can be incorporated when quantification of steatosis is warranted, such as in clinical trials studying efficacy of new therapeutic interventions in NAFLD.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=muns19a&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

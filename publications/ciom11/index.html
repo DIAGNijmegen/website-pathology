@@ -274,6 +274,27 @@
     <h2>Abstract</h2>
     <p>In this paper we present a methodology for the automatic detection of media-adventitia border (MAb) in Intravascular Ultrasound. A robust computation of the MAb is achieved through a holistic approach where the position of the MAb with respect to other tissues of the vessel is used. A learned quality measure assures that the resulting MAb is optimal with respect to all other tissues. The mean distance error computed through a set of 140 images is 0.2164 (Ã‚Â±0.1326) mm.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=ciom11&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

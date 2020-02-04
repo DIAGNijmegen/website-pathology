@@ -276,6 +276,27 @@
     <h2>Abstract</h2>
     <p>Diagnosis of breast carcinomas has so far been limited to the morphological interpretation of epithelial cells and the assessment of epithelial tissue architecture. Consequently, most of the automated systems have focused on characterizing the epithelial regions of the breast to detect cancer. In this paper, we propose a system for classification of hematoxylin and eosin (H\&amp;E) stained breast specimens based on convolutional neural networks that primarily targets the assessment of tumorassociated stroma to diagnose breast cancer patients. We evaluate the performance of our proposed system using a large cohort containing 646 breast tissue biopsies. Our evaluations show that the proposed system achieves an area under ROC of 0.92, demonstrating the discriminative power of previously neglected tumor associated stroma as a diagnostic biomarker.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=bejn17&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

@@ -275,6 +275,27 @@
     <h2>Abstract</h2>
     <p>A method is proposed to simulate nodules and diffuse infiltrates in chest radiographs. This allows creation of large annotated databases for training of both radiologists and computer aided diagnosis systems. Realistic nodules and diffuse infiltrates were generated from three-dimensional templates segmented from CT data. These templates are rescaled, rotated, projected and superimposed on a radiograph. This method was compared, in an observer study, to a previously published method that simulates pulmonary nodules as perfectly spherical objects. Results show that it is hard for human observers to distinguish real and simulated nodules when using templates (AUC-values do not significantly differ from .5, p &gt; .05 for all observers). The method that produced spherical nodules performed slightly worse (AUC of one observer differs significantly from .5, p = .011). Simulation of diffuse infiltrates is challenging but also feasible (AUC = 0.67 for one observer).</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=litj10a&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>

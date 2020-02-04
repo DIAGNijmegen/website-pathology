@@ -275,6 +275,27 @@
     <h2>Abstract</h2>
     <p>We present a novel descriptor for the characterization of pulmonary nodules in computed tomography (CT) images. The descriptor encodes information on nodule morphology and has scale-invariant and rotation-invariant properties. Information on nodule morphology is captured by sampling intensity profiles along circular patterns on spherical surfaces centered on the nodule, in a multi-scale fashion. Each intensity profile is interpreted as a periodic signal, where the Fourier transform is applied, obtaining a spectrum. A library of spectra is created and labeled via unsupervised clustering, obtaining a Bag-of- Frequencies, which is used to assign each spectra a label. The descriptor is obtained as the histogram of labels along all the spheres. Additional contributions are a technique to estimate the nodule size, based on the sampling strategy, as well as a technique to choose the most informative plane to cut a 2-D view of the nodule in the 3-D image. We evaluate the descriptor on several nodule morphology classification problems, namely discrimination of nodules versus vascular structures and characterization of spiculation. We validate the descriptor on data from European screening trials NELSON and DLCST and we compare it with state-of-the-art approaches for 3-D shape description in medical imaging and computer vision, namely SPHARM and 3-D SIFT, outperforming them in all the considered experiments.</p>
 
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=ciom14c&ref=Computational Pathology Group"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
 
     </div>
     </main>
