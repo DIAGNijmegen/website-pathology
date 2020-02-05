@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://www.computationalpathologygroup.eu/publications/geij18/">
+
+
+
+    <title>Automatic color unmixing of IHC stained whole slide images - Computational Pathology Group</title>
+
+
+    <!-- Search Engine -->
+    <meta name="description" content="">
+    <meta name="image" content="">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Automatic color unmixing of IHC stained whole slide images - Computational Pathology Group">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Automatic color unmixing of IHC stained whole slide images - Computational Pathology Group">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@diagnijmegen">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="Automatic color unmixing of IHC stained whole slide images - Computational Pathology Group">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Computational Pathology Group">
+    <meta property="og:type" content="website">
+
+    <style>
+            /* above the fold for publication */
+:root{--blue: #007bff;--indigo: #6610f2;--purple: #6f42c1;--pink: #e83e8c;--red: #dc3545;--orange: #fd7e14;--yellow: #ffc107;--green: #28a745;--teal: #20c997;--cyan: #17a2b8;--white: #fff;--gray: #6c757d;--gray-dark: #343a40;--primary: #00afdc;--secondary: #6c757d;--success: #28a745;--info: #17a2b8;--warning: #ffc107;--danger: #dc3545;--light: #f8f9fa;--dark: #343a40;--breakpoint-xs: 0;--breakpoint-sm: 576px;--breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}footer,main,nav{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#4F4F4F;text-align:left;background-color:#FCFCFC}h1,h2,h3{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ol,ul{margin-top:0;margin-bottom:1rem}a{color:#00afdc;text-decoration:none;background-color:transparent}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}label{display:inline-block;margin-bottom:.5rem}input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}input{overflow:visible}[type="submit"]{-webkit-appearance:button}[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="checkbox"]{box-sizing:border-box;padding:0}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2,h3{margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}.lead{font-size:1.25rem;font-weight:300}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-md-1,.col-md-11{position:relative;width:100%;padding-right:15px;padding-left:15px}@media (min-width:768px){.col-md-1{flex:0 0 8.33333%;max-width:8.33333%}.col-md-11{flex:0 0 91.66667%;max-width:91.66667%}}.btn{display:inline-block;font-weight:400;color:#4F4F4F;text-align:center;vertical-align:middle;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.btn-primary{color:#fff;background-color:#00afdc;border-color:#00afdc}.collapse:not(.show){display:none}.nav-link{display:block;padding:.5rem 1rem}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.5rem 1rem}.navbar>.container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%}@media (max-width:767.98px){.navbar-expand-md>.container{padding-right:0;padding-left:0}}@media (min-width:768px){.navbar-expand-md{flex-flow:row nowrap;justify-content:flex-start}.navbar-expand-md .navbar-nav{flex-direction:row}.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-md>.container{flex-wrap:nowrap}.navbar-expand-md .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-md .navbar-toggler{display:none}}.navbar-light .navbar-brand{color:rgba(0,0,0,0.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,0.5)}.navbar-light .navbar-toggler{color:rgba(0,0,0,0.5);border-color:rgba(0,0,0,0.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.breadcrumb{display:flex;flex-wrap:wrap;padding:.75rem 1rem;margin-bottom:1rem;list-style:none;background-color:#e9ecef;border-radius:.25rem}.breadcrumb-item+.breadcrumb-item{padding-left:.5rem}.breadcrumb-item+.breadcrumb-item::before{display:inline-block;padding-right:.5rem;color:#6c757d;content:"/"}.alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:.25rem}.alert-info{color:#0c5460;background-color:#d1ecf1;border-color:#bee5eb}.bg-white{background-color:#fff!important}.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}.mt-5{margin-top:3rem!important}.py-3{padding-top:1rem!important}.py-3{padding-bottom:1rem!important}.ml-auto{margin-left:auto!important}html{position:relative;min-height:100%}body{min-height:100%;min-height:100vh;display:flex;flex-flow:column}main{padding-top:40px;padding-bottom:60px;flex:1 1 auto}@media (min-width:768px){main{padding-top:80px}}main>.container{padding-top:30px}.footer{width:100%;background-color:#f8f9fa;border-top:1px solid #e9ecef}.footer .footer-ribbon{text-align:center;margin-top:-1px;padding:1em 1em 1.5em 1em;background-color:#00afdc;color:#fff}.footer .footer-ribbon img{max-width:100px;width:100%;height:auto}#navbar-toggle-cbox{display:none}.navbar.navbar-expand-md{border-bottom:1px solid #00afdc}.navbar.navbar-expand-md .navbar-brand{color:#00afdc}.navbar.navbar-expand-md .navbar-brand .external-links{display:none;color:#6c757d;font-size:0.65em}.navbar.navbar-expand-md .navbar-brand .external-links a{color:#6c757d}@media (min-width:768px){.navbar.navbar-expand-md .navbar-brand .external-links{display:block}}.navbar.navbar-expand-md .navbar-brand .name-full{font-size:1.15em}.navbar.navbar-expand-md .name-full{display:none}@media (min-width:768px){.navbar.navbar-expand-md .name-short{display:none}.navbar.navbar-expand-md .name-full{display:inline}}.navbar.navbar-expand-md .navbar-nav{overflow-x:hidden}.navbar.navbar-expand-md .nav-link{color:#4F4F4F;overflow:hidden}@media (min-width:768px){.navbar.navbar-expand-md .nav-link{padding-left:0.7rem;padding-right:0.7rem}}.navbar.navbar-expand-md .nav-icon-text{display:inline-block;overflow-x:hidden;float:right;text-align:right;white-space:nowrap}@media (min-width:768px) and (max-width:1199.98px){.navbar.navbar-expand-md .nav-icon-text{width:0}}@media (min-width:768px){.navbar.navbar-expand-md .nav-icon-text.nav-icon-text-hidden{width:0}}@media (max-width:767.98px){.navbar.navbar-expand-md .nav-icon-text{float:left}}.navbar.navbar-expand-md .nav-icon{color:#4F4F4F;font-size:1.3em;display:inline-block;margin:2px 0 0 5px;float:right}@media (max-width:767.98px){.navbar.navbar-expand-md .nav-icon{float:left;margin-right:10px}}.navbar.navbar-expand-md .nav-icon.svg-icon-file-text-o{font-size:1.2em}body{text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased}h1,h2,h3{color:#00afdc}h1,h2,h3{font-weight:300}.page-title{font-size:3rem;font-weight:300;margin-bottom:1em}.svg-icon{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor}.svg-icon-folder{width:0.9287109375em}.svg-icon-file-text-o{width:0.857421875em}    </style>
+
+    <!-- Async load css -->
+    <link href="https://www.computationalpathologygroup.eu/theme/css/theme.min.css?v=14" as="style" rel="preload" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://www.computationalpathologygroup.eu/theme/css/theme.min.css?v=14" rel="stylesheet"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+
+    <!-- lazyloader for images -->
+    <script src="https://www.computationalpathologygroup.eu/theme/js/lazysizes.min.js" async=""></script>
+    <!-- Add support for lazy loading backround images -->
+    <script>
+    document.addEventListener('lazybeforeunveil', function(e){
+    var bg = e.target.getAttribute('data-bg');
+        if(bg){
+            e.target.style.backgroundImage = 'url(' + bg + ')';
+        }
+    });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106053666-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106053666-2');
+    </script>
+</head>
+
+<body>
+
+<svg style="display: none">
+  <defs>
+    <symbol id="icon-envelope-o" viewBox="0 0 28 28">
+    <title>envelope-o</title>
+    <path d="M26 23.5v-12c-0.328 0.375-0.688 0.719-1.078 1.031-2.234 1.719-4.484 3.469-6.656 5.281-1.172 0.984-2.625 2.188-4.25 2.188h-0.031c-1.625 0-3.078-1.203-4.25-2.188-2.172-1.813-4.422-3.563-6.656-5.281-0.391-0.313-0.75-0.656-1.078-1.031v12c0 0.266 0.234 0.5 0.5 0.5h23c0.266 0 0.5-0.234 0.5-0.5zM26 7.078c0-0.391 0.094-1.078-0.5-1.078h-23c-0.266 0-0.5 0.234-0.5 0.5 0 1.781 0.891 3.328 2.297 4.438 2.094 1.641 4.188 3.297 6.266 4.953 0.828 0.672 2.328 2.109 3.422 2.109h0.031c1.094 0 2.594-1.437 3.422-2.109 2.078-1.656 4.172-3.313 6.266-4.953 1.016-0.797 2.297-2.531 2.297-3.859zM28 6.5v17c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-17c0-1.375 1.125-2.5 2.5-2.5h23c1.375 0 2.5 1.125 2.5 2.5z"></path>
+    </symbol>
+
+    <symbol id="icon-github" viewBox="0 0 24 28">
+    <title>github</title>
+    <path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+    </symbol>
+
+    <symbol id="icon-linkedin" viewBox="0 0 24 28">
+    <title>linkedin</title>
+    <path d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z"></path>
+    </symbol>
+
+    <symbol id="icon-list-ol" viewBox="0 0 28 28">
+    <title>list-ol</title>
+    <path d="M5.953 25.312c0 1.719-1.344 2.688-2.969 2.688-0.984 0-1.984-0.328-2.688-1.031l0.891-1.375c0.422 0.391 1.062 0.703 1.656 0.703 0.547 0 1.125-0.266 1.125-0.891 0-0.875-1-0.922-1.641-0.875l-0.406-0.875c0.562-0.719 1.078-1.516 1.75-2.125v-0.016c-0.5 0-1.016 0.031-1.516 0.031v0.828h-1.656v-2.375h5.203v1.375l-1.484 1.797c1.047 0.25 1.734 1.062 1.734 2.141zM5.984 15.516v2.484h-5.656c-0.047-0.281-0.094-0.562-0.094-0.844 0-2.891 3.531-3.328 3.531-4.641 0-0.531-0.328-0.812-0.844-0.812-0.547 0-1 0.469-1.266 0.906l-1.328-0.922c0.516-1.078 1.578-1.687 2.766-1.687 1.453 0 2.703 0.859 2.703 2.406 0 2.312-3.391 2.828-3.437 4.047h1.984v-0.938h1.641zM28 20.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.281 0-0.5-0.234-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19c0.266 0 0.5 0.219 0.5 0.5zM6 6.453v1.547h-5.234v-1.547h1.672c0-1.266 0.016-2.531 0.016-3.797v-0.187h-0.031c-0.172 0.344-0.484 0.578-0.781 0.844l-1.109-1.188 2.125-1.984h1.656v6.312h1.687zM28 12.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.281 0-0.5-0.234-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19c0.266 0 0.5 0.219 0.5 0.5zM28 4.5v3c0 0.266-0.234 0.5-0.5 0.5h-19c-0.281 0-0.5-0.234-0.5-0.5v-3c0-0.266 0.219-0.5 0.5-0.5h19c0.266 0 0.5 0.234 0.5 0.5z"></path>
+    </symbol>
+
+    <symbol id="icon-users" viewBox="0 0 24 24">
+    <title>users</title>
+    <path d="M13 14h-8c-2.8 0-5 2.2-5 5v2c0 0.6 0.4 1 1 1s1-0.4 1-1v-2c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v2c0 0.6 0.4 1 1 1s1-0.4 1-1v-2c0-2.8-2.2-5-5-5z"></path>
+    <path d="M9 12c2.8 0 5-2.2 5-5s-2.2-5-5-5-5 2.2-5 5 2.2 5 5 5zM9 4c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3z"></path>
+    <path d="M20.2 14.2c-0.5-0.1-1.1 0.2-1.2 0.7s0.2 1.1 0.7 1.2c1.3 0.3 2.2 1.5 2.2 2.9v2c0 0.6 0.4 1 1 1s1-0.4 1-1v-2c0.1-2.3-1.4-4.3-3.7-4.8z"></path>
+    <path d="M16.2 2.2c-0.5-0.2-1 0.1-1.2 0.7-0.1 0.5 0.2 1.1 0.7 1.2 1.6 0.4 2.6 2 2.2 3.7-0.3 1.1-1.1 1.9-2.2 2.2-0.5 0.1-0.9 0.7-0.7 1.2 0.1 0.5 0.5 0.8 1 0.8 0.1 0 0.2 0 0.2 0 1.8-0.5 3.2-1.8 3.6-3.6 0.7-2.8-0.9-5.6-3.6-6.2z"></path>
+    </symbol>
+
+    <symbol id="icon-presentations" viewBox="0 0 24 24">
+    <title>presentations</title>
+    <path d="M15.984 11.016l-6.984 3.984v-8.016zM21 17.016v-12h-18v12h18zM21 3c1.078 0 2.016 0.891 2.016 2.016l-0.047 12c0 1.078-0.891 1.969-1.969 1.969h-5.016v2.016h-7.969v-2.016h-5.016c-1.125 0-2.016-0.891-2.016-1.969v-12c0-1.125 0.891-2.016 2.016-2.016h18z"></path>
+    </symbol>
+
+    <symbol id="icon-publications" viewBox="0 0 32 32">
+    <title>publications</title>
+    <path d="M29 0h-22c-1.657 0-3 1.342-3 3v2h-1c-1.657 0-3 1.342-3 3v20c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-25c0-1.658-1.344-3-3-3zM30 28c0 1.102-0.898 2-2 2h-24c-1.103 0-2-0.898-2-2v-20c0-0.552 0.448-1 1-1h1v20c0 0.553 0.447 1 1 1s1-0.447 1-1v-24c0-0.552 0.448-1 1-1h22c0.551 0 1 0.448 1 1v25zM19.498 13.005c-0.275 0-0.5-0.224-0.5-0.5s0.225-0.5 0.5-0.5h8c0.277 0 0.5 0.224 0.5 0.5s-0.223 0.5-0.5 0.5h-8zM19.498 10.005c-0.275 0-0.5-0.224-0.5-0.5s0.225-0.5 0.5-0.5h8c0.277 0 0.5 0.224 0.5 0.5s-0.223 0.5-0.5 0.5h-8zM19.498 7.005c-0.275 0-0.5-0.224-0.5-0.5s0.225-0.5 0.5-0.5h8c0.277 0 0.5 0.224 0.5 0.5s-0.223 0.5-0.5 0.5h-8zM16.5 27.004c0.276 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-8c-0.276 0-0.5-0.223-0.5-0.5 0-0.275 0.224-0.5 0.5-0.5h8zM16.5 24.004c0.276 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-8c-0.276 0-0.5-0.223-0.5-0.5 0-0.275 0.224-0.5 0.5-0.5h8zM16.5 21.004c0.276 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-8c-0.276 0-0.5-0.223-0.5-0.5 0-0.275 0.224-0.5 0.5-0.5h8zM27.5 27.004c0.275 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-8c-0.277 0-0.5-0.223-0.5-0.5 0-0.275 0.223-0.5 0.5-0.5h8zM27.5 24.004c0.275 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-8c-0.277 0-0.5-0.223-0.5-0.5 0-0.275 0.223-0.5 0.5-0.5h8zM27.5 21.004c0.275 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-8c-0.277 0-0.5-0.223-0.5-0.5 0-0.275 0.223-0.5 0.5-0.5h8zM27.5 15.004c0.275 0 0.5 0.224 0.5 0.5s-0.225 0.5-0.5 0.5h-19c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5h19zM27.5 18.004c0.275 0 0.5 0.225 0.5 0.5 0 0.277-0.225 0.5-0.5 0.5h-19c-0.276 0-0.5-0.223-0.5-0.5 0-0.275 0.224-0.5 0.5-0.5h19zM9 13h7c0.553 0 1-0.447 1-1v-6.996c0-0.553-0.447-1-1-1h-7c-0.553 0-1 0.447-1 1v6.996c0 0.552 0.447 1 1 1zM10 6h5v5h-5v-5z"></path>
+    </symbol>
+
+    <symbol id="icon-megaphone" viewBox="0 0 32 32">
+    <title>megaphone</title>
+    <path d="M25 0c-2.053 0-3.666 1.41-4.824 3.586l-0.021-0.012c-1.682 3.293-4.186 5.426-6.929 5.426h-9.226c-2.243 0-4 2.197-4 5 0 2.805 1.757 5 4 5 1.103 0.004 1.995 0.896 1.995 2v9c0 1.105 0.896 2 2 2h4c1.104 0 2-0.895 2-2v-1c0-1-1-1.447-1-2v-7c0-0.023 0.016-0.039 0.018-0.062 0.010-0.143 0.049-0.275 0.112-0.395 0.018-0.033 0.037-0.059 0.059-0.088 0.080-0.119 0.181-0.217 0.304-0.293 0.006-0.004 0.008-0.010 0.014-0.014 0.004 0 0.007-0.004 0.011-0.004 0.080-0.045 0.176-0.055 0.266-0.080 2.524 0.268 4.809 2.305 6.377 5.373l0.025-0.012c1.159 2.169 2.768 3.575 4.819 3.575 4.596 0 7-7.043 7-14s-2.404-14-7-14zM20 14c0-1.037 0.061-2.039 0.164-3h2.836c1.104 0 2 1.344 2 3 0 1.658-0.896 3-2 3h-2.836c-0.103-0.961-0.164-1.961-0.164-3zM2 14c0-1.656 0.896-3 2-3h7.014c-0.62 0.729-1.014 1.787-1.014 3 0 1.215 0.394 2.273 1.014 3h-7.014c-1.104 0-2-1.342-2-3zM11.995 30h-4v-9c0-0.729-0.195-1.41-0.537-2h0.698v0.012h3.008c-0.107 0.311-0.169 0.641-0.169 0.988v7c0 0.963 0.538 1.604 0.859 1.986 0.044 0.053 0.096 0.107 0.141 0.166v0.848zM13.226 17.012h-0.226v-0.012c-1.104 0-2-1.342-2-3 0-1.656 0.896-3 2-3h0.226c1.886 0 3.652-0.742 5.206-2.018-0.286 1.61-0.432 3.315-0.432 5.018 0 1.709 0.146 3.42 0.434 5.031-1.555-1.277-3.322-2.019-5.208-2.019zM25 26c-2.018 0-3.75-2.871-4.541-7h2.541c2.242 0 4-2.195 4-5 0-2.803-1.758-5-4-5h-2.541c0.791-4.127 2.523-7 4.541-7 2.762 0 5 5.373 5 12s-2.238 12-5 12z"></path>
+    </symbol>
+
+
+    <symbol id="icon-code" viewBox="0 0 30 28">
+    <title>code</title>
+    <path d="M9.641 21.859l-0.781 0.781c-0.203 0.203-0.516 0.203-0.719 0l-7.281-7.281c-0.203-0.203-0.203-0.516 0-0.719l7.281-7.281c0.203-0.203 0.516-0.203 0.719 0l0.781 0.781c0.203 0.203 0.203 0.516 0 0.719l-6.141 6.141 6.141 6.141c0.203 0.203 0.203 0.516 0 0.719zM18.875 5.187l-5.828 20.172c-0.078 0.266-0.359 0.422-0.609 0.344l-0.969-0.266c-0.266-0.078-0.422-0.359-0.344-0.625l5.828-20.172c0.078-0.266 0.359-0.422 0.609-0.344l0.969 0.266c0.266 0.078 0.422 0.359 0.344 0.625zM29.141 15.359l-7.281 7.281c-0.203 0.203-0.516 0.203-0.719 0l-0.781-0.781c-0.203-0.203-0.203-0.516 0-0.719l6.141-6.141-6.141-6.141c-0.203-0.203-0.203-0.516 0-0.719l0.781-0.781c0.203-0.203 0.516-0.203 0.719 0l7.281 7.281c0.203 0.203 0.203 0.516 0 0.719z"></path>
+    </symbol>
+
+
+    <symbol id="icon-folder" viewBox="0 0 26 28">
+    <title>folder</title>
+    <path d="M24 20.5v-11c0-0.828-0.672-1.5-1.5-1.5h-11c-0.828 0-1.5-0.672-1.5-1.5v-1c0-0.828-0.672-1.5-1.5-1.5h-5c-0.828 0-1.5 0.672-1.5 1.5v15c0 0.828 0.672 1.5 1.5 1.5h19c0.828 0 1.5-0.672 1.5-1.5zM26 9.5v11c0 1.922-1.578 3.5-3.5 3.5h-19c-1.922 0-3.5-1.578-3.5-3.5v-15c0-1.922 1.578-3.5 3.5-3.5h5c1.922 0 3.5 1.578 3.5 3.5v0.5h10.5c1.922 0 3.5 1.578 3.5 3.5z"></path>
+    </symbol>
+
+
+    <symbol id="icon-format_list_bulleted" viewBox="0 0 24 24">
+    <title>format_list_bulleted</title>
+    <path d="M6.984 5.016h14.016v1.969h-14.016v-1.969zM6.984 12.984v-1.969h14.016v1.969h-14.016zM6.984 18.984v-1.969h14.016v1.969h-14.016zM3.984 16.5c0.844 0 1.5 0.703 1.5 1.5s-0.703 1.5-1.5 1.5-1.5-0.703-1.5-1.5 0.656-1.5 1.5-1.5zM3.984 4.5c0.844 0 1.5 0.656 1.5 1.5s-0.656 1.5-1.5 1.5-1.5-0.656-1.5-1.5 0.656-1.5 1.5-1.5zM3.984 10.5c0.844 0 1.5 0.656 1.5 1.5s-0.656 1.5-1.5 1.5-1.5-0.656-1.5-1.5 0.656-1.5 1.5-1.5z"></path>
+    </symbol>
+
+    <symbol id="icon-file-code" viewBox="0 0 24 28">
+    <title>file-code</title>
+    <path d="M22.937 5.938c0.578 0.578 1.062 1.734 1.062 2.562v18c0 0.828-0.672 1.5-1.5 1.5h-21c-0.828 0-1.5-0.672-1.5-1.5v-25c0-0.828 0.672-1.5 1.5-1.5h14c0.828 0 1.984 0.484 2.562 1.062zM16 2.125v5.875h5.875c-0.094-0.266-0.234-0.531-0.344-0.641l-4.891-4.891c-0.109-0.109-0.375-0.25-0.641-0.344zM22 26v-16h-6.5c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-12v24h20zM7.5 12c0.172-0.219 0.484-0.266 0.703-0.094l0.797 0.594c0.219 0.172 0.266 0.484 0.094 0.703l-2.844 3.797 2.844 3.797c0.172 0.219 0.125 0.531-0.094 0.703l-0.797 0.594c-0.219 0.172-0.531 0.125-0.703-0.094l-3.531-4.703c-0.125-0.172-0.125-0.422 0-0.594zM20.031 16.703c0.125 0.172 0.125 0.422 0 0.594l-3.531 4.703c-0.172 0.219-0.484 0.266-0.703 0.094l-0.797-0.594c-0.219-0.172-0.266-0.484-0.094-0.703l2.844-3.797-2.844-3.797c-0.172-0.219-0.125-0.531 0.094-0.703l0.797-0.594c0.219-0.172 0.531-0.125 0.703 0.094zM10.344 23.906c-0.281-0.047-0.453-0.313-0.406-0.578l2.156-12.984c0.047-0.281 0.313-0.453 0.578-0.406l0.984 0.156c0.281 0.047 0.453 0.313 0.406 0.578l-2.156 12.984c-0.047 0.281-0.313 0.453-0.578 0.406z"></path>
+    </symbol>
+
+    <symbol id="icon-file-text-o" viewBox="0 0 24 28">
+    <title>file-text-o</title>
+    <path d="M22.937 5.938c0.578 0.578 1.062 1.734 1.062 2.562v18c0 0.828-0.672 1.5-1.5 1.5h-21c-0.828 0-1.5-0.672-1.5-1.5v-25c0-0.828 0.672-1.5 1.5-1.5h14c0.828 0 1.984 0.484 2.562 1.062zM16 2.125v5.875h5.875c-0.094-0.266-0.234-0.531-0.344-0.641l-4.891-4.891c-0.109-0.109-0.375-0.25-0.641-0.344zM22 26v-16h-6.5c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-12v24h20zM6 12.5c0-0.281 0.219-0.5 0.5-0.5h11c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-0.281 0-0.5-0.219-0.5-0.5v-1zM17.5 16c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h11zM17.5 20c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h11z"></path>
+    </symbol>
+
+    <symbol id="icon-book" viewBox="0 0 24 24">
+    <title>book-open</title>
+    <path d="M22 2h-6c-1.6 0-3.1 0.8-4 2-0.9-1.2-2.4-2-4-2h-6c-0.6 0-1 0.4-1 1v15c0 0.6 0.4 1 1 1h7c1.1 0 2 0.9 2 2 0 0.6 0.4 1 1 1s1-0.4 1-1c0-1.1 0.9-2 2-2h7c0.6 0 1-0.4 1-1v-15c0-0.6-0.4-1-1-1zM11 17.5c-0.6-0.3-1.3-0.5-2-0.5h-6v-13h5c1.7 0 3 1.3 3 3v10.5zM21 17h-6c-0.7 0-1.4 0.2-2 0.5v-10.5c0-1.7 1.3-3 3-3h5v13z"></path>
+    </symbol>
+
+    <symbol id="icon-vacancies" viewBox="0 0 24 24">
+    <title>vacancies</title>
+    <path d="M18.984 20.016v-16.031h-1.969v3h-10.031v-3h-1.969v16.031h13.969zM12 2.016c-0.563 0-0.984 0.422-0.984 0.984s0.422 0.984 0.984 0.984 0.984-0.422 0.984-0.984-0.422-0.984-0.984-0.984zM18.984 2.016c1.078 0 2.016 0.891 2.016 1.969v16.031c0 1.078-0.938 1.969-2.016 1.969h-13.969c-1.078 0-2.016-0.891-2.016-1.969v-16.031c0-1.078 0.938-1.969 2.016-1.969h4.172c0.422-1.172 1.5-2.016 2.813-2.016s2.391 0.844 2.813 2.016h4.172z"></path>
+    </symbol>
+
+    <symbol id="icon-earth" viewBox="0 0 32 32">
+    <title>earth</title>
+    <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 30c-1.967 0-3.84-0.407-5.538-1.139l7.286-8.197c0.163-0.183 0.253-0.419 0.253-0.664v-3c0-0.552-0.448-1-1-1-3.531 0-7.256-3.671-7.293-3.707-0.188-0.188-0.442-0.293-0.707-0.293h-4c-0.552 0-1 0.448-1 1v6c0 0.379 0.214 0.725 0.553 0.894l3.447 1.724v5.871c-3.627-2.53-6-6.732-6-11.489 0-2.147 0.484-4.181 1.348-6h3.652c0.265 0 0.52-0.105 0.707-0.293l4-4c0.188-0.188 0.293-0.442 0.293-0.707v-2.419c1.268-0.377 2.61-0.581 4-0.581 2.2 0 4.281 0.508 6.134 1.412-0.13 0.109-0.256 0.224-0.376 0.345-1.133 1.133-1.757 2.64-1.757 4.243s0.624 3.109 1.757 4.243c1.139 1.139 2.663 1.758 4.239 1.758 0.099 0 0.198-0.002 0.297-0.007 0.432 1.619 1.211 5.833-0.263 11.635-0.014 0.055-0.022 0.109-0.026 0.163-2.541 2.596-6.084 4.208-10.004 4.208z"></path>
+    </symbol>
+
+    <symbol id="icon-external-link" viewBox="0 0 28 28">
+    <title>external-link1</title>
+    <path d="M22 14.5v5c0 2.484-2.016 4.5-4.5 4.5h-13c-2.484 0-4.5-2.016-4.5-4.5v-13c0-2.484 2.016-4.5 4.5-4.5h11c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-1.375 0-2.5 1.125-2.5 2.5v13c0 1.375 1.125 2.5 2.5 2.5h13c1.375 0 2.5-1.125 2.5-2.5v-5c0-0.281 0.219-0.5 0.5-0.5h1c0.281 0 0.5 0.219 0.5 0.5zM28 1v8c0 0.547-0.453 1-1 1-0.266 0-0.516-0.109-0.703-0.297l-2.75-2.75-10.187 10.187c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-1.781-1.781c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l10.187-10.187-2.75-2.75c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1z"></path>
+    </symbol>
+</defs>
+</svg><nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+    <div class="container">
+        <div class="navbar-brand">
+            <div class="external-links">
+                <a href="https://www.radboudumc.nl">Radboudumc</a>| <a href="http://www.diagnijmegen.nl">Diagnostic Image Analysis Group</a>            </div>
+
+            <a href="https://www.computationalpathologygroup.eu/">
+                <span class="name-full">Computational Pathology Group</span>
+                <span class="name-short">CPG</span>
+            </a>
+        </div>
+        <input type="checkbox" id="navbar-toggle-cbox">
+
+        <label for="navbar-toggle-cbox" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-top" aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </label>
+
+        <div class="collapse navbar-collapse" id="navbar-top">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/highlights">
+                            <svg class="nav-icon svg-icon svg-icon-megaphone">
+                                <use xlink:href="#icon-megaphone"></use>
+                            </svg>
+                            <span class="nav-icon-text ">Highlights</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/members">
+                            <svg class="nav-icon svg-icon svg-icon-users">
+                                <use xlink:href="#icon-users"></use>
+                            </svg>
+                            <span class="nav-icon-text ">Members</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/projects">
+                            <svg class="nav-icon svg-icon svg-icon-folder">
+                                <use xlink:href="#icon-folder"></use>
+                            </svg>
+                            <span class="nav-icon-text ">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/vacancies">
+                            <svg class="nav-icon svg-icon svg-icon-vacancies">
+                                <use xlink:href="#icon-vacancies"></use>
+                            </svg>
+                            <span class="nav-icon-text ">Vacancies</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/publications">
+                            <svg class="nav-icon svg-icon svg-icon-file-text-o">
+                                <use xlink:href="#icon-file-text-o"></use>
+                            </svg>
+                            <span class="nav-icon-text nav-icon-text-hidden w-85">Publications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/presentations">
+                            <svg class="nav-icon svg-icon svg-icon-presentations">
+                                <use xlink:href="#icon-presentations"></use>
+                            </svg>
+                            <span class="nav-icon-text nav-icon-text-hidden w-95">Presentations</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/thesis-gallery">
+                            <svg class="nav-icon svg-icon svg-icon-book">
+                                <use xlink:href="#icon-book"></use>
+                            </svg>
+                            <span class="nav-icon-text nav-icon-text-hidden w-95">Thesis Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.computationalpathologygroup.eu/contact">
+                            <svg class="nav-icon svg-icon svg-icon-envelope-o">
+                                <use xlink:href="#icon-envelope-o"></use>
+                            </svg>
+                            <span class="nav-icon-text nav-icon-text-hidden w-60">Contact</span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main role="main" class="content ">
+<div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">	
+        <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/">Home</a></li>
+
+
+          <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/publications/">Publications</a></li>
+        <li class="breadcrumb-item">Automatic color unmixing of IHC stained whole slide images</li>
+      </ol>
+    </nav>
+</div>
+    <div class="container">
+    <h1 class="page-title">Automatic color unmixing of IHC stained whole slide images</h1>
+
+    <p class="lead">
+            D.J. Geijs,             M. Intezar,             J.A.W.M. van der Laak and G.J.S. Litjens    </p>
+
+    <p>in: <i>Medical Imaging</i>, volume 10581 of SPIE, 2018</p>
+    <p>
+            <a href="https://doi.org/10.1117/12.2293734" class="btn btn-primary">DOI</a>
+    </p>
+    <h2>Abstract</h2>
+    <p>Assessment of immunohistochemically stained slides is often a crucial diagnostic step in clinical practice. However, as this assessment is generally performed visually by pathologists it can suﬀer from signi�?cant inter-observer variability. The introduction of whole slide scanners facilitates automated analysis of immunohistochemical slides. Color deconvolution (CD) is one of the most popular �?rst steps in quantifying stain density in histopathological images. However, color deconvolution requires stain color vectors for accurate unmixing. Often it is assumed that these stain vectors are static. In practice, however, they are inﬂuenced by many factors. This can cause inferior CD unmixing and thus typically results in poor quanti�?cation. Some automated methods exist for color stain vector estimation, but most depend on a signi�?cant amount of each stain to be present in the whole slide images. In this paper we propose a method for automatically �?nding stain color vectors and unmixing IHC stained whole slide images, even when some stains are sparsely expressed. We collected 16 tonsil slides and stained them for diﬀerent periods of time with hematoxylin and a DAB-colored proliferation marker Ki67. RGB pixels of WSI images were converted to the hue saturation density (HSD) color domain and subsequently K-means clustering was used to separate stains and calculate the stain color vectors for each slide. Our results show that staining time aﬀects the stain vectors and that calculating a unique stain vector for each slide results in better unmixing results than using a standard stain vector.</p>
+
+    <div id="pdf-form" class="mt-5">
+      <h2>Request PDF</h2>
+
+      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
+
+      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=geij18&ref=website-pathology"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
+    </div>
+
+    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
+      <h3>PDF sent</h3>
+
+      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
+    </div>
+
+    <script type="text/javascript">
+      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
+      if(window.location.hash == '#pdf-sent') {
+        document.getElementById('pdf-form').style.display = 'none';
+        document.getElementById('pdf-sent').style.display = 'block';
+      }
+    </script>
+
+    </div>
+    </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 py-3 footer-content">
+                <p>
+                    <a href="https://github.com/diagnijmegen/website-content/edit/master/website-pathology/content/pages/publications/geij18.md">&copy;</a>
+
+                    Computational Pathology Group 2020. <a href="https://www.computationalpathologygroup.eu/colofon">Colofon</a>.
+                </p>
+                <p>The Computational Pathology Group is part of the Department of Pathology at <a href="https://www.radboudumc.nl">Radboud University Medical Center</a>.</p>
+            </div>
+
+            <div class="col-md-1 footer-ribbon">
+                <img alt="Radboudumc logo" src="https://www.computationalpathologygroup.eu/images/umc_logo.png">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
