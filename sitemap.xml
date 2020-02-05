@@ -79,71 +79,7 @@
   </url>
 
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/mert17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/plui12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/simp19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom10a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj12d/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bejn15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/nijh16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/steen94/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/muns19a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj12a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/maas19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/kox11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/about/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/louz14/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -155,10 +91,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/mull19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/aquila/</loc>
     <priority>1.0</priority>
   </url>
@@ -167,115 +99,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bokh19b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/balo18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/vos13/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bokh19a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bult20/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ehte16a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/software/automated-gleason-grading/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bult19a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/deba16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bult18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/albe12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/albe11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom14a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom15a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/geij18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bokh18a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/char15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/herm17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/mooi18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/char18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/char15b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/babak-ehteshami-bejnordi/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom14c/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -291,23 +119,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/riel15c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/caner-mercan/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/lopa10/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/carr11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj15b/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -315,91 +127,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/balo11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/riel15d/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/band17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/abel19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/huis10/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/gees19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom16a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/seti15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj14c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj14e/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj16b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj12c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj15a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/niek09/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/roel12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/contact/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bejn17b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/kobus2016/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/swid18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/niek14a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/berk14/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/stee94a/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -411,27 +139,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/derck19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/presentations/label-scarcity-unsupervised-learning/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/less16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/balk19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj16c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/balk19b/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -447,27 +155,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bejn17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/presentations/asn-kidney-segmentation/</loc>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/projects/deeppca/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/herm19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/deba11a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/silv18/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -479,46 +171,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ehte17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/scho11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/chun15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/nage13/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj14b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj14a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/vos12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom09/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom14/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/navi13/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/elke-loskamp-huntink/</loc>
     <priority>1.0</priority>
   </url>
@@ -527,27 +179,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom09a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bult19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/baid18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/gleason-grading/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj14/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/stee17/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -559,19 +191,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/band18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/merc19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/presentations/midl_epithelial_cell_detection/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom10/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -587,59 +207,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/tell18b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/herm18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/tell18a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/hans-pinckaers/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/hali19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/pinc19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/herm16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bejn17a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/char16c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/rema16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj13/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj12b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/deba16a/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -671,71 +239,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/kooi17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/leander-van-eekelen/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bokh19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/presentations/midl_label_balancing/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/swid19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom13a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/wal14a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/sonn15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ghaf17c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/silv18a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/chun17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/riel15e/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/deba19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bejn18a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/laba17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/riel17a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/riel17/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -763,10 +271,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/kok19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/meyke-hermsen/</loc>
     <priority>1.0</priority>
   </url>
@@ -775,15 +279,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/niek12/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/miriam-groeneveld/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom12a/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -791,35 +287,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/vos15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/vos14c/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/tell19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/laak19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/silv17a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ginn15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/oscar-geessink/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/wink19/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -831,23 +299,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj10b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj10/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/vacancies/postdoc-deep-learning-gastro/</loc>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/vacancies/postdoctoral-researcher-deep-learning/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/veta18/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -864,14 +320,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/projects/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/derc19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/maas13b/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1019,47 +467,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/seti16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom16b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/peter-bandi/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/reij18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/tell19a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/niek11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/stee93/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj14d/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/seab11/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/gatt10/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ven11a/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1067,51 +475,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/band19a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/apru19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj10a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/software/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/zels17a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/gatt14/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ehte16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bel19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/presentations/cc-gan-renal-histopathology/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/balo13/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom13/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1123,31 +491,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/pinc19a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/silv17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/oost15/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/sysmifta/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj09/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/post13a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom17/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1156,22 +500,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/members/thomas-de-bel/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/gees15b/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/gatt09/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ciom17a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/snoe10/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1187,23 +515,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/smee18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/tsr/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/cast17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/seab10/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/bult18a/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1211,47 +523,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/ehte18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/dalm17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/vacancies/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/baid18a/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/stur19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/seti17/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/merc20/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/chun18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/vphprism/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/mert16/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/tell18/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1267,15 +543,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/rijt18/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/zaneta-swiderska-chadaj/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/litj11b/</loc>
     <priority>1.0</priority>
   </url>
 
