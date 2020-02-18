@@ -563,6 +563,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/members/esther-markus-smeets/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/NA</loc>
     <priority>1.0</priority>
   </url>
@@ -692,10 +696,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/members/karel-gerbrands/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/members/koen-dercksen/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -915,10 +915,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/NA</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/</loc>
     <priority>1.0</priority>
   </url>
@@ -964,10 +960,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/john-melle-bokhorst/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/koen-dercksen/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -1160,6 +1152,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/NA</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/members/tariq-haddad/</loc>
     <priority>1.0</priority>
   </url>
   <url>
