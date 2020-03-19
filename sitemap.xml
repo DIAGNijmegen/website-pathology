@@ -955,6 +955,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/sophie-van-den-broek/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/thomas-de-bel/</loc>
     <priority>1.0</priority>
   </url>
@@ -1027,11 +1031,19 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/NA</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/software/</loc>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/NA</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/members/sophie-van-den-broek/</loc>
     <priority>1.0</priority>
   </url>
   <url>
