@@ -5,33 +5,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://www.computationalpathologygroup.eu/software/automated-gleason-grading/">
+    <link rel="canonical" href="https://www.computationalpathologygroup.eu/projects/panda-challenge/">
 
 
 
-    <title>Automated Gleason Grading - Computational Pathology Group</title>
+    <title>PANDA Challenge - Computational Pathology Group</title>
 
 
     <!-- Search Engine -->
-    <meta name="description" content="Automated analysis of prostate biopsies following the Gleason grading system.">
-    <meta name="image" content="https://www.computationalpathologygroup.eu/images/software/automated_gleason_grading.png">
+    <meta name="description" content="Prostate cancer grading of biopsies using the Gleason grading system">
+    <meta name="image" content="https://www.computationalpathologygroup.eu/images/projects/panda_logo_square.png">
 
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Automated Gleason Grading - Computational Pathology Group">
-    <meta itemprop="description" content="Automated analysis of prostate biopsies following the Gleason grading system.">
-    <meta itemprop="image" content="https://www.computationalpathologygroup.eu/images/software/automated_gleason_grading.png">
+    <meta itemprop="name" content="PANDA Challenge - Computational Pathology Group">
+    <meta itemprop="description" content="Prostate cancer grading of biopsies using the Gleason grading system">
+    <meta itemprop="image" content="https://www.computationalpathologygroup.eu/images/projects/panda_logo_square.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Automated Gleason Grading - Computational Pathology Group">
-    <meta name="twitter:description" content="Automated analysis of prostate biopsies following the Gleason grading system.">
+    <meta name="twitter:title" content="PANDA Challenge - Computational Pathology Group">
+    <meta name="twitter:description" content="Prostate cancer grading of biopsies using the Gleason grading system">
     <meta name="twitter:creator" content="@diagnijmegen">
-    <meta name="twitter:image:src" content="https://www.computationalpathologygroup.eu/images/software/automated_gleason_grading.png">
+    <meta name="twitter:image:src" content="https://www.computationalpathologygroup.eu/images/projects/panda_logo_square.png">
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="Automated Gleason Grading - Computational Pathology Group">
-    <meta property="og:description" content="Automated analysis of prostate biopsies following the Gleason grading system.">
-    <meta property="og:image" content="https://www.computationalpathologygroup.eu/images/software/automated_gleason_grading.png">
+    <meta property="og:title" content="PANDA Challenge - Computational Pathology Group">
+    <meta property="og:description" content="Prostate cancer grading of biopsies using the Gleason grading system">
+    <meta property="og:image" content="https://www.computationalpathologygroup.eu/images/projects/panda_logo_square.png">
     <meta property="og:site_name" content="Computational Pathology Group">
     <meta property="og:type" content="website">
 
@@ -256,95 +256,18 @@
         <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/">Home</a></li>
 
 
-          <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/software/">Software</a></li>
-        <li class="breadcrumb-item">Automated Gleason Grading</li>
+          <li class="breadcrumb-item"><a href="https://www.computationalpathologygroup.eu/projects/">Projects & Software</a></li>
+        <li class="breadcrumb-item">PANDA Challenge</li>
       </ol>
     </nav>
 </div>    <div class="container">
     <h1 class="page-title">
-            Automated Gleason Grading
+            PANDA Challenge
     </h1>
 
     <div class="page-content">
-        <p>The <strong>Gleason score</strong> is the most important prognostic marker for prostate cancer patients but suffers from significant inter-observer variability. We developed a <strong>fully automated system using deep learning</strong> that can grade prostate biopsies following the Gleason Grading System. A description of our method and research can be found in the paper: <a href="https://arxiv.org/abs/1907.07980">Automated deep learning system for Gleason grading of prostate biopsies: a development and validation study</a>. A summary is available in a <a href="https://www.wouterbulten.nl/blog/tech/automated-gleason-grading-deep-learning/">blog post on our study</a>.</p>
-<p>The algorithm we developed is available to try out online, without any requirements on deep learning hardware.</p>
-<ol>
-<li><a href="#examples">Online examples</a></li>
-<li><a href="#try-out">Try out the algorithm</a></li>
-<li><a href="#pipeline">Pipeline</a></li>
-<li><a href="#terms">Terms &amp; Conditions</a></li>
-<li><a href="#info">More information</a></li>
-</ol>
-<figure class="figure my-4">
-<img alt="Example segmentations of the Gleason algorithm." class="img-fluid figure-img lazyload" data-src="/images/software/gleason_segmentation_overlays_small.png"/>
-<figcaption class="figure-caption">Three examples showing the output of the Gleason algorithm. The algorithm marks glands in green (benign), yellow (Gleason 3), orange (Gleason 4) or red (Gleason 5).</figcaption>
-</figure>
-<p><a name="examples"></a></p>
-<h2>Online examples</h2>
-<p>The two examples below show the raw output of the algorithm, without any post-processing, overlayed on biopsies. Benign tissue is colored green, Gleason 3 in yellow, Gleason 4 in orange and Gleason 5 in red. The original biopsy is shown on the left, the biopsy with overlay on the right. You can zoom in by scrolling, moving around can be done with click&amp;drag.</p>
-<div class="row my-4">
-<div class="col-md-6">
-<div class="img-thumbnail" id="openseadragon1" style="width: 100%; height: 400px;"></div>
-</div>
-<div class="col-md-6">
-<div class="img-thumbnail" id="openseadragon2" style="width: 100%; height: 400px;"></div>
-</div>
-</div>
-<p><a name="try-out"></a></p>
-<h2>Trying out the algorithm</h2>
-<p>Our trained system can be tried out online through the <a href="https://grand-challenge.org/algorithms/">Grand Challenge Algorithms</a> platform. All processing is performed on the platform; there is no specialized hardware required to try out our algorithm. Running the algorithm requires an account for Grand Challenge. If you don't have an account yet, you can register at the <a href="https://grand-challenge.org/accounts/signin/">website</a>; alternatively, you can log in using a Google account. After registering for a new account, or logging in to an existing Grand Challenge account, you can request access to the algorithm.</p>
-<p>The algorithm can be run with a minimum of one biopsy, supplied in a multiresolution tiff file. For more details on how to generate such a file, see <a href="#info">below</a>. We assume that the following magnification levels are available in the slide (measured in μm pixel spacing): 0.5, 1.0, and 2.0 (with a small tolerance). Note that the algorithm will provide two outputs, the first is the normalized version of the uploaded image, the second is the output of the Gleason grading system. To visualize the output of the Gleason grading system, press the second 'View input &amp; output' button. You can download the processed results as well.</p>
-<p><a class="btn btn-primary btn-lg my-3" href="https://grand-challenge.org/algorithms/gleason-grading-of-prostate-biopsies/">Try out the algorithm</a></p>
-<p><small class="text-muted">Before submitting, please take our <a href="#terms">Terms &amp; Conditions</a> in to account.</small></p>
-<p><a name="pipeline"></a></p>
-<h2>Description of the pipeline</h2>
-<p>The online Gleason grading algorithm consists of multiple steps to prepare and analyze the data:</p>
-<ol>
-<li>For each biopsy, a tissue mask will be generated by a deep learning-based <a href="/publications/band17/">tissue segmentation system</a>.</li>
-<li>Based on the input and a small set of target files, a <a href="/publications/bel19/">CycleGAN-based normalization algorithm</a> is trained.</li>
-<li>The trained normalization algorithm is applied to all input biopsies to normalize the data.</li>
-<li>Each normalized biopsy is processed by the automated Gleason grading system. The output of the system consists of an overlay and a set of metrics for each biopsy. The metrics include the biopsy-level grade group, the Gleason score, and predicted volume percentages.</li>
-</ol>
-<p>Each job roughly completes within an hour, depending on the size and number of biopsies, and the processing capacity. Jobs are processed on a first-come, first-served basis. The actual Gleason grading system itself can grade a biopsy within a few minutes, the remainder of the time is spent on the normalization task. For real world scenarios, this preprocessing step is not needed or can be pre-trained to speed up the process.</p>
-<p>The training time of the normalization algorithm is independent of the number of biopsies. It is, therefore, more efficient to submit several biopsies at once, than to submit multiple jobs with a single biopsy.</p>
-<figure class="figure my-4">
-<img alt="Overview of the pipeline." class="img-fluid figure-img rounded lazyload" data-src="/images/software/gleason_algorithm_overview.png"/>
-<figcaption class="figure-caption">Overview of the Gleason grading pipeline, including the normalization step.</figcaption>
-</figure>
-<p><a name="terms"></a></p>
-<h2>Terms &amp; Conditions</h2>
-<p>When submitting data to the algorithm, please take the following into account:</p>
-<ol>
-<li>The use of the algorithm is meant for research purposes only. The algorithm was trained on data from a single center, and can give the wrong diagnosis on external data. We give no assurance on the correctness of the system's output.</li>
-<li>A custom normalization algorithm is trained on the input data, though this cannot overcome all stain and scanner differences. We limit the overall processing time of each job by setting an upper bound on the number of epochs the normalization algorithm is trained. Due to the limited processing time, in some cases the normalization technique can fail.</li>
-<li>We currently only support multiresolution .tif files as input.</li>
-<li>All input images should contain magnification levels that correspond to a 0.5, 1.0, and 2.0μm pixel spacing (± 0.05). The algorithm will stop if any of the input images miss one or more of these levels.</li>
-<li>Following the Terms &amp; Conditions of the Grand-Challenge platform, submitted data can be used for future research projects. We assume that submitted data has been anonymized and that you, as a submitter, have the right to submit the image.</li>
-</ol>
-<p><a name="info"></a></p>
-<h2>More information</h2>
-<p>Please refer to any of the following sources for more information:</p>
-<ul>
-<li>A summary of the research can be found in our <a href="https://www.wouterbulten.nl/blog/tech/automated-gleason-grading-deep-learning/">blog post</a>.</li>
-<li>The paper can be read in the <a href="https://doi.org/10.1016/S1470-2045(19)30739-9">Lancet Oncology</a>, a preprint is available on <a href="https://arxiv.org/abs/1907.07980/">arXiv</a>.</li>
-<li>This algorithm is part of the <a href="/projects/deeppca">Deep PCA</a> research project.</li>
-<li>To generate a multi-resolution TIF file from proprietary WSI scanner formats, we recommend using the multiresolutionimageconverter command line tool which is provided with the <a href="https://computationalpathologygroup.github.io/ASAP/">ASAP</a> package.</li>
-</ul>
-<p>Further questions regarding the Gleason grading system can be addressed to <a href="/members/wouter-bulten/">Wouter Bulten</a>.</p>
-<script type="text/javascript">
-function loadDzi() {
-  var viewer = OpenSeadragon({
-    id: "openseadragon1",
-    prefixUrl: "/dzi/images/",
-    tileSources: "/dzi/gleason_example_1_1024.dzi"
-  });
-  var viewer2 = OpenSeadragon({
-    id: "openseadragon2",
-    prefixUrl: "/dzi/images/",
-    tileSources: "/dzi/gleason_example_2_1024.dzi"
-  });
-}
-</script>
+        <p>With 1.1 million new diagnoses every year, prostate cancer (PCa) is the most common cancer in men in developed countries. The biopsy Gleason grading system is the most important prognostic marker for prostate cancer but suffers from significant inter-observer variability, limiting its usefulness for individual patients. The Gleason grade is determined by pathologists on hematoxylin and eosin (H&amp;E) stained tissue specimens based on the architectural growth patterns of the tumor.</p>
+<p>Automated deep learning systems have shown promise in accurately grading prostate cancer. Several studies have shown that these systems can achieve pathologist-level performance. A large multi-center evaluation on diagnostic data is still missing. In this challenge, we strive to improve on these works by publishing the most extensive multi-center dataset on Gleason grading as of yet. The training set consists of up to 11.000 whole-slide images of digitized H&amp;E-stained biopsies originating from two centers. This is the largest public whole-slide image dataset available, roughly 8 times the size of the CAMELYON17 challenge. Furthermore, in contrast to previous challenges, we do not use small tissue micro-arrays, but full diagnostic biopsy images. Using a sizeable multicenter test set, graded by expert uropathologists, we will evaluate challenge submissions on their applicability to a clinically relevant task.</p>
     </div>
 
     <h2>People</h2>
@@ -363,18 +286,14 @@ function loadDzi() {
     <h4 class="person-title"><small>PhD student</small></h4>
 
 </div><div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
-
-
-
-    <a href="https://www.computationalpathologygroup.eu/members/geert-litjens/"><img data-src="https://www.computationalpathologygroup.eu/images/people/Geert_Litjens-160.jpg" class="img-thumbnail rounded-circle lazyload" alt="Geert Litjens"></a>
-
-    <h3 class="person-name"><a href="https://www.computationalpathologygroup.eu/members/geert-litjens/">
-      Geert Litjens
-    </a></h3>
-
-    <h4 class="person-title"><small>Assistant professor</small></h4>
-
-</div><div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
+    <img src="https://www.computationalpathologygroup.eu/images/people/Person.png" class="img-thumbnail lazyload rounded-circle" alt=" Peter Ström">
+    <h3 class="person-name"> Peter Ström</h3>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
+    <img src="https://www.computationalpathologygroup.eu/images/people/Person.png" class="img-thumbnail lazyload rounded-circle" alt=" Kimmo Kartasalo">
+    <h3 class="person-name"> Kimmo Kartasalo</h3>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
 
 
 
@@ -387,94 +306,21 @@ function loadDzi() {
     <h4 class="person-title"><small>PhD student</small></h4>
 
 </div><div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
-
-
-
-    <a href="https://www.computationalpathologygroup.eu/members/thomas-de-bel/"><img data-src="https://www.computationalpathologygroup.eu/images/people/Thomas_de_Bel.jpg" class="img-thumbnail rounded-circle lazyload" alt="Thomas de Bel"></a>
-
-    <h3 class="person-name"><a href="https://www.computationalpathologygroup.eu/members/thomas-de-bel/">
-      Thomas de Bel
-    </a></h3>
-
-    <h4 class="person-title"><small>PhD student</small></h4>
-
+    <img src="https://www.computationalpathologygroup.eu/images/people/Person.png" class="img-thumbnail lazyload rounded-circle" alt=" Martin Eklund">
+    <h3 class="person-name"> Martin Eklund</h3>
 </div>
 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
 
-    <a href="https://www.labpon.nl/over-labpon/pathologen-en-subspecialisaties/29-pathologen/104-christina-hulsbergen-van-de-kaa"><img data-src="https://www.computationalpathologygroup.eu/images/people/external/Christina_Hulsbergen-van_de_Kaa.jpg" class="img-thumbnail rounded-circle lazyload" alt="Christina Hulsbergen-van de Kaa"></a>
 
-    <h3 class="person-name"><a href="https://www.labpon.nl/over-labpon/pathologen-en-subspecialisaties/29-pathologen/104-christina-hulsbergen-van-de-kaa">
-      Christina Hulsbergen-van de Kaa
-      <small><svg class="svg-icon svg-icon-external-link"><use xlink:href="#icon-external-link"></use></svg></small>
+
+    <a href="https://www.computationalpathologygroup.eu/members/geert-litjens/"><img data-src="https://www.computationalpathologygroup.eu/images/people/Geert_Litjens-160.jpg" class="img-thumbnail rounded-circle lazyload" alt="Geert Litjens"></a>
+
+    <h3 class="person-name"><a href="https://www.computationalpathologygroup.eu/members/geert-litjens/">
+      Geert Litjens
     </a></h3>
 
-    <h4 class="person-title"><small>Pathologist</small></h4>
+    <h4 class="person-title"><small>Assistant professor</small></h4>
 
-    <p class='text-muted'>LabPON</p>
-
-    <p class='text-muted'><a href="mailto:info@labpon.nl"><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a></p>
-</div>
-
-
-<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
-
-    <a href="https://www.labpon.nl/over-labpon/pathologen-en-subspecialisaties/29-pathologen/111-robert-vink"><img data-src="https://www.computationalpathologygroup.eu/images/people/external/Robert_Vink.jpg" class="img-thumbnail rounded-circle lazyload" alt="Robert Vink"></a>
-
-    <h3 class="person-name"><a href="https://www.labpon.nl/over-labpon/pathologen-en-subspecialisaties/29-pathologen/111-robert-vink">
-      Robert Vink
-      <small><svg class="svg-icon svg-icon-external-link"><use xlink:href="#icon-external-link"></use></svg></small>
-    </a></h3>
-
-    <h4 class="person-title"><small>Pathologist</small></h4>
-
-    <p class='text-muted'>LabPON</p>
-
-    <p class='text-muted'><a href="mailto:info@labpon.nl"><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a></p>
-</div>
-
-
-<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
-
-    <a href="https://www.avl.nl/voorbereiding-afspraak/afdelingen-en-centra/pathologie-met-moleculaire-diagnostiek/"><img data-src="https://www.computationalpathologygroup.eu/images/people/external/Hester_van_Boven.jpg" class="img-thumbnail rounded-circle lazyload" alt="Hester van Boven"></a>
-
-    <h3 class="person-name"><a href="https://www.avl.nl/voorbereiding-afspraak/afdelingen-en-centra/pathologie-met-moleculaire-diagnostiek/">
-      Hester van Boven
-      <small><svg class="svg-icon svg-icon-external-link"><use xlink:href="#icon-external-link"></use></svg></small>
-    </a></h3>
-
-    <h4 class="person-title"><small>Pathologist</small></h4>
-
-    <p class='text-muted'>Antoni van Leeuwenhoek</p>
-
-    <p class='text-muted'><a href="mailto:h.v.boven@nki.nl"><svg class="svg-icon svg-icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg></a></p>
-</div>
-
-<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
-
-
-
-    <a href="https://www.computationalpathologygroup.eu/members/jeroen-van-der-laak/"><img data-src="https://www.computationalpathologygroup.eu/images/people/Jeroen_van_der_Laak-160.jpg" class="img-thumbnail rounded-circle lazyload" alt="Jeroen van der Laak"></a>
-
-    <h3 class="person-name"><a href="https://www.computationalpathologygroup.eu/members/jeroen-van-der-laak/">
-      Jeroen van der Laak
-    </a></h3>
-
-    <h4 class="person-title"><small>Associate professor</small></h4>
-
-</div><div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 person">
-
-
-
-    <a href="http://www.diagnijmegen.nl/index.php/Person?name=Bram_van_Ginneken"><img data-src="https://www.computationalpathologygroup.eu/images/people/Bram_van_Ginneken-160.jpg" class="img-thumbnail rounded-circle lazyload" alt="Bram van Ginneken"></a>
-
-    <h3 class="person-name"><a href="http://www.diagnijmegen.nl/index.php/Person?name=Bram_van_Ginneken">
-      Bram van Ginneken
-      <small><svg class="svg-icon svg-icon-external-link"><use xlink:href="#icon-external-link"></use></svg></small>
-    </a></h3>
-
-    <h4 class="person-title"><small>Professor</small></h4>
-
-      <p class='text-muted'>Diagnostic Image Analysis Group</p>
 </div>        </div>
     </div>
 
@@ -499,56 +345,6 @@ function loadDzi() {
 
 	<a href=https://arxiv.org/abs/1907.07980> arXiv </a>
 </li>
-<li>
-     W. Bulten, P. Bandi, J. Hoven, R. van de Loo, J. Lotz, N. Weiss, J. van der Laak, B. van Ginneken, C. Hulsbergen-van de Kaa and G. Litjens.
-   
-    "Epithelium segmentation using deep learning in H&E-stained prostate specimens with immunohistochemistry as reference standard",
-   
-    <i>Nature Scientific Reports, </i>
-   
-        2019.
-   
-    
-        <a href=/publications/bult19>Abstract/PDF</a>
-
-    <a href=https://doi.org/10.1038/s41598-018-37257-4>DOI</a>
-    
-    <a href=http://www.ncbi.nlm.nih.gov/pubmed/30696866>PMID</a>
-
-	<a href=https://arxiv.org/abs/1808.05883> arXiv </a>
-</li>
-<li>
-     T. de Bel, M. Hermsen, J. Kers, J. van der Laak and G. Litjens.
-   
-    "Stain-Transforming Cycle-Consistent Generative Adversarial Networks for Improved Segmentation of Renal Histopathology",
-   
-        <i>Medical Imaging with Deep Learning, </i>
-   
-        2019.
-   
-    
-        <a href=/publications/bel19>Abstract/PDF</a>
-
-    
-
-</li>
-<li>
-     P. Bandi, R. van de Loo, M. Intezar, D. Geijs, F. Ciompi, B. van Ginneken, J. van der Laak and G. Litjens.
-   
-    "Comparison of Different Methods for Tissue Segmentation In Histopathological Whole-Slide Images",
-   
-        <i>IEEE International Symposium on Biomedical Imaging, </i>
-   
-        2017.
-   
-    
-        <a href=/publications/band17>Abstract/PDF</a>
-
-    <a href=https://doi.org/10.1109/ISBI.2017.7950590>DOI</a>
-    
-
-	<a href=https://arxiv.org/abs/1703.05990> arXiv </a>
-</li>
         </ul>
     </div>
     </div>
@@ -559,7 +355,7 @@ function loadDzi() {
         <div class="row">
             <div class="col-md-11 py-3 footer-content">
                 <p>
-                    <a href="https://github.com/diagnijmegen/website-content/edit/master/content/pages/software/automated-gleason-grading.md" title="Edit on Github">
+                    <a href="https://github.com/diagnijmegen/website-content/edit/master/content/pages/projects/panda-challenge.md" title="Edit on Github">
                         <svg class="nav-icon svg-icon svg-icon-github">
                             <use xlink:href="#icon-github"></use>
                         </svg>
@@ -576,6 +372,5 @@ function loadDzi() {
         </div>
     </div>
 </footer>
-    <script type="text/javascript" src="/dzi/openseadragon.min.js" async onload="window.loadDzi();"></script>
 </body>
 </html>
