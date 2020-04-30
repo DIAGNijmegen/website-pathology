@@ -403,6 +403,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/members/daan-geijs/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/members/david-tellez/</loc>
     <priority>1.0</priority>
   </url>
@@ -895,6 +899,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/daan-geijs/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/david-tellez/</loc>
     <priority>1.0</priority>
   </url>
@@ -1168,6 +1176,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/smee18/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/geij19/</loc>
     <priority>1.0</priority>
   </url>
   <url>
