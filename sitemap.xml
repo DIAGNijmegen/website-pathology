@@ -619,6 +619,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/software/hooknet/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/char16c/</loc>
     <priority>1.0</priority>
   </url>
