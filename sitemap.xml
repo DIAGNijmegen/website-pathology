@@ -559,6 +559,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/tell20/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/members/francesco-ciompi/</loc>
     <priority>1.0</priority>
   </url>
@@ -867,6 +871,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/kos2020/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/vacancies/postdoc-deep-learning-gastro/</loc>
     <priority>1.0</priority>
   </url>
@@ -1040,6 +1048,10 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/members/rens-van-schouwenburg/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/amgad2020/</loc>
     <priority>1.0</priority>
   </url>
   <url>
