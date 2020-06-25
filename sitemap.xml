@@ -791,15 +791,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/kok19/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.computationalpathologygroup.eu/members/meyke-hermsen/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/members/michel-kok/</loc>
     <priority>1.0</priority>
   </url>
   <url>
@@ -988,10 +980,6 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/meyke-hermsen/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.computationalpathologygroup.eu/publications/michel-kok/</loc>
     <priority>1.0</priority>
   </url>
   <url>
