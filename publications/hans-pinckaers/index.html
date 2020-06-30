@@ -305,18 +305,22 @@
             
 
 <div class="btn-group btn-group-toggle year-button-group" data-toggle="buttons">
-    <input type="radio" name="year-selection" data-year="2020" id="input_2020" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2020", style="color:grey">
-        2020
+    <input type="radio" name="year-selection" data-year="all" id="input_all" autocomplete="off" style="display: none">
+    <label class="btn btn-link" for="input_all", style="color:grey">
+        all
     </label>
-    <input type="radio" name="year-selection" data-year="2019" id="input_2019" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2019", style="color:grey">
-        2019
-    </label>
-    <input type="radio" name="year-selection" data-year="2018" id="input_2018" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2018", style="color:grey">
-        2018
-    </label>
+        <input type="radio" name="year-selection" data-year="2020" id="input_2020" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2020", style="color:grey">
+            2020
+        </label>
+        <input type="radio" name="year-selection" data-year="2019" id="input_2019" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2019", style="color:grey">
+            2019
+        </label>
+        <input type="radio" name="year-selection" data-year="2018" id="input_2018" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2018", style="color:grey">
+            2018
+        </label>
 </div>
 
         <div data-year="2020" class="publication-year">
@@ -351,26 +355,6 @@
                                 <h3>Papers in international journals</h3>
                             <ol>
 <li>
-     Z. Swiderska-Chadaj, H. Pinckaers, M. van Rijthoven, M. Balkenhol, M. Melnikova, O. Geessink, Q. Manson, M. Sherman, A. Polonia, J. Parry, M. Abubakar, G. Litjens, J. van der Laak and F. Ciompi.
-   
-    "Learning to detect lymphocytes in immunohistochemistry with deep learning",
-   
-    <i>Medical Image Analysis, </i>
-   
-        2019.
-   
-    <small>
-    
-        <a href=/publications/swid19>Abstract/PDF</a>
-
-    <a href=https://doi.org/10.1016/j.media.2019.101547>DOI</a>
-    
-    <a href=http://www.ncbi.nlm.nih.gov/pubmed/31476576>PMID</a>
-
-    </small>
-</li>
-				
-<li>
      M. Balkenhol, D. Tellez, W. Vreuls, P. Clahsen, H. Pinckaers, F. Ciompi, P. Bult and J. van der Laak.
    
     "Deep learning assisted mitotic counting for breast cancer",
@@ -386,6 +370,26 @@
     <a href=https://doi.org/10.1038/s41374-019-0275-0>DOI</a>
     
     <a href=http://www.ncbi.nlm.nih.gov/pubmed/31222166>PMID</a>
+
+    </small>
+</li>
+				
+<li>
+     Z. Swiderska-Chadaj, H. Pinckaers, M. van Rijthoven, M. Balkenhol, M. Melnikova, O. Geessink, Q. Manson, M. Sherman, A. Polonia, J. Parry, M. Abubakar, G. Litjens, J. van der Laak and F. Ciompi.
+   
+    "Learning to detect lymphocytes in immunohistochemistry with deep learning",
+   
+    <i>Medical Image Analysis, </i>
+   
+        2019.
+   
+    <small>
+    
+        <a href=/publications/swid19>Abstract/PDF</a>
+
+    <a href=https://doi.org/10.1016/j.media.2019.101547>DOI</a>
+    
+    <a href=http://www.ncbi.nlm.nih.gov/pubmed/31476576>PMID</a>
 
     </small>
 </li>
@@ -415,6 +419,24 @@
                                 <h3>Papers in conference proceedings</h3>
                             <ol>
 <li>
+     J. Bokhorst, H. Pinckaers, P. van Zwam, I. Nagetgaal, J. van der Laak and F. Ciompi.
+   
+    "Learning from sparsely annotated data for semantic segmentation in histopathology images",
+   
+        <i>Medical Imaging with Deep Learning, </i>
+   
+        2019.
+   
+    <small>
+    
+        <a href=/publications/bokh19>Abstract/PDF</a>
+
+    
+
+    </small>
+</li>
+				
+<li>
      H. Pinckaers, W. Bulten and G. Litjens.
    
     "High resolution whole prostate biopsy classification using streaming stochastic gradient descent",
@@ -428,24 +450,6 @@
         <a href=/publications/pinc19>Abstract/PDF</a>
 
     <a href=https://doi.org/10.1117/12.2512817>DOI</a>
-    
-
-    </small>
-</li>
-				
-<li>
-     J. Bokhorst, H. Pinckaers, P. van Zwam, I. Nagetgaal, J. van der Laak and F. Ciompi.
-   
-    "Learning from sparsely annotated data for semantic segmentation in histopathology images",
-   
-        <i>Medical Imaging with Deep Learning, </i>
-   
-        2019.
-   
-    <small>
-    
-        <a href=/publications/bokh19>Abstract/PDF</a>
-
     
 
     </small>
@@ -509,24 +513,29 @@
         var year = this.dataset.year; 
         var yearsplit = year.split(' ')
         for(var b = 0; b < year_blocks.length; b++) {
-            if (yearsplit[yearsplit.length-1] == 'before'){
-                if(year_blocks[b].dataset.year <= parseInt(yearsplit[0])) {
-                    year_blocks[b].style.display = 'block';
+            if (year == 'all'){
+                year_blocks[b].style.display = 'block';
+            }
+            else{
+                if (yearsplit[yearsplit.length-1] == 'before'){
+                    if(year_blocks[b].dataset.year <= parseInt(yearsplit[0])) {
+                        year_blocks[b].style.display = 'block';
+                    } else {
+                        year_blocks[b].style.display = 'none';
+                    }
+        
                 } else {
-                    year_blocks[b].style.display = 'none';
-                }
-    
-            } else {
-                if(year_blocks[b].dataset.year == year) {
-                    year_blocks[b].style.display = 'block';
-                } else {
-                    year_blocks[b].style.display = 'none';
+                    if(year_blocks[b].dataset.year == year) {
+                        year_blocks[b].style.display = 'block';
+                    } else {
+                        year_blocks[b].style.display = 'none';
+                    }
                 }
             }
         }
     });
     }
-    buttons[0].click()
+    buttons[1].click()
 </script>    </div>
     </main>
 

@@ -305,10 +305,14 @@
             
 
 <div class="btn-group btn-group-toggle year-button-group" data-toggle="buttons">
-    <input type="radio" name="year-selection" data-year="2019" id="input_2019" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2019", style="color:grey">
-        2019
+    <input type="radio" name="year-selection" data-year="all" id="input_all" autocomplete="off" style="display: none">
+    <label class="btn btn-link" for="input_all", style="color:grey">
+        all
     </label>
+        <input type="radio" name="year-selection" data-year="2019" id="input_2019" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2019", style="color:grey">
+            2019
+        </label>
 </div>
 
         <div data-year="2019" class="publication-year">
@@ -349,24 +353,29 @@
         var year = this.dataset.year; 
         var yearsplit = year.split(' ')
         for(var b = 0; b < year_blocks.length; b++) {
-            if (yearsplit[yearsplit.length-1] == 'before'){
-                if(year_blocks[b].dataset.year <= parseInt(yearsplit[0])) {
-                    year_blocks[b].style.display = 'block';
+            if (year == 'all'){
+                year_blocks[b].style.display = 'block';
+            }
+            else{
+                if (yearsplit[yearsplit.length-1] == 'before'){
+                    if(year_blocks[b].dataset.year <= parseInt(yearsplit[0])) {
+                        year_blocks[b].style.display = 'block';
+                    } else {
+                        year_blocks[b].style.display = 'none';
+                    }
+        
                 } else {
-                    year_blocks[b].style.display = 'none';
-                }
-    
-            } else {
-                if(year_blocks[b].dataset.year == year) {
-                    year_blocks[b].style.display = 'block';
-                } else {
-                    year_blocks[b].style.display = 'none';
+                    if(year_blocks[b].dataset.year == year) {
+                        year_blocks[b].style.display = 'block';
+                    } else {
+                        year_blocks[b].style.display = 'none';
+                    }
                 }
             }
         }
     });
     }
-    buttons[0].click()
+    buttons[1].click()
 </script>    </div>
     </main>
 

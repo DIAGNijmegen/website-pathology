@@ -305,18 +305,22 @@
             
 
 <div class="btn-group btn-group-toggle year-button-group" data-toggle="buttons">
-    <input type="radio" name="year-selection" data-year="2019" id="input_2019" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2019", style="color:grey">
-        2019
+    <input type="radio" name="year-selection" data-year="all" id="input_all" autocomplete="off" style="display: none">
+    <label class="btn btn-link" for="input_all", style="color:grey">
+        all
     </label>
-    <input type="radio" name="year-selection" data-year="2018" id="input_2018" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2018", style="color:grey">
-        2018
-    </label>
-    <input type="radio" name="year-selection" data-year="2017" id="input_2017" autocomplete="off" style="display: none">
-    <label class="btn btn-link" for="input_2017", style="color:grey">
-        2017
-    </label>
+        <input type="radio" name="year-selection" data-year="2019" id="input_2019" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2019", style="color:grey">
+            2019
+        </label>
+        <input type="radio" name="year-selection" data-year="2018" id="input_2018" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2018", style="color:grey">
+            2018
+        </label>
+        <input type="radio" name="year-selection" data-year="2017" id="input_2017" autocomplete="off" style="display: none">
+        <label class="btn btn-link" for="input_2017", style="color:grey">
+            2017
+        </label>
 </div>
 
         <div data-year="2019" class="publication-year">
@@ -370,26 +374,6 @@
                                 <h3>Papers in international journals</h3>
                             <ol>
 <li>
-     P. Bándi, O. Geessink, Q. Manson, M. van Dijk, M. Balkenhol, M. Hermsen, B. Bejnordi, B. Lee, K. Paeng, A. Zhong, Q. Li, F. Zanjani, S. Zinger, K. Fukuta, D. Komura, V. Ovtcharov, S. Cheng, S. Zeng, J. Thagaard, A. Dahl, H. Lin, H. Chen, L. Jacobsson, M. Hedlund, M. Cetin, E. Halici, H. Jackson, R. Chen, F. Both, J. Franke, H. Kusters-Vandevelde, W. Vreuls, P. Bult, B. van Ginneken, J. van der Laak and G. Litjens.
-   
-    "From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge",
-   
-    <i>IEEE Transactions on Medical Imaging, </i>
-   
-        2018.
-   
-    <small>
-    
-        <a href=/publications/band18>Abstract/PDF</a>
-
-    <a href=https://doi.org/10.1109/tmi.2018.2867350>DOI</a>
-    
-    <a href=http://www.ncbi.nlm.nih.gov/pubmed/30716025>PMID</a>
-
-    </small>
-</li>
-				
-<li>
      G. Litjens, P. Bandi, B. Bejnordi, O. Geessink, M. Balkenhol, P. Bult, A. Halilovic, M. Hermsen, R. van de Loo, R. Vogels, Q. Manson, N. Stathonikos, A. Baidoshvili, P. van Diest, C. Wauters, M. van Dijk and J. van der Laak.
    
     "1399 H&E-stained sentinel lymph node sections of breast cancer patients: the CAMELYON dataset",
@@ -405,6 +389,26 @@
     <a href=https://doi.org/10.1093/gigascience/giy065>DOI</a>
     
     <a href=http://www.ncbi.nlm.nih.gov/pubmed/29860392>PMID</a>
+
+    </small>
+</li>
+				
+<li>
+     P. Bándi, O. Geessink, Q. Manson, M. van Dijk, M. Balkenhol, M. Hermsen, B. Bejnordi, B. Lee, K. Paeng, A. Zhong, Q. Li, F. Zanjani, S. Zinger, K. Fukuta, D. Komura, V. Ovtcharov, S. Cheng, S. Zeng, J. Thagaard, A. Dahl, H. Lin, H. Chen, L. Jacobsson, M. Hedlund, M. Cetin, E. Halici, H. Jackson, R. Chen, F. Both, J. Franke, H. Kusters-Vandevelde, W. Vreuls, P. Bult, B. van Ginneken, J. van der Laak and G. Litjens.
+   
+    "From detection of individual metastases to classification of lymph node status at the patient level: the CAMELYON17 challenge",
+   
+    <i>IEEE Transactions on Medical Imaging, </i>
+   
+        2018.
+   
+    <small>
+    
+        <a href=/publications/band18>Abstract/PDF</a>
+
+    <a href=https://doi.org/10.1109/tmi.2018.2867350>DOI</a>
+    
+    <a href=http://www.ncbi.nlm.nih.gov/pubmed/30716025>PMID</a>
 
     </small>
 </li>
@@ -493,24 +497,29 @@
         var year = this.dataset.year; 
         var yearsplit = year.split(' ')
         for(var b = 0; b < year_blocks.length; b++) {
-            if (yearsplit[yearsplit.length-1] == 'before'){
-                if(year_blocks[b].dataset.year <= parseInt(yearsplit[0])) {
-                    year_blocks[b].style.display = 'block';
+            if (year == 'all'){
+                year_blocks[b].style.display = 'block';
+            }
+            else{
+                if (yearsplit[yearsplit.length-1] == 'before'){
+                    if(year_blocks[b].dataset.year <= parseInt(yearsplit[0])) {
+                        year_blocks[b].style.display = 'block';
+                    } else {
+                        year_blocks[b].style.display = 'none';
+                    }
+        
                 } else {
-                    year_blocks[b].style.display = 'none';
-                }
-    
-            } else {
-                if(year_blocks[b].dataset.year == year) {
-                    year_blocks[b].style.display = 'block';
-                } else {
-                    year_blocks[b].style.display = 'none';
+                    if(year_blocks[b].dataset.year == year) {
+                        year_blocks[b].style.display = 'block';
+                    } else {
+                        year_blocks[b].style.display = 'none';
+                    }
                 }
             }
         }
     });
     }
-    buttons[0].click()
+    buttons[1].click()
 </script>    </div>
     </main>
 
