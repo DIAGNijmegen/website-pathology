@@ -311,27 +311,6 @@
     <h2>Abstract</h2>
     <p>Breast cancer is among females the most frequently diagnosed cancer and the leading cause of cancer death. A subtype of breast cancer called triple negative breast cancer(TNBC) is known to be more aggressive, generally occur at younger age and even very small (&lt;1cm) node-negative TNBC show recurrence within 5 years in 15% of cases if left untreated. For TNBC, several studies showed that the number of tumor-in?ltraing lymphocytes (TIL) in hematoxylin and eosin (H&amp;E) stained sections strongly correlates with disease free survival. Subtyping of lymphocytes could strongly help ?nding more powerful prognostic markers. However, standard H&amp;E stained sections do not permit speci?c subtyping of lymphocytes and immunohistochemistry(IHC) allows very limited subtyping. New scanning systems, staining protocols and medical imaging analysis algorithms allows to gather spatial information of lymphocyte subtypes and to determine subtype positioning of lymfocytes in peri- or intertumoral regions. A ?rst step towards this goal is to detect tumor regions to determine whether a lymfocyte is positioned perior intertumoral. Therefore, the aim of this thesis was to investigate the performance of convolutional networks to segment tumor regions in TNBC whole-slide multiplex IHC slides. Multiple experiments were conducted to investigate and maximize the performance. The data used for training was investigated and it was concluded that training a FCNN (fully convolutional neural network) using the DAPI and CK8-18 data channels together with a resolution of 0.96 um/pix and patch size of 128x128 resulted in the highest segmentation performance. Enriching the dataset with hard mining had no positive effects on the performance. Using the different architecture U-net resulted in similar results compared to that of a FCNN. A 'model averaging ensemble' resulted in the highest segmentation performance with a F1 score of 0.83. It can be concluded that fully convolutional networks were able to segment tumor regions in triple negative and holds true for both FCNN and U-net architectures and can be used for the overarching aim of this research, namely extracting powerful prognostic information from intra- and peritumoral lymphocyte</p>
 
-    <div id="pdf-form" class="mt-5">
-      <h2>Request PDF</h2>
-
-      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
-
-      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=geij19&ref=website-pathology"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
-    </div>
-
-    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
-      <h3>PDF sent</h3>
-
-      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
-    </div>
-
-    <script type="text/javascript">
-      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
-      if(window.location.hash == '#pdf-sent') {
-        document.getElementById('pdf-form').style.display = 'none';
-        document.getElementById('pdf-sent').style.display = 'block';
-      }
-    </script>
 
     </div>
     </main>

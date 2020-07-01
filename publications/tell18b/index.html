@@ -312,27 +312,6 @@
     <h2>Abstract</h2>
     <p>We propose a novel two-step methodology for entire whole-slide image (WSI) classification. First, all tissue patches in a WSI are mapped into vector embeddings using an encoder trained in an unsupervised fashion. The spatial arrangement of these embeddings is maintained with respect to the tissue patches, forming a stack of 2D feature maps representing the WSI. Second, a convolutional neural network is trained on these compact representations to predict weak labels associated with entire WSIs. We investigated several unsupervised schemes to train the encoder model: convolutional autoencoders (CAE), variational autoencoders (VAE), and a novel approach based on contrastive training. We validated the proposed methodology by predicting the existence of tumor metastasis at WSI-level using the Camelyon16 dataset. Our experimental results showed that the proposed methodology can be used to predict weak labels from entire WSIs. Furthermore, the novel contrastive encoder proved to be superior to the CAE and VAE approaches.</p>
 
-    <div id="pdf-form" class="mt-5">
-      <h2>Request PDF</h2>
-
-      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
-
-      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=tell18b&ref=website-pathology"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
-    </div>
-
-    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
-      <h3>PDF sent</h3>
-
-      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
-    </div>
-
-    <script type="text/javascript">
-      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
-      if(window.location.hash == '#pdf-sent') {
-        document.getElementById('pdf-form').style.display = 'none';
-        document.getElementById('pdf-sent').style.display = 'block';
-      }
-    </script>
 
     </div>
     </main>

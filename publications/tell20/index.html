@@ -312,27 +312,6 @@
     <h2>Abstract</h2>
     <p>We focus on the problem of training convolutional neural networks on gigapixel histopathology images to predict image-level targets. For this purpose, we extend Neural Image Compression (NIC), an image compression framework that reduces the dimensionality of these images using an encoder network trained unsupervisedly. We propose to train this encoder using supervised multitask learning (MTL) instead. We applied the proposed MTL NIC to two histopathology datasets and three tasks. First, we obtained state-of-the-art results in the Tumor Proliferation Assessment Challenge of 2016 (TUPAC16). Second, we successfully classified histopathological growth patterns in images with colorectal liver metastasis (CLM). Third, we predicted patient risk of death by learning directly from overall survival in the same CLM data. Our experimental results suggest that the representations learned by the MTL objective are: (1) highly specific, due to the supervised training signal, and (2) transferable, since the same features perform well across different tasks. Additionally, we trained multiple encoders with different training objectives, e.g. unsupervised and variants of MTL, and observed a positive correlation between the number of tasks in MTL and the system performance on the TUPAC16 dataset.</p>
 
-    <div id="pdf-form" class="mt-5">
-      <h2>Request PDF</h2>
-
-      <p>A pdf file of this publication is available for personal use. Enter your e-mail address in the box below and press the button. You will receive an e-mail message with a link to the pdf file.</p>
-
-      <form method="post" action="http://shared.radboudimaging.nl/mediawiki/publication/confirmemail.php?bibkey=tell20&ref=website-pathology"><input type="text" name="email" size="50"><input type="submit" value="Send code by e-mail"></form>
-    </div>
-
-    <div id="pdf-sent" class="mt-5 alert alert-info" style="display: none">
-      <h3>PDF sent</h3>
-
-      <p>An email message containing a code and instructions to download the following paper has been sent to your email adress.</p>
-    </div>
-
-    <script type="text/javascript">
-      // The pdf service loads this page with the #pdf-sent hash, if it is present we hide the form.
-      if(window.location.hash == '#pdf-sent') {
-        document.getElementById('pdf-form').style.display = 'none';
-        document.getElementById('pdf-sent').style.display = 'block';
-      }
-    </script>
 
     </div>
     </main>
