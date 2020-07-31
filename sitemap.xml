@@ -207,6 +207,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/less20/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/publications/litj12/</loc>
     <priority>1.0</priority>
   </url>
@@ -1064,6 +1068,14 @@
   </url>
   <url>
     <loc>https://www.computationalpathologygroup.eu/publications/milly-van-de-warenburg/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/miriam-groeneveld/all/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/miriam-groeneveld/</loc>
     <priority>1.0</priority>
   </url>
   <url>
