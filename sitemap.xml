@@ -811,6 +811,10 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.computationalpathologygroup.eu/publications/ciom12a/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.computationalpathologygroup.eu/projects/multimot/</loc>
     <priority>1.0</priority>
   </url>
