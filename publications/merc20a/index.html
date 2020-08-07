@@ -308,8 +308,6 @@
       
     </p>
 
-
-
     <h2>Abstract</h2>
     <p>Nuclear pleomorphism is defined as the variability in size and shape of tumor cells as compared to normal epithelial cells. Objective of this study is to train a deep neural network that can achieve pathologist-level pleomorphism grading performance. We collected 29 whole slide images (WSI) of breast cancer resections in which we manually selected 90 regions of interest, ensuring grade homogeneity of tumour cells within a region. Subsequently, we cropped regions of ~0.38 mm2 at 40X magnification (0.25 um/px) and asked six pathologists to grade each region independently. We used an epithelial cell detector network to detect the epithelial cells in each region and extracted fixed-size patches from these regions with high tumor density. For the task of pleomorphism grading, we trained a densenet model on those patches with the majority voting of the grades of the pathologists (majority grades). The variation of kappa scores of the pathologists with the majority grade was very high, ranging between 0.37 and 0.69 on the standalone test set consisting of 18 regions from 7 WSI. On the same test set, our densenet model had a kappa score of 0.47 with the majority grades. We demonstrated that our network trained only on tumor cells achieved performance on the task of pleomorphism grading of breast cancer around the low mid-range of the inter-pathologist variability where the inter-observer variability of pathologists was very high. Future research will include scores of a larger panel of pathologists, and study alternative deep learning strategies to improve the performance.</p>
 
